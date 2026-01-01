@@ -1,7 +1,5 @@
 # Admin tools (private, not for GitHub Pages)
-admin_manager.py
-oli3d_admin.py
-admin_app.py
+
 # Python
 __pycache__/
 *.py[cod]

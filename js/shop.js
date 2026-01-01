@@ -244,9 +244,10 @@ async function loadProducts() {
             return;
         }
 
-        paginated.items.forEach(product => {
-            container.appendChild(renderProductCard(product));
-        });
+        for (const product of paginated.items) {
+            const card = await renderProductCard(product);
+            container.appendChild(card);
+        }
 
         renderPagination(paginated);
 

@@ -31,9 +31,10 @@ async function loadHighlightedProducts() {
         container.innerHTML = '';
 
         // Show max 4 highlighted products on home
-        products.slice(0, 4).forEach(product => {
-            container.appendChild(renderProductCard(product));
-        });
+        for (const product of products.slice(0, 4)) {
+            const card = await renderProductCard(product);
+            container.appendChild(card);
+        }
     } catch (error) {
         console.error('Error loading highlighted products:', error);
         container.innerHTML = '<p class="text-center">Error al cargar productos destacados</p>';
@@ -55,9 +56,10 @@ async function loadLatestProducts() {
         const products = await getLatestProducts(4);
         container.innerHTML = '';
 
-        products.forEach(product => {
-            container.appendChild(renderProductCard(product));
-        });
+        for (const product of products) {
+            const card = await renderProductCard(product);
+            container.appendChild(card);
+        }
     } catch (error) {
         console.error('Error loading latest products:', error);
         container.innerHTML = '<p class="text-center">Error al cargar últimos productos</p>';

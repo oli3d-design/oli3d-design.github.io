@@ -6,6 +6,34 @@
 // Cache for loaded data
 let productsCache = null;
 let categoriesCache = null;
+let settingsCache = null;
+
+/**
+ * Load settings from JSON database
+ */
+async function loadSettings() {
+  if (settingsCache) return settingsCache;
+
+  try {
+    const cacheBuster = '?v=' + Date.now();
+    const response = await fetch(getBasePath() + 'db/settings.json' + cacheBuster);
+    if (!response.ok) throw new Error('Failed to load settings');
+    settingsCache = await response.json();
+    return settingsCache;
+  } catch (error) {
+    console.error('Error loading settings:', error);
+    // Return default settings if file doesn't exist
+    return { showPrices: true };
+  }
+}
+
+/**
+ * Check if prices should be shown
+ */
+async function shouldShowPrices() {
+  const settings = await loadSettings();
+  return settings.showPrices !== false;
+}
 
 // Determine base path for JSON files (works both locally and on GitHub Pages)
 function getBasePath() {
@@ -24,7 +52,9 @@ async function loadCategoriesRaw() {
   if (categoriesCache) return categoriesCache;
 
   try {
-    const response = await fetch(getBasePath() + 'db/categories.json');
+    // Add cache-busting to ensure we get the latest data
+    const cacheBuster = '?v=' + Date.now();
+    const response = await fetch(getBasePath() + 'db/categories.json' + cacheBuster);
     if (!response.ok) throw new Error('Failed to load categories');
     const data = await response.json();
     categoriesCache = data.categories;
@@ -58,7 +88,9 @@ async function loadProductsRaw() {
   if (productsCache) return productsCache;
 
   try {
-    const response = await fetch(getBasePath() + 'db/products.json');
+    // Add cache-busting to ensure we get the latest data
+    const cacheBuster = '?v=' + Date.now();
+    const response = await fetch(getBasePath() + 'db/products.json' + cacheBuster);
     if (!response.ok) throw new Error('Failed to load products');
     const data = await response.json();
     productsCache = data.products;
@@ -223,7 +255,12 @@ function formatPrice(price) {
 /**
  * Render a product card (preview version for shop grid)
  */
-function renderProductCard(product) {
+async function renderProductCard(product, showPrice = null) {
+  // If showPrice not explicitly set, check settings
+  if (showPrice === null) {
+    showPrice = await shouldShowPrices();
+  }
+
   const card = document.createElement('article');
   card.className = 'card product-card';
   card.setAttribute('data-product-id', product.id);
@@ -235,7 +272,7 @@ function renderProductCard(product) {
     </div>
     <div class="product-info">
       <h3 class="product-name">${product.name}</h3>
-      <p class="product-price">${formatPrice(product.price)}</p>
+      ${showPrice ? `<p class="product-price">${formatPrice(product.price)}</p>` : ''}
     </div>
   `;
 
@@ -269,7 +306,7 @@ function renderCategoryCard(category, onClick) {
 /**
  * Generate mailto link for product inquiry
  */
-function generateMailtoLink(product, quantity = 1, customMessage = '') {
+function generateMailtoLink(product, quantity = 1, customMessage = '', showPrices = true) {
   const email = 'oli3d.design@gmail.com';
   const subject = encodeURIComponent(`Consulta sobre: ${product.name}`);
 
@@ -278,13 +315,13 @@ function generateMailtoLink(product, quantity = 1, customMessage = '') {
 Me interesa el siguiente producto:
 
 Producto: ${product.name}
-Precio: ${formatPrice(product.price)}
-Tamaño: ${product.size}
+${showPrices ? `Precio: ${formatPrice(product.price)}
+` : ''}Tamaño: ${product.size}
 Cantidad: ${quantity}
 
 `;
 
-  if (product.priceOffers && product.priceOffers.length > 0) {
+  if (showPrices && product.priceOffers && product.priceOffers.length > 0) {
     body += `Ofertas disponibles:
 `;
     product.priceOffers.forEach(offer => {
@@ -336,6 +373,8 @@ window.ProductsModule = {
   loadProductsRaw,
   loadCategories,
   loadCategoriesRaw,
+  loadSettings,
+  shouldShowPrices,
   getHiddenCategoryIds,
   isProductVisible,
   getProductById,
