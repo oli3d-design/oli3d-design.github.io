@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda Oli3D Design - Productos 3D personalizados.">
+    <meta name="author" content="Oli3D Design">
+
+    <title>Tienda - Oli3D Design</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="resources/LOGO_SIN_FONDO.png">
+
+    <style>
+        /* Shop Layout */
+        .shop-layout {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: var(--spacing-2xl);
+            align-items: start;
+        }
+
+        @media (max-width: 900px) {
+            .shop-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .shop-sidebar {
+                display: none;
+            }
+
+            .shop-sidebar.open {
+                display: block;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 1001;
+                background: var(--white);
+                padding: var(--spacing-xl);
+                overflow-y: auto;
+            }
+
+            .mobile-filter-toggle {
+                display: flex;
+            }
+        }
+
+        /* Sidebar */
+        .shop-sidebar {
+            position: sticky;
+            top: calc(var(--nav-height) + var(--spacing-lg));
+        }
+
+        .sidebar-section {
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .sidebar-title {
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--gray-500);
+            margin-bottom: var(--spacing-md);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sidebar-close {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 20px;
+            color: var(--gray-500);
+            cursor: pointer;
+        }
+
+        @media (max-width: 900px) {
+            .sidebar-close {
+                display: block;
+            }
+        }
+
+        /* Category List - Collapsible style */
+        .category-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .category-item {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            padding: 8px 10px;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            font-size: 13px;
+            color: var(--gray-700);
+            transition: all var(--transition-fast);
+            background: transparent;
+            border: none;
+            width: 100%;
+            text-align: left;
+        }
+
+        .category-item:hover {
+            background: var(--gray-100);
+        }
+
+        .category-item.active {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .category-item .check-icon {
+            width: 16px;
+            height: 16px;
+            border: 1.5px solid var(--gray-400);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: all var(--transition-fast);
+        }
+
+        .category-item.active .check-icon {
+            background: var(--white);
+            border-color: var(--white);
+        }
+
+        .category-item.active .check-icon svg {
+            opacity: 1;
+        }
+
+        .category-item .check-icon svg {
+            width: 10px;
+            height: 10px;
+            stroke: var(--primary);
+            stroke-width: 3;
+            fill: none;
+            opacity: 0;
+        }
+
+        .category-count {
+            margin-left: auto;
+            font-size: 11px;
+            color: var(--gray-400);
+        }
+
+        .category-item.active .category-count {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Mobile Filter Toggle */
+        .mobile-filter-toggle {
+            display: none;
+            align-items: center;
+            gap: var(--spacing-sm);
+            padding: 8px 14px;
+            background: var(--gray-100);
+            border: none;
+            border-radius: var(--radius-sm);
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--gray-700);
+            cursor: pointer;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .mobile-filter-toggle svg {
+            width: 16px;
+            height: 16px;
+            stroke: currentColor;
+            stroke-width: 2;
+            fill: none;
+        }
+
+        /* Shop Main */
+        .shop-main {
+            min-height: 400px;
+        }
+
+        .shop-top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-lg);
+            flex-wrap: wrap;
+        }
+
+        .shop-top-bar .search-box {
+            flex: 1;
+            max-width: 280px;
+            margin: 0;
+        }
+
+        .shop-info {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-lg);
+        }
+
+        #products-count {
+            color: var(--gray-500);
+            font-size: 13px;
+        }
+
+        /* Clear Filters */
+        .clear-filters {
+            font-size: 12px;
+            color: var(--primary);
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0;
+        }
+
+        .clear-filters:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <img src="resources/LOGO_SIN_FONDO.png" alt="Oli3D Design Logo">
+                <span class="nav-logo-text">Oli3D Design</span>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="shop.html" class="nav-link active">Tienda</a></li>
+                <li><a href="about.html" class="nav-link">Sobre Nosotros</a></li>
+                <li><a href="contact.html" class="nav-link">Contacto</a></li>
+            </ul>
+
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Shop Header -->
+        <section class="shop-header">
+            <div class="container">
+                <h1>Tienda</h1>
+                <p style="color: var(--gray-500); margin-top: var(--spacing-sm); font-size: 14px;">
+                    Explora nuestra colección de productos
+                </p>
+            </div>
+        </section>
+
+        <!-- Shop Content -->
+        <section class="section" style="padding-top: var(--spacing-lg);">
+            <div class="container">
+                <!-- Mobile Filter Toggle -->
+                <button class="mobile-filter-toggle" onclick="toggleSidebar()">
+                    <svg viewBox="0 0 24 24">
+                        <line x1="4" y1="21" x2="4" y2="14"></line>
+                        <line x1="4" y1="10" x2="4" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12" y2="3"></line>
+                        <line x1="20" y1="21" x2="20" y2="16"></line>
+                        <line x1="20" y1="12" x2="20" y2="3"></line>
+                    </svg>
+                    Filtros
+                </button>
+
+                <div class="shop-layout">
+                    <!-- Sidebar Filters -->
+                    <aside class="shop-sidebar" id="shop-sidebar">
+                        <div class="sidebar-section">
+                            <div class="sidebar-title">
+                                <span>Categorías</span>
+                                <button class="sidebar-close" onclick="toggleSidebar()">×</button>
+                            </div>
+                            <div id="category-filters" class="category-list">
+                                <div class="loading-container" style="min-height: 80px;">
+                                    <div class="spinner"></div>
+                                </div>
+                            </div>
+                            <button class="clear-filters mt-lg" id="clear-filters" style="display: none;">Limpiar
+                                filtros</button>
+                        </div>
+                    </aside>
+
+                    <!-- Main Content -->
+                    <div class="shop-main">
+                        <!-- Top Bar -->
+                        <div class="shop-top-bar">
+                            <div class="search-box">
+                                <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <path d="m21 21-4.35-4.35"></path>
+                                </svg>
+                                <input type="text" id="search-input" placeholder="Buscar..."
+                                    aria-label="Buscar productos">
+                            </div>
+
+                            <div class="shop-info">
+                                <span id="products-count"></span>
+                                <select id="sort-select" class="sort-select">
+                                    <option value="newest">Más recientes</option>
+                                    <option value="price-asc">Precio ↑</option>
+                                    <option value="price-desc">Precio ↓</option>
+                                    <option value="name-asc">A-Z</option>
+                                    <option value="name-desc">Z-A</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Products Grid -->
+                        <div id="products-grid" class="product-grid">
+                            <div class="loading-container">
+                                <div class="spinner"></div>
+                            </div>
+                        </div>
+
+                        <!-- Pagination -->
+                        <div id="pagination" class="pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>¿No encuentras lo que buscas?</h2>
+                <p>Podemos crear cualquier diseño personalizado.</p>
+                <a href="contact.html" class="btn btn-primary"
+                    style="background: var(--white); color: var(--gray-900);">Contactar</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="resources/LOGO_SIN_FONDO.png" alt="Oli3D Design">
+                        <span class="footer-logo-text">Oli3D Design</span>
+                    </div>
+                    <p>Especialistas en impresión 3D y diseño personalizado.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Navegación</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Inicio</a>
+                        <a href="shop.html">Tienda</a>
+                        <a href="about.html">Sobre Nosotros</a>
+                        <a href="contact.html">Contacto</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <div class="footer-links">
+                        <a href="mailto:oli3d.design@gmail.com">oli3d.design@gmail.com</a>
+                        <a href="https://www.instagram.com/oli3d.design/" target="_blank">@oli3d.design</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/oli3d.design/" target="_blank" class="social-link"
+                            aria-label="Instagram">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/people/Oli3D/61581251891899/" target="_blank"
+                            class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://es.wallapop.com/user/oli3d-470754978" target="_blank" class="social-link"
+                            aria-label="Wallapop">
+                            <svg viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                            </svg>
+                        </a>
+                        <a href="mailto:oli3d.design@gmail.com" class="social-link" aria-label="Email">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Oli3D Design. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/shop.js"></script>
+    <script>
+        function toggleSidebar() {
+            document.getElementById('shop-sidebar').classList.toggle('open');
+        }
+    </script>
+</body>
+
+</html>

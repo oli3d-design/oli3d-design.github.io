@@ -1,0 +1,25 @@
+# Admin tools (private, not for GitHub Pages)
+admin_manager.py
+oli3d_admin.py
+admin_app.py
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+
+# Misc
+*.log
+*.tmp

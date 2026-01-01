@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Producto - Oli3D Design">
+    <meta name="author" content="Oli3D Design">
+
+    <title>Producto - Oli3D Design</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="resources/LOGO_SIN_FONDO.png">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <img src="resources/LOGO_SIN_FONDO.png" alt="Oli3D Design Logo">
+                <span class="nav-logo-text">Oli3D Design</span>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="shop.html" class="nav-link">Tienda</a></li>
+                <li><a href="about.html" class="nav-link">Sobre Nosotros</a></li>
+                <li><a href="contact.html" class="nav-link">Contacto</a></li>
+            </ul>
+
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section product-detail">
+            <div class="container">
+                <a href="shop.html" class="back-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="m15 18-6-6 6-6"></path>
+                    </svg>
+                    Volver a la tienda
+                </a>
+
+                <div class="product-detail-grid">
+                    <!-- Gallery -->
+                    <div class="product-gallery" id="product-gallery">
+                        <div class="loading-container">
+                            <div class="spinner"></div>
+                        </div>
+                    </div>
+
+                    <!-- Details -->
+                    <div class="product-details" id="product-details">
+                        <div class="loading-container">
+                            <div class="spinner"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Related Products -->
+                <div class="related-section" id="related-section" style="display: none;">
+                    <h3 style="margin-bottom: var(--spacing-lg);">También te puede interesar</h3>
+                    <div id="related-products" class="product-grid"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="resources/LOGO_SIN_FONDO.png" alt="Oli3D Design">
+                        <span class="footer-logo-text">Oli3D Design</span>
+                    </div>
+                    <p>Especialistas en impresión 3D y diseño personalizado.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Navegación</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Inicio</a>
+                        <a href="shop.html">Tienda</a>
+                        <a href="about.html">Sobre Nosotros</a>
+                        <a href="contact.html">Contacto</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <div class="footer-links">
+                        <a href="mailto:oli3d.design@gmail.com">oli3d.design@gmail.com</a>
+                        <a href="https://www.instagram.com/oli3d.design/" target="_blank">@oli3d.design</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/oli3d.design/" target="_blank" class="social-link"
+                            aria-label="Instagram">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/people/Oli3D/61581251891899/" target="_blank"
+                            class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://es.wallapop.com/user/oli3d-470754978" target="_blank" class="social-link"
+                            aria-label="Wallapop">
+                            <svg viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                            </svg>
+                        </a>
+                        <a href="mailto:oli3d.design@gmail.com" class="social-link" aria-label="Email">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Oli3D Design. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/product-detail.js"></script>
+</body>
+
+</html>

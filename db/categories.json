@@ -1,0 +1,16 @@
+{
+  "categories": [
+    { "id": "all", "name": "Todos", "icon": "🎯", "popular": true },
+    { "id": "keychains", "name": "Llaveros", "icon": "🔑", "popular": true },
+    { "id": "sports", "name": "Deportes", "icon": "⚽", "popular": true },
+    { "id": "celebrations", "name": "Celebraciones", "icon": "🎉", "popular": false },
+    { "id": "christmas", "name": "Navidad", "icon": "🎄", "popular": true, "seasonal": true },
+    { "id": "halloween", "name": "Halloween", "icon": "🎃", "popular": false, "seasonal": true, "hidden": true },
+    { "id": "pets", "name": "Mascotas", "icon": "🐕", "popular": false },
+    { "id": "babies", "name": "Bebés", "icon": "👶", "popular": false },
+    { "id": "office", "name": "Oficina", "icon": "💼", "popular": false },
+    { "id": "home", "name": "Hogar", "icon": "🏠", "popular": true },
+    { "id": "figures", "name": "Figuras", "icon": "🎭", "popular": true },
+    { "id": "gifts", "name": "Regalos", "icon": "🎁", "popular": true }
+  ]
+}
