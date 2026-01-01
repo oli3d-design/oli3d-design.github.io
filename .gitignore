@@ -1,4 +1,5 @@
 # Admin tools (private, not for GitHub Pages)
+admin.py
 
 # Python
 __pycache__/
@@ -21,3 +22,7 @@ ENV/
 # Misc
 *.log
 *.tmp
+
+# Virtual env
+.venv/
+ENV/
