@@ -28,7 +28,12 @@
             "size": "8cm diámetro",
             "material": "PLA",
             "createdAt": "2024-11-15",
-            "hidden": true
+            "hidden": true,
+            "images": [
+                "products/bolas_navidad.JPG",
+                "products/bolas_navidad.JPG",
+                "products/caja_regalo.JPG"
+            ]
         },
         {
             "id": "caja_regalo",
