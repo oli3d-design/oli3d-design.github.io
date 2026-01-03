@@ -204,12 +204,7 @@ async function loadProductDetail(productId) {
         </a>
         ${product.wallapopLink ? `
           <a href="${product.wallapopLink}" target="_blank" rel="noopener" class="btn btn-secondary">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="10"></circle>
-              <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
-              <line x1="9" y1="9" x2="9.01" y2="9"></line>
-              <line x1="15" y1="9" x2="15.01" y2="9"></line>
-            </svg>
+            <img src="resources/wallapop-logo.svg" alt="Wallapop" style="width: 18px; height: 18px;">
             Ver en Wallapop
           </a>
         ` : ''}
