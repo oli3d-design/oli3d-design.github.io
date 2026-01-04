@@ -151,22 +151,31 @@ async function loadProductDetail(productId) {
     // Build price section HTML (only if showPrices is true)
     let priceSectionHTML = '';
     if (showPrices) {
-      priceSectionHTML = `
-        <div class="product-price-section">
-          <div class="product-price-main">${formatPrice(product.price)}</div>
-          ${product.priceOffers && product.priceOffers.length > 0 ? `
-            <p style="margin: 0; font-size: 13px; color: var(--gray-500);">Ofertas por cantidad:</p>
-            <div class="price-offers">
-              ${product.priceOffers.map(offer => `
-                <div class="price-offer">
-                  <span class="quantity">${offer.label}</span>
-                  <span class="price">${formatPrice(offer.price)}/ud</span>
-                </div>
-              `).join('')}
-            </div>
-          ` : ''}
-        </div>
-      `;
+      if (product.priceOnRequest) {
+        priceSectionHTML = `
+          <div class="product-price-section">
+            <div class="product-price-main" style="font-size: 22px; color: var(--primary);">Consultar precio</div>
+            <p style="margin: 4px 0 0; color: var(--gray-600); font-size: 14px;">Este producto se realiza a medida o bajo presupuesto.</p>
+          </div>
+        `;
+      } else {
+        priceSectionHTML = `
+          <div class="product-price-section">
+            <div class="product-price-main">${formatPrice(product.price)}</div>
+            ${product.priceOffers && product.priceOffers.length > 0 ? `
+              <p style="margin: 0; font-size: 13px; color: var(--gray-500);">Ofertas por cantidad:</p>
+              <div class="price-offers">
+                ${product.priceOffers.map(offer => `
+                  <div class="price-offer">
+                    <span class="quantity">${offer.label}</span>
+                    <span class="price">${formatPrice(offer.price)}/ud</span>
+                  </div>
+                `).join('')}
+              </div>
+            ` : ''}
+          </div>
+        `;
+      }
     }
 
     // Render details

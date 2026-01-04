@@ -185,7 +185,56 @@ async function getLatestProducts(count = 8) {
  */
 async function getPopularCategories() {
   const categories = await loadCategories();
-  return categories.filter(c => c.popular && c.id !== 'all');
+  const popularCategories = categories.filter(c => c.popular && c.id !== 'all');
+
+  // Pre-fetch products for all categories to sort by scarcity
+  const categoriesWithProducts = [];
+  for (const category of popularCategories) {
+    const products = await getProductsByCategory(category.id);
+    categoriesWithProducts.push({ category, products });
+  }
+
+  // Sort by product count (ascending) to prioritize categories with fewer options
+  categoriesWithProducts.sort((a, b) => a.products.length - b.products.length);
+
+  const usedImages = new Set();
+  const resultCategories = [];
+
+  for (const item of categoriesWithProducts) {
+    const { category, products } = item;
+
+    // Filter out products with already used images
+    const availableProducts = products.filter(p => !usedImages.has(p.image));
+
+    let images = [];
+    if (availableProducts.length > 0) {
+      // Prioritize highlighted products first
+      const highlighted = availableProducts.filter(p => p.highlighted);
+      const regular = availableProducts.filter(p => !p.highlighted);
+
+      const sortedProducts = [...highlighted, ...regular];
+
+      // Take up to 2 images (simplify collage)
+      images = sortedProducts.slice(0, 2).map(p => p.image);
+
+      // Mark as used
+      images.forEach(img => usedImages.add(img));
+    }
+
+    // Handle fallback if 0
+    if (images.length === 0) {
+      images = ['resources/LOGO_SIN_FONDO.png'];
+    }
+
+    category.images = images;
+    resultCategories.push(category);
+  }
+
+  // Restore original popular categories order (by ID)
+  // This ensures the UI order matches the Admin Panel order
+  return popularCategories.map(c =>
+    resultCategories.find(res => res.id === c.id) || c
+  );
 }
 
 /**
@@ -275,7 +324,7 @@ async function renderProductCard(product, showPrice = null) {
     </div>
     <div class="product-info">
       <h3 class="product-name">${product.name}</h3>
-      ${showPrice ? `<p class="product-price">${formatPrice(product.price)}</p>` : ''}
+      ${showPrice ? `<p class="product-price">${product.priceOnRequest ? '<span style="font-size:14px;color:var(--gray-500)">Consultar / A medida</span>' : formatPrice(product.price)}</p>` : ''}
     </div>
   `;
 
@@ -318,7 +367,7 @@ function generateMailtoLink(product, quantity = 1, customMessage = '', showPrice
 Me interesa el siguiente producto:
 
 Producto: ${product.name}
-${showPrices ? `Precio: ${formatPrice(product.price)}
+${showPrices ? `Precio: ${product.priceOnRequest ? 'A consultar / A medida' : formatPrice(product.price)}
 ` : ''}Tamaño: ${product.size}
 Cantidad: ${quantity}
 

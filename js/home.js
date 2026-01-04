@@ -80,13 +80,39 @@ async function loadPopularCategories() {
         container.innerHTML = '';
 
         categories.forEach(category => {
-            const card = renderCategoryCard(category, (cat) => {
-                // Navigate to shop with category filter
-                window.location.href = `shop.html?category=${cat.id}`;
-            });
+            const card = document.createElement('a');
+            card.href = `shop.html?category=${category.id}`;
+            card.className = 'category-image-card';
+
+            let imagesHtml = '';
+
+            if (!category.images || category.images.length <= 1) {
+                // Single image
+                const imgSrc = (category.images && category.images[0]) || 'resources/LOGO_SIN_FONDO.png';
+                imagesHtml = `<img src="${imgSrc}" alt="${category.name}" loading="lazy" class="category-single-img">`;
+            } else {
+                // Collage (2 or 4 images)
+                const count = category.images.length;
+                const gridClass = count === 2 ? 'grid-2' : 'grid-4';
+
+                imagesHtml = `<div class="category-collage ${gridClass}">`;
+                category.images.forEach((img, index) => {
+                    imagesHtml += `<img src="${img}" alt="${category.name} ${index + 1}" loading="lazy">`;
+                });
+                imagesHtml += `</div>`;
+            }
+
+            card.innerHTML = `
+                ${imagesHtml}
+                <div class="category-image-overlay">
+                    <span>${category.name}</span>
+                </div>
+            `;
+
             container.appendChild(card);
         });
     } catch (error) {
         console.error('Error loading categories:', error);
+        container.innerHTML = '<p class="text-center">Error al cargar categorías</p>';
     }
 }
