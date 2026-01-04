@@ -2,229 +2,157 @@
     "products": [
         {
             "id": "bolas_navidad",
-            "name": "Bolas de Navidad Personalizadas",
-            "description": "Decora tu árbol con estilo único. Bolas de Navidad personalizables con nombres, fechas o mensajes especiales. El detalle perfecto para unas fiestas inolvidables.",
-            "price": 8.99,
-            "priceOffers": [
-                {
-                    "quantity": 3,
-                    "price": 7.99,
-                    "label": "3+ unidades"
-                },
-                {
-                    "quantity": 6,
-                    "price": 6.99,
-                    "label": "6+ unidades"
-                }
-            ],
+            "name": "Bolas de Navidad",
+            "description": "Decora tu árbol con estilo único. Bolas de Navidad impresas en 3D con diferentes escenas invernales. Tenemos otros modelos, ¡pregunta sin compromiso!\r\n\r\nNota: Se venden por unidad.",
+            "price": 6.0,
             "image": "products/bolas_navidad.JPG",
-            "highlighted": true,
+            "highlighted": false,
             "categories": [
                 "christmas",
-                "home",
-                "gifts"
+                "home"
             ],
-            "wallapopLink": "https://es.wallapop.com/user/oli3d-470754978",
-            "size": "8cm diámetro",
+            "wallapopLink": "https://es.wallapop.com/item/bolas-navidenas-3d-personalizadas-1208999659",
+            "size": "",
             "material": "PLA",
             "createdAt": "2024-11-15",
             "images": [
                 "products/bolas_navidad.JPG",
-                "products/bolas_navidad.JPG",
-                "products/caja_regalo.JPG"
+                "products/bolas_navidad.JPG"
             ]
         },
         {
             "id": "caja_regalo",
-            "name": "Caja Regalo Decorativa",
-            "description": "Sorprende con una presentación única. Caja decorativa perfecta para pequeños obsequios, joyas o dulces. Ideal para cualquier ocasión especial.",
-            "price": 12.99,
-            "priceOffers": [
-                {
-                    "quantity": 2,
-                    "price": 11.49,
-                    "label": "2+ unidades"
-                },
-                {
-                    "quantity": 5,
-                    "price": 9.99,
-                    "label": "5+ unidades"
-                }
-            ],
+            "name": "Caja de Regalo Funcional",
+            "description": "Sorprende con una presentación única. Caja decorativa perfecta regalos. Ideal para cualquier ocasión especial.",
+            "price": 10.0,
             "image": "products/caja_regalo.JPG",
             "highlighted": false,
             "categories": [
-                "gifts",
                 "celebrations"
             ],
-            "wallapopLink": "https://es.wallapop.com/user/oli3d-470754978",
-            "size": "10x10x8cm",
+            "wallapopLink": "https://es.wallapop.com/item/caja-de-regalo-navidena-impresa-3d-1208999305",
+            "size": "",
             "material": "PLA",
-            "createdAt": "2024-10-20"
+            "createdAt": "2024-10-20",
+            "images": [
+                "products/caja_regalo.JPG",
+                "products/caja_regalo2.JPG"
+            ]
         },
         {
             "id": "casita",
             "name": "Casita Decorativa con Luces",
             "description": "Añade magia a tu hogar con esta encantadora casita. Perfecta para crear ambientes acogedores, con espacio para luces LED que la hacen brillar.",
-            "price": 18.99,
-            "priceOffers": [
-                {
-                    "quantity": 2,
-                    "price": 16.99,
-                    "label": "2+ unidades"
-                }
-            ],
+            "price": 10.0,
             "image": "products/casita.JPG",
-            "highlighted": true,
+            "highlighted": false,
             "categories": [
-                "home",
                 "christmas",
-                "gifts"
+                "home"
             ],
-            "wallapopLink": "https://es.wallapop.com/user/oli3d-470754978",
-            "size": "15x12x10cm",
+            "wallapopLink": "https://es.wallapop.com/item/casita-navidena-3d-1208995394",
+            "size": "10.4x10.7x10.7 cm",
             "material": "PLA",
             "createdAt": "2024-11-01"
         },
         {
             "id": "cerdo",
             "name": "Hucha Cerdito Simpático",
-            "description": "El clásico cerdito reinventado. Hucha divertida y funcional para enseñar a los pequeños el valor del ahorro. ¡Personalizable con nombre!",
-            "price": 14.99,
-            "priceOffers": [
-                {
-                    "quantity": 2,
-                    "price": 12.99,
-                    "label": "2+ unidades"
-                }
-            ],
+            "description": "El clásico cerdito reinventado con diseño geométrico. ¡Hucha divertida y funcional!",
+            "price": 15.0,
             "image": "products/cerdo.JPG",
             "highlighted": false,
             "categories": [
                 "babies",
-                "gifts",
-                "home"
+                "office",
+                "home",
+                "figures"
             ],
-            "wallapopLink": "https://es.wallapop.com/user/oli3d-470754978",
-            "size": "12x8x10cm",
+            "wallapopLink": "https://es.wallapop.com/item/hucha-cerdito-impresa-3d-rosa-1208995869",
+            "size": "",
             "material": "PLA",
             "createdAt": "2024-09-10"
         },
         {
             "id": "contador_lectura",
-            "name": "Contador de Lectura",
-            "description": "Para los amantes de los libros. Lleva la cuenta de tus páginas leídas de forma original y decorativa. El regalo perfecto para booklovers.",
-            "price": 9.99,
-            "priceOffers": [
-                {
-                    "quantity": 3,
-                    "price": 8.49,
-                    "label": "3+ unidades"
-                }
-            ],
+            "name": "Contador de Lectura Anual",
+            "description": "Para los amantes de los libros. Lleva la cuenta de tus libros leídos este año de forma original y decorativa. El regalo perfecto para booklovers. ¡Puedes elegir el color que prefieras!",
+            "price": 10.0,
             "image": "products/contador_lectura.JPG",
             "highlighted": false,
             "categories": [
                 "office",
-                "gifts",
                 "home"
             ],
-            "wallapopLink": "https://es.wallapop.com/user/oli3d-470754978",
-            "size": "8x6x3cm",
+            "wallapopLink": "https://es.wallapop.com/item/contador-de-libros-leidos-1209000720",
+            "size": "",
             "material": "PLA",
             "createdAt": "2024-08-25"
         },
         {
             "id": "cuenco_arbol",
-            "name": "Cuenco Árbol Decorativo",
-            "description": "Un toque de naturaleza en tu mesa. Cuenco con diseño de árbol perfecto para guardar llaves, joyas o pequeños tesoros del día a día.",
-            "price": 11.99,
-            "priceOffers": [
-                {
-                    "quantity": 2,
-                    "price": 10.49,
-                    "label": "2+ unidades"
-                }
-            ],
-            "image": "products/cuenco_arbol_rojo.JPG",
+            "name": "Cuenco Árbol de Navidad",
+            "description": "Cuenco decorativo con forma de árbol de Navidad, ideal para estas fiestas. Su diseño moderno y festivo lo hace perfecto para cualquier hogar. ¡Ideal para colocar mantecados y polvorones!",
+            "price": 7.0,
+            "image": "products/cuenco_arbol_rojo2.JPG",
             "highlighted": false,
             "categories": [
-                "home",
-                "gifts"
+                "christmas",
+                "home"
             ],
-            "wallapopLink": "https://es.wallapop.com/user/oli3d-470754978",
-            "size": "12x12x5cm",
+            "wallapopLink": "https://es.wallapop.com/item/cuenco-arbol-de-navidad-3d-rojo-y-dorado-1208999905",
+            "size": "",
             "material": "PLA",
             "createdAt": "2024-07-15"
         },
         {
             "id": "escudo_madrid",
-            "name": "Escudo Real Madrid con LEDs",
-            "description": "¡Hala Madrid! Escudo del Real Madrid con iluminación LED integrada. El regalo definitivo para madridistas. Brilla con los colores de tu equipo.",
-            "price": 24.99,
-            "priceOffers": [
-                {
-                    "quantity": 2,
-                    "price": 22.49,
-                    "label": "2+ unidades"
-                }
-            ],
+            "name": "Lámpara Escudo Real Madrid con LEDs",
+            "description": "¡Hala Madrid! Lámpara del escudo del Real Madrid con iluminación LED integrada (con pilas). El regalo definitivo para madridistas. Brilla con los colores de tu equipo. Además, ¡puedes personalizarlo con tu nombre!",
+            "price": 25.0,
             "image": "products/escudo_madrid_leds.JPG",
             "highlighted": true,
             "categories": [
                 "sports",
-                "gifts",
                 "home"
             ],
-            "wallapopLink": "https://es.wallapop.com/user/oli3d-470754978",
-            "size": "20x25x5cm",
+            "size": "35cm",
             "material": "PLA + LEDs",
             "createdAt": "2024-12-01"
         },
         {
             "id": "escudo_madrid_noleds",
-            "name": "Escudo Real Madrid Clásico",
-            "description": "El escudo merengue en su máximo esplendor. Versión clásica sin luces, perfecta para escritorio o estantería. Ideal para el aficionado purista.",
-            "price": 15.99,
-            "priceOffers": [
-                {
-                    "quantity": 2,
-                    "price": 13.99,
-                    "label": "2+ unidades"
-                }
-            ],
+            "name": "Escudo Real Madrid",
+            "description": "El escudo merengue en su máximo esplendor. Versión clásica sin luces, perfecta para escritorio o estantería. Ideal para el aficionado purista. Además, ¡puedes personalizarlo con tu nombre!",
+            "price": 15.0,
             "image": "products/escudo_madrid_noleds.JPG",
             "highlighted": false,
             "categories": [
                 "sports",
-                "gifts"
+                "home"
             ],
-            "wallapopLink": "https://es.wallapop.com/user/oli3d-470754978",
-            "size": "15x18x3cm",
+            "size": "",
             "material": "PLA",
-            "createdAt": "2024-11-28"
+            "createdAt": "2024-11-28",
+            "images": [
+                "products/escudo_madrid_noleds.JPG",
+                "products/escudo_madrid_noleds3.JPG"
+            ]
         },
         {
             "id": "hellokitty",
-            "name": "Figura Hello Kitty",
-            "description": "La gatita más famosa del mundo llega a tu colección. Figura decorativa de Hello Kitty con acabado de alta calidad. ¡Kawaii al máximo!",
-            "price": 13.99,
-            "priceOffers": [
-                {
-                    "quantity": 2,
-                    "price": 11.99,
-                    "label": "2+ unidades"
-                }
-            ],
+            "name": "Lapicero Hello Kitty",
+            "description": "La gatita más famosa del mundo llega a tu colección. Lapicero de Hello Kitty con acabado de alta calidad, ¡ideal para tu escritorio!",
+            "price": 15.0,
             "image": "products/hellokitty.JPG",
-            "highlighted": true,
+            "highlighted": false,
             "categories": [
-                "figures",
-                "gifts",
-                "babies"
+                "babies",
+                "office",
+                "home"
             ],
-            "wallapopLink": "https://es.wallapop.com/user/oli3d-470754978",
-            "size": "10x8x12cm",
+            "wallapopLink": "https://es.wallapop.com/item/lapicero-hello-kitty-3d-1208997643",
+            "size": "",
             "material": "PLA",
             "createdAt": "2024-12-10"
         },
@@ -232,284 +160,179 @@
             "id": "hucha_arcoiris",
             "name": "Hucha Arcoíris",
             "description": "Colores que inspiran a ahorrar. Hucha multicolor alegre y vibrante que hará sonreír mientras guardas tus monedas. Perfecta para niños y adultos.",
-            "price": 12.99,
-            "priceOffers": [
-                {
-                    "quantity": 2,
-                    "price": 10.99,
-                    "label": "2+ unidades"
-                }
-            ],
+            "price": 15.0,
             "image": "products/hucha_arcoiris.JPG",
             "highlighted": false,
             "categories": [
                 "babies",
-                "gifts",
                 "home"
             ],
-            "wallapopLink": "https://es.wallapop.com/user/oli3d-470754978",
-            "size": "14x8x10cm",
-            "material": "PLA multicolor",
+            "wallapopLink": "https://es.wallapop.com/item/hucha-arcoiris-impresa-3d-1208997861",
+            "size": "",
+            "material": "PLA",
             "createdAt": "2024-06-20"
         },
         {
             "id": "hucha_toad",
-            "name": "Hucha Toad (Mario Bros)",
-            "description": "¡Wahoo! El simpático Toad guarda tus monedas. Hucha inspirada en el icónico personaje de Nintendo. Para gamers nostálgicos y nuevas generaciones.",
-            "price": 16.99,
-            "priceOffers": [
-                {
-                    "quantity": 2,
-                    "price": 14.99,
-                    "label": "2+ unidades"
-                }
-            ],
+            "name": "Hucha Seta de Mario Bros",
+            "description": "La simpática seta de Mario Bros guarda tus monedas. Para gamers nostálgicos y nuevas generaciones.",
+            "price": 10.0,
             "image": "products/hucha_toad.JPG",
             "highlighted": true,
             "categories": [
-                "figures",
-                "gifts",
-                "babies"
+                "babies",
+                "office",
+                "home"
             ],
-            "wallapopLink": "https://es.wallapop.com/user/oli3d-470754978",
-            "size": "12x10x14cm",
+            "wallapopLink": "https://es.wallapop.com/item/hucha-toad-impresa-3d-1208997133",
+            "size": "",
             "material": "PLA",
-            "createdAt": "2024-12-05"
+            "createdAt": "2024-12-05",
+            "images": [
+                "products/hucha_toad.JPG",
+                "products/hucha_toad2.JPG"
+            ]
         },
         {
             "id": "labubu",
-            "name": "Figura Labubu Coleccionable",
-            "description": "El fenómeno viral en tu estantería. Figura Labubu con detalles increíbles. La pieza que todo coleccionista necesita. ¡Edición especial!",
-            "price": 19.99,
-            "priceOffers": [
-                {
-                    "quantity": 2,
-                    "price": 17.49,
-                    "label": "2+ unidades"
-                },
-                {
-                    "quantity": 4,
-                    "price": 15.99,
-                    "label": "4+ unidades"
-                }
-            ],
+            "name": "Lapicero Labubu",
+            "description": "El fenómeno viral en tu escritorio. Lapicero Labubu con detalles increíbles, ¡que se encargará de mantenerte el escritorio ordenado!",
+            "price": 15.0,
             "image": "products/labubu1.JPG",
             "highlighted": true,
             "categories": [
-                "figures",
-                "gifts"
+                "babies",
+                "office",
+                "home"
             ],
-            "wallapopLink": "https://es.wallapop.com/user/oli3d-470754978",
-            "size": "10x8x15cm",
+            "wallapopLink": "https://es.wallapop.com/item/lapicero-labubu-3d-1208994867",
+            "size": "",
             "material": "PLA",
-            "createdAt": "2024-12-15"
+            "createdAt": "2024-12-15",
+            "images": [
+                "products/labubu1.JPG",
+                "products/labubu3.JPG",
+                "products/labubu4.JPG"
+            ]
         },
         {
             "id": "lapicero_dino",
-            "name": "Lapicero Dinosaurio",
+            "name": "Lapicero Dinosaurio T-Rex",
             "description": "Organiza tu escritorio con estilo jurásico. Lapicero con forma de simpático dinosaurio que hará más divertido el estudio o trabajo.",
-            "price": 10.99,
-            "priceOffers": [
-                {
-                    "quantity": 2,
-                    "price": 9.49,
-                    "label": "2+ unidades"
-                },
-                {
-                    "quantity": 5,
-                    "price": 7.99,
-                    "label": "5+ unidades"
-                }
-            ],
+            "price": 15.0,
             "image": "products/lapicero_dino.JPG",
             "highlighted": false,
             "categories": [
-                "office",
                 "babies",
-                "gifts"
+                "office",
+                "home"
             ],
-            "wallapopLink": "https://es.wallapop.com/user/oli3d-470754978",
-            "size": "10x8x12cm",
-            "material": "PLA",
+            "wallapopLink": "https://es.wallapop.com/item/lapicero-dino-t-rex-impreso-3d-1208997401",
+            "size": "",
+            "material": "PLA Multicolor",
             "createdAt": "2024-05-10"
         },
         {
             "id": "lapicero_lapiz",
             "name": "Lapicero Lápiz Gigante",
-            "description": "Meta-decoración para tu escritorio. Un lápiz que guarda lápices. Original, funcional y con un toque de humor para artistas y creativos.",
-            "price": 9.99,
-            "priceOffers": [
-                {
-                    "quantity": 3,
-                    "price": 8.49,
-                    "label": "3+ unidades"
-                }
-            ],
+            "description": "Meta-decoración para tu escritorio. Un lápiz que guarda lápices. Original, funcional y con un toque de humor para artistas y creativos. Además, ¡totalmente personalizable! ",
+            "price": 15.0,
             "image": "products/lapicero_lapiz.JPG",
             "highlighted": false,
             "categories": [
                 "office",
-                "gifts"
+                "home"
             ],
-            "wallapopLink": "https://es.wallapop.com/user/oli3d-470754978",
-            "size": "15x6x6cm",
+            "wallapopLink": "https://es.wallapop.com/item/organizador-3d-lapiz-portalapices-1208996612",
+            "size": "",
             "material": "PLA",
             "createdAt": "2024-04-15"
         },
         {
-            "id": "llaveros_periana",
-            "name": "Llaveros Personalizados Periana",
-            "description": "Lleva tu pueblo en el bolsillo. Llaveros personalizados con el escudo o nombre de Periana. Ideales para regalos locales y recuerdos únicos.",
-            "price": 5.99,
-            "priceOffers": [
-                {
-                    "quantity": 5,
-                    "price": 4.99,
-                    "label": "5+ unidades"
-                },
-                {
-                    "quantity": 10,
-                    "price": 3.99,
-                    "label": "10+ unidades"
-                }
-            ],
-            "image": "products/llaveros_periana.JPG",
-            "highlighted": false,
-            "categories": [
-                "keychains",
-                "gifts"
-            ],
-            "wallapopLink": "https://es.wallapop.com/user/oli3d-470754978",
-            "size": "5x3x0.5cm",
-            "material": "PLA",
-            "createdAt": "2024-03-20"
-        },
-        {
             "id": "maquina_bolas",
-            "name": "Máquina de Bolas Retro",
-            "description": "Nostalgia funcional. Mini máquina de bolas estilo vintage perfecta para caramelos o chicles. Un toque retro que encantará a pequeños y mayores.",
-            "price": 22.99,
-            "priceOffers": [
-                {
-                    "quantity": 2,
-                    "price": 19.99,
-                    "label": "2+ unidades"
-                }
-            ],
+            "name": "Máquina Expendedora de Bolas",
+            "description": "Máquina expendedora de bolas, ideal para dispensar pequeños juguetes o caramelos. Fabricada con impresión 3D, presenta un diseño moderno y colorido.",
+            "price": 45.0,
             "image": "products/maquina_bolas.JPG",
             "highlighted": true,
             "categories": [
-                "home",
-                "gifts",
-                "celebrations"
+                "celebrations",
+                "babies",
+                "home"
             ],
-            "wallapopLink": "https://es.wallapop.com/user/oli3d-470754978",
+            "wallapopLink": "https://es.wallapop.com/item/maquina-expendedora-de-bolas-3d-1208998753",
             "size": "20x12x12cm",
-            "material": "PLA + acrílico",
+            "material": "PLA",
             "createdAt": "2024-10-05"
         },
         {
             "id": "mario",
-            "name": "Figura Super Mario",
-            "description": "¡It's-a me, Mario! El fontanero más famoso de los videojuegos en formato coleccionable. Detallado, colorido y listo para tu siguiente aventura.",
-            "price": 17.99,
-            "priceOffers": [
-                {
-                    "quantity": 2,
-                    "price": 15.99,
-                    "label": "2+ unidades"
-                }
-            ],
+            "name": "Lapicero Super Mario",
+            "description": "¡It's me, Mario! El fontanero más famoso de los videojuegos en formato coleccionable. Detallado, colorido y listo para tu siguiente aventura. ¡Guarda tus lapices y bolígrafos en su tubería!",
+            "price": 20.0,
             "image": "products/mario.JPG",
             "highlighted": true,
             "categories": [
-                "figures",
-                "gifts"
+                "office",
+                "home",
+                "figures"
             ],
-            "wallapopLink": "https://es.wallapop.com/user/oli3d-470754978",
-            "size": "12x8x16cm",
+            "wallapopLink": "https://es.wallapop.com/item/lapicero-mario-bros-3d-1208996268",
+            "size": "",
             "material": "PLA",
             "createdAt": "2024-11-20"
         },
         {
             "id": "pokeball",
-            "name": "Pokéball Funcional",
-            "description": "¡Hazte con todas! Pokéball que se abre para guardar pequeños objetos o sorpresas. El regalo perfecto para entrenadores Pokémon de todas las edades.",
-            "price": 11.99,
-            "priceOffers": [
-                {
-                    "quantity": 3,
-                    "price": 9.99,
-                    "label": "3+ unidades"
-                },
-                {
-                    "quantity": 6,
-                    "price": 8.49,
-                    "label": "6+ unidades"
-                }
-            ],
-            "image": "products/pokeball.JPG",
-            "highlighted": true,
+            "name": "Hucha Pokéball ",
+            "description": "¡Hazte con todas! Hucha con forma de una pokéball. El regalo perfecto para entrenadores Pokémon de todas las edades.",
+            "price": 15.0,
+            "image": "products/pokeball2.JPG",
+            "highlighted": false,
             "categories": [
-                "figures",
-                "gifts"
+                "home",
+                "figures"
             ],
             "wallapopLink": "https://es.wallapop.com/user/oli3d-470754978",
-            "size": "8cm diámetro",
+            "size": "",
             "material": "PLA",
             "createdAt": "2024-12-08"
         },
         {
             "id": "posavasos",
-            "name": "Set Posavasos Personalizados",
-            "description": "Protege tu mesa con estilo. Set de posavasos personalizables con nombres, iniciales o diseños únicos. Prácticos y decorativos a partes iguales.",
-            "price": 14.99,
-            "priceOffers": [
-                {
-                    "quantity": 2,
-                    "price": 12.99,
-                    "label": "2 sets"
-                }
-            ],
+            "name": "Set 4 Posavasos Navideños",
+            "description": "Conjunto de cuatro posavasos con temática navideña, ideales para dar un toque festivo a tu hogar. Cada posavasos presenta un diseño único.",
+            "price": 7.0,
             "image": "products/posavasos.JPG",
             "highlighted": false,
             "categories": [
-                "home",
-                "gifts"
+                "christmas",
+                "home"
             ],
-            "wallapopLink": "https://es.wallapop.com/user/oli3d-470754978",
-            "size": "10x10x0.5cm (c/u)",
+            "wallapopLink": "https://es.wallapop.com/item/set-4-posavasos-navidenos-impresos-3d-1208998228",
+            "size": "",
             "material": "PLA",
             "createdAt": "2024-02-10"
         },
         {
             "id": "velas_navidad",
-            "name": "Portavelas Navideñas",
-            "description": "Ilumina tus fiestas con calidez. Portavelas decorativas con motivos navideños que crean el ambiente perfecto para las noches de invierno.",
-            "price": 9.99,
-            "priceOffers": [
-                {
-                    "quantity": 3,
-                    "price": 8.49,
-                    "label": "3+ unidades"
-                },
-                {
-                    "quantity": 5,
-                    "price": 7.49,
-                    "label": "5+ unidades"
-                }
-            ],
+            "name": "Velas Navideñas",
+            "description": "Ilumina tus fiestas con calidez. Portavelas decorativas con motivos navideños que crean el ambiente perfecto para las noches de invierno. Se venden por unidad. No son velas reales, dentro tiene una vela con pilas.\r\n",
+            "price": 5.0,
             "image": "products/velas_navidad.JPG",
             "highlighted": false,
             "categories": [
                 "christmas",
-                "home",
-                "gifts"
+                "home"
             ],
-            "wallapopLink": "https://es.wallapop.com/user/oli3d-470754978",
+            "wallapopLink": "https://es.wallapop.com/item/velas-navidenas-3d-decorativas-1209000304",
             "size": "8x8x10cm",
             "material": "PLA",
-            "createdAt": "2024-11-10"
+            "createdAt": "2024-11-10",
+            "images": [
+                "products/velas_navidad.JPG",
+                "products/velas_navidad2.JPG"
+            ]
         }
     ]
 }
