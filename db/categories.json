@@ -43,7 +43,7 @@
             "id": "pets",
             "name": "Mascotas",
             "icon": "🐕",
-            "popular": true
+            "popular": false
         },
         {
             "id": "babies",
