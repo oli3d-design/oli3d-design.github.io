@@ -399,7 +399,8 @@
                 "products/img-20250917-wa0016.jpg",
                 "products/i5901606972.webp",
                 "products/i5901606971.webp"
-            ]
+            ],
+            "priceOnRequest": true
         }
     ]
 }
