@@ -544,7 +544,8 @@
             ],
             "size": "",
             "material": "PLA",
-            "createdAt": "2026-01-04"
+            "createdAt": "2026-01-04",
+            "customizable": true
         },
         {
             "id": "broche_personalizado",
@@ -679,7 +680,6 @@
             "name": "Llavero Pala Pádel Babolat con Nombre",
             "description": "¡Llévate tu pasión por el pádel a todas partes! Llavero de tu pala de pádel con tu nombre.",
             "price": 3.5,
-            "priceOnRequest": false,
             "image": "products/20251106_163928.jpg",
             "images": [
                 "products/20251106_163928.jpg",
@@ -693,7 +693,8 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-01-04",
-            "wallapopLink": "https://es.wallapop.com/item/llavero-pala-padel-babolat-personalizado-1196589542"
+            "wallapopLink": "https://es.wallapop.com/item/llavero-pala-padel-babolat-personalizado-1196589542",
+            "customizable": true
         },
         {
             "id": "padel_bullpadel",
