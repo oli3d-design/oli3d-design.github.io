@@ -236,10 +236,10 @@
         },
         {
             "id": "lapicero_lapiz",
-            "name": "Lapicero Lápiz Gigante",
-            "description": "Meta-decoración para tu escritorio. Un lápiz que guarda lápices. Original, funcional y con un toque de humor para artistas y creativos. Además, ¡totalmente personalizable! ",
-            "price": 15.0,
-            "image": "products/lapicero_lapiz.JPG",
+            "name": "Lapicero Lápiz Gigante con Nombre",
+            "description": "Decoración para tu escritorio. Un lápiz que guarda lápices. Original, funcional y con un toque de humor para artistas y creativos. Además, ¡totalmente personalizable! ",
+            "price": 25.0,
+            "image": "products/20251011_101201.jpg",
             "highlighted": false,
             "categories": [
                 "office",
@@ -249,7 +249,11 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2024-04-15",
-            "customizable": true
+            "customizable": true,
+            "images": [
+                "products/20251011_101201.jpg",
+                "products/lapicero_lapiz.JPG"
+            ]
         },
         {
             "id": "maquina_bolas",
@@ -340,8 +344,8 @@
         {
             "id": "cuenco_mascotas",
             "name": "Cuenco para Mascotas",
-            "description": "¡Cuenco personalizado para tu mascota!",
-            "price": 12.0,
+            "description": "Cuencos de comida únicos, impresos en 3D y personalizados con el nombre de tu mascota.",
+            "price": 15.0,
             "image": "products/20251106_162530.jpg",
             "images": [
                 "products/20251106_162530.jpg",
@@ -352,10 +356,11 @@
             "categories": [
                 "pets"
             ],
-            "size": "12cm",
+            "size": "15cm",
             "material": "PLA",
             "createdAt": "2026-01-04",
-            "customizable": true
+            "customizable": true,
+            "wallapopLink": "https://es.wallapop.com/item/cuencos-personalizados-mascotas-1169841671"
         },
         {
             "id": "lampara_malaga",
@@ -401,6 +406,404 @@
                 "products/i5901606971.webp"
             ],
             "priceOnRequest": true
+        },
+        {
+            "id": "circulo_profe",
+            "name": "Círculo Identificativo para Profe",
+            "description": "",
+            "price": 25.0,
+            "priceOnRequest": false,
+            "image": "products/20251106_163334.jpg",
+            "images": [
+                "products/20251106_163334.jpg",
+                "products/img-20251110-wa0026.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "office"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-01-04",
+            "customizable": true
+        },
+        {
+            "id": "cuadro_personalizado",
+            "name": "Cuadro Personalizado",
+            "description": "",
+            "price": 0.0,
+            "priceOnRequest": true,
+            "image": "products/20251109_163157.jpg",
+            "images": [
+                "products/20251109_163157.jpg",
+                "products/20251106_163221.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "celebrations",
+                "home"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-01-04",
+            "customizable": true
+        },
+        {
+            "id": "cuencos_futbol",
+            "name": "Cuencos Escudos de Fútbol",
+            "description": "Cuenco del escudo de tu equipo de fútbol favorito ideal para poner snacks mientras disfrutas del partido de tu equipo. ¡Pídenos el de tu equipo!",
+            "price": 0.0,
+            "priceOnRequest": true,
+            "image": "products/20250923_182734.jpg",
+            "images": [
+                "products/20250923_182734.jpg",
+                "products/20251002_191233.jpg",
+                "products/20251019_180025.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "sports"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-01-04",
+            "wallapopLink": "https://es.wallapop.com/item/escudos-futbol-impresos-3d-personalizados-1181328997",
+            "customizable": true
+        },
+        {
+            "id": "dispensador_lacasitos",
+            "name": "Dispensador para Lacasitos",
+            "description": "",
+            "price": 15.0,
+            "priceOnRequest": false,
+            "image": "products/img-20250811-wa0015.jpg",
+            "highlighted": false,
+            "categories": [
+                "celebrations",
+                "home"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-01-04"
+        },
+        {
+            "id": "funkos",
+            "name": "Funko Personalizado",
+            "description": "",
+            "price": 0.0,
+            "priceOnRequest": true,
+            "image": "products/img-20250925-wa0069.jpg",
+            "images": [
+                "products/img-20250925-wa0069.jpg",
+                "products/img-20250925-wa0078.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "celebrations",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-01-04",
+            "customizable": true
+        },
+        {
+            "id": "hucha_realmadrid",
+            "name": "Hucha Real Madrid CF con Nombre",
+            "description": "",
+            "price": 35.0,
+            "priceOnRequest": false,
+            "image": "products/20251015_182807.jpg",
+            "images": [
+                "products/20251015_182807.jpg",
+                "products/20251015_182740.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "sports"
+            ],
+            "size": "35cm",
+            "material": "PLA",
+            "createdAt": "2026-01-04",
+            "customizable": true
+        },
+        {
+            "id": "imanes_personalizados",
+            "name": "Imanes Personalizados",
+            "description": "",
+            "price": 0.0,
+            "priceOnRequest": true,
+            "image": "products/gemini_generated_image_empv62empv62empv.png",
+            "images": [
+                "products/gemini_generated_image_empv62empv62empv.png",
+                "products/img-20250906-wa0042.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "home"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-01-04"
+        },
+        {
+            "id": "broche_personalizado",
+            "name": "Broche Personalizado",
+            "description": "",
+            "price": 0.0,
+            "priceOnRequest": true,
+            "image": "products/gemini_generated_image_spslqwspslqwspsl.png",
+            "highlighted": false,
+            "categories": [
+                "celebrations",
+                "office"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-01-04",
+            "customizable": true
+        },
+        {
+            "id": "llavero_corporativo",
+            "name": "Llavero Personalizado",
+            "description": "",
+            "price": 0.0,
+            "priceOnRequest": true,
+            "image": "products/20251031_173817.jpg",
+            "images": [
+                "products/20251031_173817.jpg",
+                "products/20250916_171051.jpg",
+                "products/20250903_180034.jpg",
+                "products/20250916_170840.jpg",
+                "products/img-20251003-wa0024.jpg"
+            ],
+            "highlighted": true,
+            "categories": [
+                "keychains",
+                "celebrations"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-01-04",
+            "customizable": true
+        },
+        {
+            "id": "logo_personalizado",
+            "name": "Logo Personalizado",
+            "description": "",
+            "price": 0.0,
+            "priceOnRequest": true,
+            "image": "products/20251016_154312.jpg",
+            "images": [
+                "products/20251016_154312.jpg",
+                "products/img-20251008-wa0084.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "celebrations",
+                "office"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-01-04",
+            "customizable": true
+        },
+        {
+            "id": "marcapaginas_personalizado",
+            "name": "Marcapáginas Personalizado",
+            "description": "",
+            "price": 0.0,
+            "priceOnRequest": true,
+            "image": "products/20250926_172238.jpg",
+            "images": [
+                "products/20250926_172238.jpg",
+                "products/20251106_162924.jpg",
+                "products/20251106_162821.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "office",
+                "home"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-01-04",
+            "customizable": true
+        },
+        {
+            "id": "topper_personalizado",
+            "name": "Topper Personalizado para Tarta",
+            "description": "",
+            "price": 0.0,
+            "priceOnRequest": true,
+            "image": "products/20251106_164344.jpg",
+            "images": [
+                "products/20251106_164344.jpg",
+                "products/20251019_183555.jpg",
+                "products/20251106_164323.jpg",
+                "products/20251019_183945.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "celebrations"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-01-04",
+            "customizable": true
+        },
+        {
+            "id": "padel_siux",
+            "name": "Llavero Pala Pádel Siux con Nombre",
+            "description": "¡Llévate tu pasión por el pádel a todas partes! Llavero de tu pala de pádel con tu nombre.",
+            "price": 3.5,
+            "priceOnRequest": false,
+            "image": "products/151c98d1-4749-43e1-9b68-2a0de576c44d.jpg",
+            "images": [
+                "products/151c98d1-4749-43e1-9b68-2a0de576c44d.jpg",
+                "products/3ee2e4d7-d5e2-4e09-bee0-b35aaaa251a7.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "keychains",
+                "sports"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-01-04",
+            "wallapopLink": "https://es.wallapop.com/item/llavero-pala-padel-siux-personalizado-3d-1215211895",
+            "customizable": true
+        },
+        {
+            "id": "padel_babolat",
+            "name": "Llavero Pala Pádel Babolat con Nombre",
+            "description": "¡Llévate tu pasión por el pádel a todas partes! Llavero de tu pala de pádel con tu nombre.",
+            "price": 3.5,
+            "priceOnRequest": false,
+            "image": "products/20251106_163928.jpg",
+            "images": [
+                "products/20251106_163928.jpg",
+                "products/20251110_173447.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "keychains",
+                "sports"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-01-04",
+            "wallapopLink": "https://es.wallapop.com/item/llavero-pala-padel-babolat-personalizado-1196589542"
+        },
+        {
+            "id": "padel_bullpadel",
+            "name": "Llavero Pala Pádel Bullpadel con Nombre",
+            "description": "¡Llévate tu pasión por el pádel a todas partes! Llavero de tu pala de pádel con tu nombre.",
+            "price": 3.5,
+            "image": "products/img_4854_1.jpg",
+            "images": [
+                "products/img_4854_1.jpg",
+                "products/396e679f-bdf9-4fd2-ac36-25a6c8b06298_1.jpg",
+                "products/de696e33-210d-407b-b150-6c62eb22544e_1.jpg",
+                "products/20251015_174644_1.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "keychains",
+                "sports"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-01-04",
+            "wallapopLink": "https://es.wallapop.com/item/llaveros-pala-padel-bullpadel-personalizados-1196588967",
+            "customizable": true
+        },
+        {
+            "id": "padel_vibora",
+            "name": "Llavero Pala Pádel Víbora con Nombre",
+            "description": "¡Llévate tu pasión por el pádel a todas partes! Llavero de tu pala de pádel con tu nombre.",
+            "price": 3.5,
+            "priceOnRequest": false,
+            "image": "products/20251110_173546.jpg",
+            "highlighted": false,
+            "categories": [
+                "keychains",
+                "sports"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-01-04",
+            "wallapopLink": "https://es.wallapop.com/item/llaveros-pala-padel-vibora-personalizados-1196594198",
+            "customizable": true
+        },
+        {
+            "id": "padel_head",
+            "name": "Llavero Pala Pádel Head con Nombre",
+            "description": "¡Llévate tu pasión por el pádel a todas partes! Llavero de tu pala de pádel con tu nombre.",
+            "price": 3.5,
+            "image": "products/20250905_160306.jpg",
+            "highlighted": false,
+            "categories": [
+                "keychains",
+                "sports"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-01-04",
+            "wallapopLink": "https://es.wallapop.com/item/llavero-pala-padel-head-personalizado-3d-1215215485",
+            "customizable": true
+        },
+        {
+            "id": "padel_nox",
+            "name": "Llavero Pala Pádel Nox con Nombre",
+            "description": "¡Llévate tu pasión por el pádel a todas partes! Llavero de tu pala de pádel con tu nombre.",
+            "price": 3.5,
+            "image": "products/20250925_183755.jpg",
+            "highlighted": false,
+            "categories": [
+                "keychains",
+                "sports"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-01-04",
+            "wallapopLink": "https://es.wallapop.com/item/llavero-pala-padel-nox-personalizado-3d-1215216357",
+            "customizable": true
+        },
+        {
+            "id": "padel_starvie",
+            "name": "Llavero Pala Pádel Starvie con Nombre",
+            "description": "¡Llévate tu pasión por el pádel a todas partes! Llavero de tu pala de pádel con tu nombre.",
+            "price": 3.5,
+            "image": "products/20250925_183748.jpg",
+            "highlighted": false,
+            "categories": [
+                "keychains",
+                "sports"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-01-04",
+            "wallapopLink": "https://es.wallapop.com/item/llavero-pala-padel-starvie-personalizado-3d-1215217327",
+            "customizable": true
+        },
+        {
+            "id": "padel_kombat",
+            "name": "Llavero Pala Pádel Kombat con Nombre",
+            "description": "¡Llévate tu pasión por el pádel a todas partes! Llavero de tu pala de pádel con tu nombre.",
+            "price": 3.5,
+            "priceOnRequest": false,
+            "image": "products/img-20250918-wa0002.jpg",
+            "highlighted": false,
+            "categories": [
+                "keychains",
+                "sports"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-01-04",
+            "wallapopLink": "https://es.wallapop.com/item/llavero-pala-padel-kombat-personalizada-3d-1215218323",
+            "customizable": true
         }
     ]
 }
