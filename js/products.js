@@ -266,7 +266,10 @@ async function renderProductCard(product, showPrice = null) {
   card.setAttribute('data-product-id', product.id);
 
   card.innerHTML = `
-    ${product.highlighted ? '<span class="product-badge">Destacado</span>' : ''}
+    <div class="product-badges">
+      ${product.highlighted ? '<span class="product-badge">Destacado</span>' : ''}
+      ${product.customizable ? '<span class="product-badge badge-customizable">Personalizable</span>' : ''}
+    </div>
     <div class="product-image">
       <img src="${product.image}" alt="${product.name}" loading="lazy" onerror="this.src='resources/LOGO_SIN_FONDO.png'">
     </div>

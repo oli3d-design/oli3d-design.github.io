@@ -495,10 +495,17 @@ p {
   color: var(--primary);
 }
 
-.product-card .product-badge {
+.product-card .product-badges {
   position: absolute;
   top: var(--spacing-md);
   left: var(--spacing-md);
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  z-index: 5;
+}
+
+.product-card .product-badge {
   background: var(--primary);
   color: var(--white);
   padding: 4px 10px;
@@ -506,6 +513,10 @@ p {
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.product-card .badge-customizable {
+  background: linear-gradient(135deg, #9333ea, #ec4899);
 }
 
 /* Category Card */
@@ -820,6 +831,24 @@ p {
   grid-template-columns: 1fr 1fr;
   gap: var(--spacing-3xl);
   align-items: start;
+}
+
+/* Customizable product badge */
+.customizable-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(135deg, #9333ea, #ec4899);
+  color: white;
+  padding: 8px 14px;
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  font-weight: 600;
+  margin: var(--spacing-sm) 0 var(--spacing-md);
+}
+
+.customizable-badge svg {
+  stroke: currentColor;
 }
 
 @media (max-width: 768px) {
