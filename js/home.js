@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function initHomePage() {
     await Promise.all([
+        loadSeasonalBanner(),
         loadHighlightedProducts(),
         loadLatestProducts(),
         loadPopularCategories()
@@ -114,5 +115,63 @@ async function loadPopularCategories() {
     } catch (error) {
         console.error('Error loading categories:', error);
         container.innerHTML = '<p class="text-center">Error al cargar categorías</p>';
+    }
+}
+
+/**
+ * Load and display seasonal banner (only if a seasonal category is visible)
+ */
+async function loadSeasonalBanner() {
+    const section = document.getElementById('seasonal-banner-section');
+    const banner = document.getElementById('seasonal-banner');
+    if (!section || !banner) return;
+
+    try {
+        const { loadCategories, getProductsByCategory } = window.ProductsModule;
+        const categories = await loadCategories();
+
+        // Find first visible seasonal category
+        const seasonalCategory = categories.find(c => c.seasonal && !c.hidden);
+
+        if (!seasonalCategory) {
+            // No visible seasonal category, keep banner hidden
+            return;
+        }
+
+        // Get products from this category for images
+        const products = await getProductsByCategory(seasonalCategory.id);
+        const productImages = products.slice(0, 3).map(p => p.image);
+
+        // Seasonal descriptions map
+        const descriptions = {
+            'christmas': 'Descubre nuestra colección navideña de figuras y decoración para regalar.',
+            'halloween': 'Decora tu hogar con nuestras espeluznantes creaciones de Halloween.',
+            'default': `Explora nuestra nueva colección de ${seasonalCategory.name.toLowerCase()}.`
+        };
+        const description = descriptions[seasonalCategory.id] || descriptions.default;
+
+        // Render the banner
+        banner.innerHTML = `
+            <div class="featured-banner-bg"></div>
+            <div class="featured-banner-content">
+                <span class="seasonal-tag">${seasonalCategory.icon} Temporada</span>
+                <h3>${seasonalCategory.name}</h3>
+                <p>${description}</p>
+                <a href="shop.html?category=${seasonalCategory.id}" class="btn btn-primary btn-glow">Ver Colección</a>
+            </div>
+            <div class="featured-banner-showcase">
+                ${productImages.map((img, i) => `
+                    <div class="showcase-item" style="animation-delay: ${i * 0.1}s">
+                        <img src="${img}" alt="Producto" loading="lazy">
+                    </div>
+                `).join('')}
+            </div>
+        `;
+
+        // Show the section
+        section.style.display = 'block';
+
+    } catch (error) {
+        console.error('Error loading seasonal banner:', error);
     }
 }

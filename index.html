@@ -44,6 +44,10 @@
   <main>
     <!-- Hero Section -->
     <section class="hero">
+      <video class="hero-video" autoplay muted loop playsinline poster="resources/LOGO_SIN_FONDO.png">
+        <source src="resources/3dprinting.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
       <div class="hero-content">
         <h1 class="hero-title">Impresión 3D Personalizada</h1>
         <p class="hero-subtitle">
@@ -56,19 +60,13 @@
       </div>
     </section>
 
-    <!-- Featured Banner - NOW FIRST after hero -->
-    <section class="section">
+    <!-- Seasonal Banner - Dynamic (only shows if a seasonal category is visible) -->
+    <section class="section" id="seasonal-banner-section" style="display: none;">
       <div class="container">
-        <div class="featured-banner">
-          <div class="featured-banner-content">
-            <h3>Novedades de Temporada</h3>
-            <p>Descubre nuestra colección de figuras y decoración para regalar.</p>
-            <a href="shop.html" class="btn btn-primary">Ver Novedades</a>
-          </div>
-          <div class="featured-banner-image">
-            <img src="products/bolas_navidad.JPG" alt="Productos destacados">
-          </div>
+        <div class="featured-banner" id="seasonal-banner">
+          <!-- Dynamically populated by home.js -->
         </div>
+      </div>
     </section>
 
     <!-- Popular Categories with images -->
@@ -198,9 +196,9 @@
     </div>
   </footer>
 
-  <script src="js/products.js?v=9"></script>
-  <script src="js/main.js?v=9"></script>
-  <script src="js/home.js?v=9"></script>
+  <script src="js/products.js?v=13"></script>
+  <script src="js/main.js?v=13"></script>
+  <script src="js/home.js?v=13"></script>
 </body>
 
 </html>
