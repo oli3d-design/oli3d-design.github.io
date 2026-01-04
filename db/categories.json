@@ -10,7 +10,7 @@
             "id": "keychains",
             "name": "Llaveros",
             "icon": "🔑",
-            "popular": true
+            "popular": false
         },
         {
             "id": "sports",
@@ -43,7 +43,7 @@
             "id": "pets",
             "name": "Mascotas",
             "icon": "🐕",
-            "popular": false
+            "popular": true
         },
         {
             "id": "babies",

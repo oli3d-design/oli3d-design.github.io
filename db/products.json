@@ -118,7 +118,8 @@
             ],
             "size": "35cm",
             "material": "PLA + LEDs",
-            "createdAt": "2024-12-01"
+            "createdAt": "2024-12-01",
+            "customizable": true
         },
         {
             "id": "escudo_madrid_noleds",
@@ -137,7 +138,8 @@
             "images": [
                 "products/escudo_madrid_noleds.JPG",
                 "products/escudo_madrid_noleds3.JPG"
-            ]
+            ],
+            "customizable": true
         },
         {
             "id": "hellokitty",
@@ -246,7 +248,8 @@
             "wallapopLink": "https://es.wallapop.com/item/organizador-3d-lapiz-portalapices-1208996612",
             "size": "",
             "material": "PLA",
-            "createdAt": "2024-04-15"
+            "createdAt": "2024-04-15",
+            "customizable": true
         },
         {
             "id": "maquina_bolas",
@@ -332,6 +335,70 @@
             "images": [
                 "products/velas_navidad.JPG",
                 "products/velas_navidad2.JPG"
+            ]
+        },
+        {
+            "id": "cuenco_mascotas",
+            "name": "Cuenco para Mascotas",
+            "description": "¡Cuenco personalizado para tu mascota!",
+            "price": 12.0,
+            "image": "products/20251106_162530.jpg",
+            "images": [
+                "products/20251106_162530.jpg",
+                "products/20251106_162535.jpg",
+                "products/img-20250820-wa0005.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pets"
+            ],
+            "size": "12cm",
+            "material": "PLA",
+            "createdAt": "2026-01-04",
+            "customizable": true
+        },
+        {
+            "id": "lampara_malaga",
+            "name": "Lámpara Escudo Málaga CF con Nombre ",
+            "description": "¡Forza Málaga! Hazte con tu lámpara del Málaga CF con LEDS (con pilas) totalmente personalizable con tu nombre.",
+            "price": 35.0,
+            "image": "products/img_5296.jpg",
+            "images": [
+                "products/img_5296.jpg",
+                "products/img_5297.jpg"
+            ],
+            "highlighted": true,
+            "categories": [
+                "sports",
+                "home"
+            ],
+            "size": "25cm",
+            "material": "PLA",
+            "createdAt": "2026-01-04",
+            "customizable": true
+        },
+        {
+            "id": "trofeo_personalizable",
+            "name": "Trofeos Personalizados",
+            "description": "Diseñamos trofeos únicos y modernos, perfectos para competiciones, equipos, empresas, eventos, etc. ¡Escríbenos para que diseñemos el tuyo! El precio depende del diseño, tamaño y colores del trofeo.",
+            "price": 0.0,
+            "image": "products/img-20250917-wa0016.jpg",
+            "highlighted": false,
+            "categories": [
+                "celebrations",
+                "office",
+                "home",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-01-04",
+            "wallapopLink": "https://es.wallapop.com/item/trofeos-personalizados-impresos-en-3d-1169866527",
+            "customizable": true,
+            "images": [
+                "products/img-20250917-wa0016.jpg",
+                "products/i5901606972.webp",
+                "products/i5901606971.webp"
             ]
         }
     ]
