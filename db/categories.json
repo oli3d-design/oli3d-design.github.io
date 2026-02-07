@@ -28,8 +28,9 @@
             "id": "christmas",
             "name": "Navidad",
             "icon": "🎄",
-            "popular": true,
-            "seasonal": true
+            "popular": false,
+            "seasonal": true,
+            "hidden": true
         },
         {
             "id": "halloween",
