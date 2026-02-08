@@ -805,6 +805,677 @@
             "createdAt": "2026-01-04",
             "wallapopLink": "https://es.wallapop.com/item/llavero-pala-padel-kombat-personalizada-3d-1215218323",
             "customizable": true
+        },
+        {
+            "id": "pokeball_venusaur",
+            "name": "Pokeball Venusaur",
+            "description": "Pokeball impresa en 3D con diseño de Venusaur. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260119_171751.jpg",
+            "images": [
+                "products/20260119_171751.jpg",
+                "products/20260119_171756.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pokeball_charizard",
+            "name": "Pokeball Charizard",
+            "description": "Pokeball impresa en 3D con diseño de Charizard. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260119_171520.jpg",
+            "images": [
+                "products/20260119_171520.jpg"
+            ],
+            "highlighted": true,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pokeball_blastoise",
+            "name": "Pokeball Blastoise",
+            "description": "Pokeball impresa en 3D con diseño de Blastoise. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260119_171731.jpg",
+            "images": [
+                "products/20260119_171731.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pokeball_pikachu",
+            "name": "Pokeball Pikachu",
+            "description": "Pokeball impresa en 3D con diseño de Pikachu. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260119_172439.jpg",
+            "images": [
+                "products/20260119_172439.jpg"
+            ],
+            "highlighted": true,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pokeball_vulpix",
+            "name": "Pokeball Vulpix",
+            "description": "Pokeball impresa en 3D con diseño de Vulpix. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260119_171822.jpg",
+            "images": [
+                "products/20260119_171822.jpg",
+                "products/20260121_102128.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pokeball_gastly",
+            "name": "Pokeball Gastly",
+            "description": "Pokeball impresa en 3D con diseño de Gastly. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260127_163635.jpg",
+            "images": [
+                "products/20260127_163635.jpg",
+                "products/20260127_164710.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pokeball_haunter",
+            "name": "Pokeball Haunter",
+            "description": "Pokeball impresa en 3D con diseño de Haunter. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260121_102259.jpg",
+            "images": [
+                "products/20260121_102259.jpg",
+                "products/20260121_102304.jpg",
+                "products/20260127_164743.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pokeball_gengar",
+            "name": "Pokeball Gengar",
+            "description": "Pokeball impresa en 3D con diseño de Gengar. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260127_163653.jpg",
+            "images": [
+                "products/20260127_163653.jpg",
+                "products/20260127_164810.jpg",
+                "products/20260130_143323.jpg",
+                "products/20260130_143330.jpg"
+            ],
+            "highlighted": true,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pokeball_eevee",
+            "name": "Pokeball Eevee",
+            "description": "Pokeball impresa en 3D con diseño de Eevee. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260130_143927.jpg",
+            "images": [
+                "products/20260130_143927.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pokeball_vaporeon",
+            "name": "Pokeball Vaporeon",
+            "description": "Pokeball impresa en 3D con diseño de Vaporeon. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260130_143820.jpg",
+            "images": [
+                "products/20260130_143820.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pokeball_jolteon",
+            "name": "Pokeball Jolteon",
+            "description": "Pokeball impresa en 3D con diseño de Jolteon. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260130_143902.jpg",
+            "images": [
+                "products/20260130_143902.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pokeball_flareon",
+            "name": "Pokeball Flareon",
+            "description": "Pokeball impresa en 3D con diseño de Flareon. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260130_143844.jpg",
+            "images": [
+                "products/20260130_143844.jpg",
+                "products/20260130_143849.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pokeball_snorlax",
+            "name": "Pokeball Snorlax",
+            "description": "Pokeball impresa en 3D con diseño de Snorlax. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260119_171926.jpg",
+            "images": [
+                "products/20260119_171926.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pokeball_articuno",
+            "name": "Pokeball Articuno",
+            "description": "Pokeball impresa en 3D con diseño de Articuno. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260130_143045.jpg",
+            "images": [
+                "products/20260130_143045.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pokeball_zapdos",
+            "name": "Pokeball Zapdos",
+            "description": "Pokeball impresa en 3D con diseño de Zapdos. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260127_163949.jpg",
+            "images": [
+                "products/20260127_163949.jpg",
+                "products/20260127_165129.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pokeball_moltres",
+            "name": "Pokeball Moltres",
+            "description": "Pokeball impresa en 3D con diseño de Moltres. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260130_143059.jpg",
+            "images": [
+                "products/20260130_143059.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pokeball_dragonite",
+            "name": "Pokeball Dragonite",
+            "description": "Pokeball impresa en 3D con diseño de Dragonite. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260119_172113.jpg",
+            "images": [
+                "products/20260119_172113.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pokeball_mewtwo",
+            "name": "Pokeball Mewtwo",
+            "description": "Pokeball impresa en 3D con diseño de Mewtwo. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260120_155748.jpg",
+            "images": [
+                "products/20260120_155748.jpg"
+            ],
+            "highlighted": true,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pokeball_mew",
+            "name": "Pokeball Mew",
+            "description": "Pokeball impresa en 3D con diseño de Mew. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260119_171952.jpg",
+            "images": [
+                "products/20260119_171952.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pokeball_espeon",
+            "name": "Pokeball Espeon",
+            "description": "Pokeball impresa en 3D con diseño de Espeon. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260127_164011.jpg",
+            "images": [
+                "products/20260127_164011.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pokeball_umbreon",
+            "name": "Pokeball Umbreon",
+            "description": "Pokeball impresa en 3D con diseño de Umbreon. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260120_155725.jpg",
+            "images": [
+                "products/20260120_155725.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pokeball_raikou",
+            "name": "Pokeball Raikou",
+            "description": "Pokeball impresa en 3D con diseño de Raikou. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260130_143437.jpg",
+            "images": [
+                "products/20260130_143437.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pokeball_entei",
+            "name": "Pokeball Entei",
+            "description": "Pokeball impresa en 3D con diseño de Entei. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260127_163933.jpg",
+            "images": [
+                "products/20260127_163933.jpg",
+                "products/20260127_165000.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pokeball_suicune",
+            "name": "Pokeball Suicune",
+            "description": "Pokeball impresa en 3D con diseño de Suicune. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260127_163921.jpg",
+            "images": [
+                "products/20260127_163921.jpg",
+                "products/20260127_165034.jpg",
+                "products/20260127_165042.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pokeball_rayquaza",
+            "name": "Pokeball Rayquaza",
+            "description": "Pokeball impresa en 3D con diseño de Rayquaza. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260119_172033.jpg",
+            "images": [
+                "products/20260119_172033.jpg"
+            ],
+            "highlighted": true,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pokeball_leafeon",
+            "name": "Pokeball Leafeon",
+            "description": "Pokeball impresa en 3D con diseño de Leafeon. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260130_143810.jpg",
+            "images": [
+                "products/20260130_143810.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pokeball_glaceon",
+            "name": "Pokeball Glaceon",
+            "description": "Pokeball impresa en 3D con diseño de Glaceon. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260130_143913.jpg",
+            "images": [
+                "products/20260130_143913.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pokeball_sylveon",
+            "name": "Pokeball Sylveon",
+            "description": "Pokeball impresa en 3D con diseño de Sylveon. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260130_143759.jpg",
+            "images": [
+                "products/20260130_143759.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pack_eevee",
+            "name": "Pack 9 Pokeballs Eevee y Evoluciones",
+            "description": "Pack de 9 pokeballs impresas en 3D: Eevee, Vaporeon, Jolteon, Flareon, Espeon, Umbreon, Leafeon, Glaceon y Sylveon. ¡Colecciona todas las evoluciones!",
+            "price": 70.0,
+            "image": "products/20260130_162121.jpg",
+            "images": [
+                "products/20260130_162121.jpg",
+                "products/20260130_162123.jpg"
+            ],
+            "highlighted": true,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pack_perros_legendarios",
+            "name": "Pack 3 Pokeballs Perros Legendarios",
+            "description": "Pack de 3 pokeballs impresas en 3D: Entei, Raikou y Suicune. ¡Los perros legendarios de Johto!",
+            "price": 25.0,
+            "image": "products/20260130_143534.jpg",
+            "images": [
+                "products/20260130_143534.jpg",
+                "products/20260130_143539.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pack_gastly_haunter_gengar",
+            "name": "Pack 3 Pokeballs Gastly, Haunter y Gengar",
+            "description": "Pack de 3 pokeballs impresas en 3D: Gastly, Haunter y Gengar. ¡La línea evolutiva fantasma!",
+            "price": 25.0,
+            "image": "products/20260127_163716.jpg",
+            "images": [
+                "products/20260127_163716.jpg",
+                "products/20260127_163839.jpg",
+                "products/20260127_164849.jpg",
+                "products/20260127_164900.jpg",
+                "products/20260130_143302.jpg",
+                "products/20260130_143305.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pack_mew_mewtwo",
+            "name": "Pack 2 Pokeballs Mew y Mewtwo",
+            "description": "Pack de 2 pokeballs impresas en 3D: Mew y Mewtwo. ¡Los legendarios psíquicos!",
+            "price": 17.0,
+            "image": "products/Mew, Mewtwo.jpg",
+            "images": [
+                "products/Mew, Mewtwo.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pack_snorlax_pikachu",
+            "name": "Pack 2 Pokeballs Snorlax y Pikachu",
+            "description": "Pack de 2 pokeballs impresas en 3D: Snorlax y Pikachu. ¡Los favoritos de todos!",
+            "price": 17.0,
+            "image": "products/Snorlax, Pikachu.jpg",
+            "images": [
+                "products/Snorlax, Pikachu.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pack_starters",
+            "name": "Pack 3 Pokeballs Starters (Venusaur, Charizard, Blastoise)",
+            "description": "Pack de 3 pokeballs impresas en 3D: Venusaur, Charizard y Blastoise. ¡Los starters de Kanto en su forma final!",
+            "price": 25.0,
+            "image": "products/Venusaur, Charizard, Blastoise.jpg",
+            "images": [
+                "products/Venusaur, Charizard, Blastoise.jpg"
+            ],
+            "highlighted": true,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pack_vulpix",
+            "name": "Pack 2 Pokeballs Vulpix y Vulpix de Alola",
+            "description": "Pack de 2 pokeballs impresas en 3D: Vulpix y Vulpix de Alola. ¡Fuego y hielo!",
+            "price": 17.0,
+            "image": "products/Vulpix, Vulpix de Alola.jpg",
+            "images": [
+                "products/Vulpix, Vulpix de Alola.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
+        },
+        {
+            "id": "pack_pajaros_legendarios",
+            "name": "Pack 3 Pokeballs Pájaros Legendarios",
+            "description": "Pack de 3 pokeballs impresas en 3D: Zapdos, Moltres y Articuno. ¡Los pájaros legendarios de Kanto!",
+            "price": 25.0,
+            "image": "products/20260130_142813.jpg",
+            "images": [
+                "products/20260130_142813.jpg",
+                "products/20260130_142924.jpg",
+                "products/20260130_143015.jpg",
+                "products/20260130_143018.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08"
         }
     ]
 }
