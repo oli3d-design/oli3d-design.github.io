@@ -205,6 +205,16 @@ async function loadProductDetail(productId) {
           </svg>
           ${product.material || 'PLA'}
         </span>
+        ${product.weight ? `
+        <span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px;">
+            <path d="M12 7c-2.76 0-5 2.24-5 5h10c0-2.76-2.24-5-5-5Z"></path>
+            <path d="M7 12H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2"></path>
+            <path d="M15 12h-6"></path>
+          </svg>
+          ${product.weight} kg
+        </span>
+        ` : ''}
       </div>
       
       ${priceSectionHTML}
@@ -225,6 +235,14 @@ async function loadProductDetail(productId) {
           <a href="${product.wallapopLink}" target="_blank" rel="noopener" class="btn btn-secondary">
             <img src="resources/wallapop-logo.svg" alt="Wallapop" style="width: 18px; height: 18px;">
             Ver en Wallapop
+          </a>
+        ` : ''}
+        ${product.vintedLink ? `
+          <a href="${product.vintedLink}" target="_blank" rel="noopener" class="btn btn-secondary btn-vinted" style="background-color: #09b1ba; color: white; border-color: #09b1ba;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 6px;">
+              <path d="M11.028 6c0 7.695 -.292 11.728 0 12c2.046 -5 4.246 -12.642 5.252 -14.099c.343 -.497 .768 -.93 1.257 -1.277c.603 -.39 1.292 -.76 1.463 -.575c-.07 2.319 -4.023 15.822 -4.209 16.314a6.135 6.135 0 0 1 -3.465 3.386c-3.213 .78 -3.429 -.446 -3.836 -1.134c-.95 -2.103 -1.682 -14.26 -1.445 -15.615c.05 -.523 .143 -1.851 2.491 -2c2.359 -.354 2.547 1.404 2.492 3z"></path>
+            </svg>
+            Ver en Vinted
           </a>
         ` : ''}
       </div>
