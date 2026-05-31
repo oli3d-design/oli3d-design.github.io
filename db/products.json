@@ -916,8 +916,8 @@
             ],
             "highlighted": false,
             "categories": [
-                "pokeballs",
-                "figures"
+                "figures",
+                "pokeballs"
             ],
             "size": "",
             "material": "PLA",
@@ -974,7 +974,7 @@
             "id": "pokeball_0003_venusaur",
             "name": "0003 Venusaur Pokeball 3D",
             "description": "Pokeball impresa en 3D con diseño de Venusaur. Colecciona todas las pokeballs de tus Pokémon favoritos.",
-            "price": 8.5,
+            "price": 9.0,
             "image": "products/20260119_171751.jpg",
             "images": [
                 "products/20260119_171751.jpg",
@@ -1039,7 +1039,7 @@
             "id": "pokeball_0006_charizard",
             "name": "0006 Charizard Pokeball 3D",
             "description": "Pokeball impresa en 3D con diseño de Charizard. Colecciona todas las pokeballs de tus Pokémon favoritos.",
-            "price": 8.5,
+            "price": 9.0,
             "image": "products/20260119_171520.jpg",
             "images": [
                 "products/20260119_171520.jpg",
@@ -1151,7 +1151,7 @@
             "id": "pokeball_0012_butterfree",
             "name": "0012 Butterfree Pokeball 3D",
             "description": "Pokeball impresa en 3D con diseño de Butterfree. Colecciona todas las pokeballs de tus Pokémon favoritos.",
-            "price": 8.5,
+            "price": 9.0,
             "image": "products/20260415_172603.jpg",
             "images": [
                 "products/20260415_172603.jpg"
@@ -1193,7 +1193,7 @@
             "id": "pokeball_0014_kakuna",
             "name": "0014 Kakuna Pokeball 3D",
             "description": "Pokeball impresa en 3D con diseño de Kakuna. Colecciona todas las pokeballs de tus Pokémon favoritos.",
-            "price": 8.5,
+            "price": 9.5,
             "image": "products/20260415_172707.jpg",
             "images": [
                 "products/20260415_172707.jpg"
@@ -1214,7 +1214,7 @@
             "id": "pokeball_0015_beedrill",
             "name": "0015 Beedrill Pokeball 3D",
             "description": "Pokeball impresa en 3D con diseño de Beedrill. Colecciona todas las pokeballs de tus Pokémon favoritos.",
-            "price": 8.5,
+            "price": 9.0,
             "image": "products/20260415_172800.jpg",
             "images": [
                 "products/20260415_172800.jpg"
@@ -1361,7 +1361,7 @@
             "id": "pokeball_0051_dugtrio",
             "name": "0051 Dugtrio Pokeball 3D",
             "description": "Pokeball impresa en 3D con diseño de Dugtrio. Colecciona todas las pokeballs de tus Pokémon favoritos.",
-            "price": 8.5,
+            "price": 9.0,
             "image": "products/20260311_121628.jpg",
             "images": [
                 "products/20260311_121628.jpg"
@@ -1382,7 +1382,7 @@
             "id": "pokeball_0057_primeape",
             "name": "0057 Primeape Pokeball 3D",
             "description": "Pokeball impresa en 3D con diseño de Primeape. Colecciona todas las pokeballs de tus Pokémon favoritos.",
-            "price": 8.5,
+            "price": 9.0,
             "image": "products/20260311_121317.jpg",
             "images": [
                 "products/20260311_121317.jpg",
@@ -1404,7 +1404,7 @@
             "id": "pokeball_0062_poliwrath",
             "name": "0062 Poliwrath Pokeball 3D",
             "description": "Pokeball impresa en 3D con diseño de Poliwrath. Colecciona todas las pokeballs de tus Pokémon favoritos.",
-            "price": 8.5,
+            "price": 9.0,
             "image": "products/20260311_121152.jpg",
             "images": [
                 "products/20260311_121152.jpg"
@@ -1447,7 +1447,7 @@
             "id": "pokeball_0068_machamp",
             "name": "0068 Machamp Pokeball 3D",
             "description": "Pokeball impresa en 3D con diseño de Machamp. Colecciona todas las pokeballs de tus Pokémon favoritos.",
-            "price": 8.5,
+            "price": 9.5,
             "image": "products/20260311_121603.jpg",
             "images": [
                 "products/20260311_121603.jpg"
@@ -1468,7 +1468,7 @@
             "id": "pokeball_0082_magneton",
             "name": "0082 Magneton Pokeball 3D",
             "description": "Pokeball impresa en 3D con diseño de Magneton. Colecciona todas las pokeballs de tus Pokémon favoritos.",
-            "price": 8.5,
+            "price": 9.0,
             "image": "products/20260311_121242.jpg",
             "images": [
                 "products/20260311_121242.jpg",
@@ -1604,7 +1604,7 @@
             "id": "pokeball_0115_kangaskhan",
             "name": "0115 Kangaskhan Pokeball 3D",
             "description": "Pokeball impresa en 3D con diseño de Kangaskhan. Colecciona todas las pokeballs de tus Pokémon favoritos.",
-            "price": 8.5,
+            "price": 9.0,
             "image": "products/20260311_120835.jpg",
             "images": [
                 "products/20260311_120835.jpg",
@@ -1627,7 +1627,7 @@
             "id": "pokeball_0130_gyarados",
             "name": "0130 Gyarados Pokeball 3D",
             "description": "Pokeball impresa en 3D con diseño de Gyarados. Colecciona todas las pokeballs de tus Pokémon favoritos.",
-            "price": 8.5,
+            "price": 9.5,
             "image": "products/20260311_121716.jpg",
             "images": [
                 "products/20260311_121716.jpg"
@@ -1690,7 +1690,7 @@
             "id": "pokeball_0134_vaporeon",
             "name": "0134 Vaporeon Pokeball 3D",
             "description": "Pokeball impresa en 3D con diseño de Vaporeon. Colecciona todas las pokeballs de tus Pokémon favoritos.",
-            "price": 8.5,
+            "price": 9.0,
             "image": "products/20260130_143820.jpg",
             "images": [
                 "products/20260130_143820.jpg"
@@ -1754,7 +1754,7 @@
             "id": "pokeball_0142_aerodactyl",
             "name": "0142 Aerodactyl Pokeball 3D",
             "description": "Pokeball impresa en 3D con diseño de Aerodactyl. Colecciona todas las pokeballs de tus Pokémon favoritos.",
-            "price": 8.5,
+            "price": 9.0,
             "image": "products/20260415_172830.jpg",
             "images": [
                 "products/20260415_172830.jpg",
@@ -1799,7 +1799,7 @@
             "id": "pokeball_0144_articuno",
             "name": "0144 Articuno Pokeball 3D",
             "description": "Pokeball impresa en 3D con diseño de Articuno. Colecciona todas las pokeballs de tus Pokémon favoritos.",
-            "price": 8.5,
+            "price": 9.0,
             "image": "products/20260130_143045.jpg",
             "images": [
                 "products/20260130_143045.jpg",
@@ -1821,7 +1821,7 @@
             "id": "pokeball_0145_zapdos",
             "name": "0145 Zapdos Pokeball 3D",
             "description": "Pokeball impresa en 3D con diseño de Zapdos. Colecciona todas las pokeballs de tus Pokémon favoritos.",
-            "price": 8.5,
+            "price": 9.0,
             "image": "products/20260127_163949.jpg",
             "images": [
                 "products/20260127_163949.jpg",
@@ -1844,7 +1844,7 @@
             "id": "pokeball_0146_moltres",
             "name": "0146 Moltres Pokeball 3D",
             "description": "Pokeball impresa en 3D con diseño de Moltres. Colecciona todas las pokeballs de tus Pokémon favoritos.",
-            "price": 8.5,
+            "price": 9.5,
             "image": "products/20260130_143059.jpg",
             "images": [
                 "products/20260130_143059.jpg",
@@ -1910,7 +1910,7 @@
             "id": "pokeball_0151_mew",
             "name": "0151 Mew Pokeball 3D",
             "description": "Pokeball impresa en 3D con diseño de Mewtwo. Colecciona todas las pokeballs de tus Pokémon favoritos.",
-            "price": 8.5,
+            "price": 8.0,
             "image": "products/20260119_171952.jpg",
             "images": [
                 "products/20260119_171952.jpg",
@@ -1974,7 +1974,7 @@
             "id": "pokeball_0243_raikou",
             "name": "0243 Raikou Pokeball 3D",
             "description": "Pokeball impresa en 3D con diseño de Raikou. Colecciona todas las pokeballs de tus Pokémon favoritos.",
-            "price": 8.5,
+            "price": 9.0,
             "image": "products/20260130_143437.jpg",
             "images": [
                 "products/20260130_143437.jpg"
@@ -1995,7 +1995,7 @@
             "id": "pokeball_0244_entei",
             "name": "0244 Entei Pokeball 3D",
             "description": "Pokeball impresa en 3D con diseño de Entei. Colecciona todas las pokeballs de tus Pokémon favoritos.",
-            "price": 8.5,
+            "price": 9.0,
             "image": "products/20260127_163933.jpg",
             "images": [
                 "products/20260127_163933.jpg",
@@ -2017,7 +2017,7 @@
             "id": "pokeball_0245_suicune",
             "name": "0245 Suicune Pokeball 3D",
             "description": "Pokeball impresa en 3D con diseño de Suicune. Colecciona todas las pokeballs de tus Pokémon favoritos.",
-            "price": 8.5,
+            "price": 9.0,
             "image": "products/20260127_163921.jpg",
             "images": [
                 "products/20260127_163921.jpg",
@@ -2062,7 +2062,7 @@
             "id": "pokeball_0250_ho_oh",
             "name": "0250 Ho oh Pokeball 3D",
             "description": "Pokeball impresa en 3D con diseño de Ho oh. Colecciona todas las pokeballs de tus Pokémon favoritos.",
-            "price": 8.5,
+            "price": 9.0,
             "image": "products/20260311_121426.jpg",
             "images": [
                 "products/20260311_121426.jpg",
@@ -2085,7 +2085,7 @@
             "id": "pokeball_0384_rayquaza",
             "name": "0384 Rayquaza Pokeball 3D",
             "description": "Pokeball impresa en 3D con diseño de Rayquaza. Colecciona todas las pokeballs de tus Pokémon favoritos.",
-            "price": 8.5,
+            "price": 9.0,
             "image": "products/20260119_172033.jpg",
             "images": [
                 "products/20260119_172033.jpg"
@@ -2148,7 +2148,7 @@
             "id": "pokeball_0700_sylveon",
             "name": "0700 Sylveon Pokeball 3D",
             "description": "Pokeball impresa en 3D con diseño de Sylveon. Colecciona todas las pokeballs de tus Pokémon favoritos.",
-            "price": 8.5,
+            "price": 9.5,
             "image": "products/20260130_143759.jpg",
             "images": [
                 "products/20260130_143759.jpg"
@@ -2169,7 +2169,7 @@
             "id": "pack_eevee",
             "name": "Pack Pokeballs 3D Eevee, Vaporeon, Jolteon, Flareon, Espeon, Umbreon, Leafeon, Glaceon, Sylveon",
             "description": "Pack de 9 pokeballs impresas en 3D: Eevee, Vaporeon, Jolteon, Flareon, Espeon, Umbreon, Leafeon, Glaceon y Sylveon. ¡Colecciona todas las evoluciones!",
-            "price": 70.0,
+            "price": 75.0,
             "image": "products/20260130_162121.jpg",
             "images": [
                 "products/20260130_162121.jpg",
@@ -2191,7 +2191,7 @@
             "id": "pack_entei_raikou_suicune",
             "name": "Pack Pokeballs 3D Entei, Raikou, Suicune",
             "description": "Pack de 3 pokeballs impresas en 3D: Entei, Raikou y Suicune. ¡Los perros legendarios de Johto!",
-            "price": 25.0,
+            "price": 26.5,
             "image": "products/20260130_143534.jpg",
             "images": [
                 "products/20260130_143534.jpg",
@@ -2213,7 +2213,7 @@
             "id": "pack_espeon_umbreon",
             "name": "Pack Pokeballs 3D Espeon, Umbreon",
             "description": "Pack de 2 pokeballs impresas en 3D: Espeon y Umbreon. ¡El sol y la luna!",
-            "price": 17.0,
+            "price": 16.5,
             "image": "products/20260127_164011.jpg",
             "images": [
                 "products/20260127_164011.jpg"
@@ -2283,7 +2283,7 @@
             "id": "pack_mew_mewtwo",
             "name": "Pack Pokeballs 3D Mew, Mewtwo",
             "description": "Pack de 2 pokeballs impresas en 3D: Mew y Mewtwo. ¡Los legendarios psíquicos!",
-            "price": 17.0,
+            "price": 16.0,
             "image": "products/Mew, Mewtwo.jpg",
             "images": [
                 "products/Mew, Mewtwo.jpg"
@@ -2304,7 +2304,7 @@
             "id": "pack_ninetales_ninetales_alola",
             "name": "Pack Pokeballs 3D Ninetales, Ninetales de Alola",
             "description": "Pack de 2 pokeballs impresas en 3D: Ninetales y Ninetales de Alola. ¡Fuego y hielo de nueve colas!",
-            "price": 17.0,
+            "price": 16.5,
             "image": "products/20260223_160430.jpg",
             "images": [
                 "products/20260223_160430.jpg"
@@ -2325,7 +2325,7 @@
             "id": "pack_snorlax_pikachu",
             "name": "Pack Pokeballs 3D Snorlax, Pikachu",
             "description": "Pack de 2 pokeballs impresas en 3D: Snorlax y Pikachu. ¡Los favoritos de todos!",
-            "price": 17.0,
+            "price": 16.5,
             "image": "products/Snorlax, Pikachu.jpg",
             "images": [
                 "products/Snorlax, Pikachu.jpg"
@@ -2367,7 +2367,7 @@
             "id": "pack_vulpix_vulpix_alola",
             "name": "Pack Pokeballs 3D Vulpix, Vulpix de Alola",
             "description": "Pack de 2 pokeballs impresas en 3D: Vulpix y Vulpix de Alola. ¡Fuego y hielo!",
-            "price": 17.0,
+            "price": 16.5,
             "image": "products/Vulpix, Vulpix de Alola.jpg",
             "images": [
                 "products/Vulpix, Vulpix de Alola.jpg"
@@ -2388,7 +2388,7 @@
             "id": "pack_zapdos_moltres_articuno",
             "name": "Pack Pokeballs 3D Zapdos, Moltres, Articuno",
             "description": "Pack de 3 pokeballs impresas en 3D: Zapdos, Moltres y Articuno. ¡Los pájaros legendarios de Kanto!",
-            "price": 25.0,
+            "price": 26.0,
             "image": "products/20260130_142813.jpg",
             "images": [
                 "products/20260130_142813.jpg",
