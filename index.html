@@ -7,198 +7,240 @@
   <meta name="description"
     content="Oli3D Design - Impresión 3D personalizada. Regalos únicos y objetos personalizados.">
   <meta name="author" content="Oli3D Design">
+  <meta name="theme-color" content="#EEF2F6">
 
   <title>Oli3D Design - Impresión 3D Personalizada</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=14">
   <link rel="icon" type="image/png" href="resources/LOGO_SIN_FONDO.png">
+  <link rel="preload" as="image" href="resources/web/hero-poster.jpg">
 </head>
 
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="container">
-      <a href="index.html" class="nav-logo">
-        <img src="resources/LOGO_SIN_FONDO.png" alt="Oli3D Design Logo">
-        <span class="nav-logo-text">Oli3D Design</span>
-      </a>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
 
-      <ul class="nav-menu">
-        <li><a href="index.html" class="nav-link active">Inicio</a></li>
-        <li><a href="shop.html" class="nav-link">Catálogo</a></li>
-        <li><a href="about.html" class="nav-link">Sobre Nosotros</a></li>
-        <li><a href="contact.html" class="nav-link">Contacto</a></li>
-      </ul>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Principal">
+      <div class="container nav-inner">
+        <a href="index.html" class="nav-logo">
+          <img src="resources/web/logo-mark.png" alt="" width="44" height="44">
+          <span class="nav-logo-text">Oli3D<small>DESIGN</small></span>
+        </a>
 
-      <button class="nav-toggle" aria-label="Abrir menú">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </nav>
+        <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <video class="hero-video" autoplay muted loop playsinline poster="resources/LOGO_SIN_FONDO.png">
-        <source src="resources/3dprinting.mp4" type="video/mp4">
-      </video>
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <h1 class="hero-title">Impresión 3D Personalizada</h1>
-        <p class="hero-subtitle">
-          Creamos objetos únicos para regalos especiales. Tu imaginación es el único límite.
-        </p>
-        <div class="hero-buttons">
-          <a href="shop.html" class="btn btn-primary btn-lg">Ver Productos</a>
-          <a href="contact.html" class="btn btn-outline btn-lg">Contactar</a>
-        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link active" aria-current="page">Inicio</a></li>
+          <li><a href="shop.html" class="nav-link">Catálogo</a></li>
+          <li><a href="about.html" class="nav-link">Sobre Nosotros</a></li>
+          <li><a href="contact.html" class="nav-link">Contacto</a></li>
+        </ul>
       </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero: headline prints layer by layer; the printer window sits on the logo waves -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 class="hero-title" id="hero-title">
+            <span class="print-line" style="--i: 0">Lo imaginas.</span>
+            <span class="print-line" style="--i: 1">Lo imprimimos</span>
+            <span class="print-line" style="--i: 2">capa a capa.</span>
+          </h1>
+          <p class="hero-subtitle">
+            Impresión 3D personalizada: creamos objetos únicos para regalos especiales. Tu imaginación es el único límite.
+          </p>
+          <div class="hero-buttons">
+            <a href="shop.html" class="btn btn-primary btn-lg">Ver productos</a>
+            <a href="contact.html" class="btn btn-ghost btn-lg">Contactar</a>
+          </div>
+        </div>
+
+        <figure class="printer">
+          <div class="printer-frame">
+            <video class="hero-video" muted loop playsinline preload="none" poster="resources/web/hero-poster.jpg"
+              aria-label="Timelapse de una hucha en forma de cerdito imprimiéndose en 3D">
+              <source src="resources/3dprinting.mp4" type="video/mp4">
+            </video>
+            <button class="video-toggle" type="button" aria-label="Pausar vídeo" aria-pressed="false" hidden>
+              <svg class="icon-pause" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <rect x="6" y="4" width="4" height="16" rx="1"></rect>
+                <rect x="14" y="4" width="4" height="16" rx="1"></rect>
+              </svg>
+              <svg class="icon-play" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M7 4.5v15a1 1 0 0 0 1.5.86l12-7.5a1 1 0 0 0 0-1.72l-12-7.5A1 1 0 0 0 7 4.5z"></path>
+              </svg>
+            </button>
+          </div>
+          <figcaption>Recién salido de la impresora</figcaption>
+        </figure>
+      </div>
+
+      <svg class="waves hero-waves" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <path class="w1" d="M-10 28 C 220 6, 430 6, 700 30 S 1180 52, 1450 14"></path>
+        <path class="w2" d="M-10 54 C 250 38, 520 74, 760 58 S 1220 32, 1450 52"></path>
+        <path class="w3" d="M140 78 C 420 64, 660 92, 980 78 S 1300 70, 1420 82"></path>
+      </svg>
     </section>
 
     <!-- Seasonal Banner - Dynamic (only shows if a seasonal category is visible) -->
-    <section class="section" id="seasonal-banner-section" style="display: none;">
+    <section class="section" id="seasonal-banner-section" style="display: none;" aria-label="Colección de temporada">
       <div class="container">
-        <div class="featured-banner" id="seasonal-banner">
+        <div class="seasonal-banner on-dark" id="seasonal-banner">
           <!-- Dynamically populated by home.js -->
         </div>
       </div>
     </section>
 
-    <!-- Popular Categories with images -->
-    <section class="section">
+    <!-- Popular Categories -->
+    <section class="section" aria-labelledby="popular-title">
       <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Categorías Populares</h2>
-          <p class="section-subtitle">Encuentra lo que buscas</p>
+        <div class="section-head">
+          <div>
+            <h2 class="section-title" id="popular-title">Categorías populares</h2>
+            <p class="section-subtitle">Encuentra lo que buscas</p>
+          </div>
+          <a href="shop.html" class="link-more">Ver todas las categorías</a>
         </div>
-        <div id="popular-categories" class="category-image-grid">
-          <div class="loading-container">
-            <div class="spinner"></div>
+        <div id="popular-categories" class="category-mosaic">
+          <div class="loading-container" role="status">
+            <span class="loader-layers" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+            <span>Cargando categorías…</span>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Highlighted Products -->
-    <section class="section bg-light">
+    <section class="section" aria-labelledby="highlighted-title">
       <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Productos Destacados</h2>
-          <p class="section-subtitle">Los favoritos de la comunidad</p>
-        </div>
-        <div id="highlighted-products" class="product-grid">
-          <div class="loading-container">
-            <div class="spinner"></div>
+        <div class="section-head">
+          <div>
+            <h2 class="section-title" id="highlighted-title">Productos destacados</h2>
+            <p class="section-subtitle">Los favoritos de la comunidad</p>
           </div>
+          <a href="shop.html" class="link-more">Ver todos</a>
         </div>
-        <div class="text-center mt-xl">
-          <a href="shop.html" class="btn btn-secondary">Ver todos</a>
+        <div id="highlighted-products" class="product-grid product-grid--stagger">
+          <div class="loading-container" role="status">
+            <span class="loader-layers" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+            <span>Cargando productos…</span>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Latest Products -->
-    <section class="section">
+    <section class="section" aria-labelledby="latest-title">
       <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Últimas Novedades</h2>
-          <p class="section-subtitle">Recién salidos de nuestras impresoras</p>
+        <div class="section-head">
+          <div>
+            <h2 class="section-title" id="latest-title">Últimas novedades</h2>
+            <p class="section-subtitle">Recién salidos de nuestras impresoras</p>
+          </div>
         </div>
         <div id="latest-products" class="product-grid">
-          <div class="loading-container">
-            <div class="spinner"></div>
+          <div class="loading-container" role="status">
+            <span class="loader-layers" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+            <span>Cargando productos…</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-      <div class="container">
-        <h2>¿Tienes una idea en mente?</h2>
-        <p>Cuéntanos tu proyecto y lo haremos realidad.</p>
-        <a href="contact.html" class="btn btn-primary btn-lg" style="background: var(--white); color: var(--gray-900);">
-          ¡Hablemos!
-        </a>
+    <!-- CTA -->
+    <section class="cta-band on-dark" aria-labelledby="cta-title">
+      <div class="container cta-inner">
+        <div>
+          <h2 id="cta-title">¿Tienes una idea en mente?</h2>
+          <p>Cuéntanos tu proyecto y lo haremos realidad.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-sky btn-lg">¡Hablemos!</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <div class="footer-logo">
-            <img src="resources/LOGO_SIN_FONDO.png" alt="Oli3D Design">
-            <span class="footer-logo-text">Oli3D Design</span>
-          </div>
-          <p>Apasionados de la impresión 3D y el diseño personalizado.</p>
+  <footer class="footer on-dark">
+    <svg class="footer-waves" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+      <path class="w3" d="M120 18 C 420 4, 660 30, 980 16 S 1300 8, 1420 20"></path>
+      <path class="w2" d="M-10 40 C 250 24, 520 60, 760 44 S 1220 18, 1450 38"></path>
+      <path class="fill" d="M0 68 C 220 46, 430 46, 700 70 S 1180 92, 1440 56 V 90 H 0 Z"></path>
+    </svg>
+    <div class="container footer-content">
+      <div class="footer-section">
+        <div class="footer-logo">
+          <img src="resources/web/logo-mark.png" alt="" width="52" height="52" loading="lazy">
+          <span class="footer-logo-text">Oli3D Design</span>
         </div>
-
-        <div class="footer-section">
-          <h4>Navegación</h4>
-          <div class="footer-links">
-            <a href="index.html">Inicio</a>
-            <a href="shop.html">Catálogo</a>
-            <a href="about.html">Sobre Nosotros</a>
-            <a href="contact.html">Contacto</a>
-          </div>
-        </div>
-
-        <div class="footer-section">
-          <h4>Contacto</h4>
-          <div class="footer-links">
-            <a href="mailto:oli3d.design@gmail.com">oli3d.design@gmail.com</a>
-            <a href="https://www.instagram.com/oli3d.design/" target="_blank">@oli3d.design</a>
-          </div>
-        </div>
-
-        <div class="footer-section">
-          <h4>Síguenos</h4>
-          <div class="social-links">
-            <a href="https://www.instagram.com/oli3d.design/" target="_blank" class="social-link"
-              aria-label="Instagram">
-              <svg viewBox="0 0 24 24">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-              </svg>
-            </a>
-            <a href="https://www.facebook.com/people/Oli3D/61581251891899/" target="_blank" class="social-link"
-              aria-label="Facebook">
-              <svg viewBox="0 0 24 24">
-                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-              </svg>
-            </a>
-            <a href="https://es.wallapop.com/user/oli3d-470754978" target="_blank" class="social-link"
-              aria-label="Wallapop">
-              <img src="resources/wallapop-logo.svg" alt="Wallapop" style="width: 20px; height: 20px;">
-            </a>
-            <a href="mailto:oli3d.design@gmail.com" class="social-link" aria-label="Email">
-              <svg viewBox="0 0 24 24">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
-            </a>
-          </div>
-        </div>
+        <p>Apasionados de la impresión 3D y el diseño personalizado.</p>
       </div>
 
+      <nav class="footer-section" aria-labelledby="footer-nav-title">
+        <h2 class="footer-title" id="footer-nav-title">Navegación</h2>
+        <ul class="footer-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="shop.html">Catálogo</a></li>
+          <li><a href="about.html">Sobre Nosotros</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-section">
+        <h2 class="footer-title">Contacto</h2>
+        <ul class="footer-links">
+          <li><a href="mailto:oli3d.design@gmail.com">oli3d.design@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/oli3d.design/" target="_blank" rel="noopener">@oli3d.design</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h2 class="footer-title">Síguenos</h2>
+        <div class="social-links">
+          <a href="https://www.instagram.com/oli3d.design/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/people/Oli3D/61581251891899/" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <a href="https://es.wallapop.com/user/oli3d-470754978" target="_blank" rel="noopener" class="social-link" aria-label="Wallapop">
+            <img src="resources/wallapop-logo.svg" alt="" width="20" height="20" loading="lazy">
+          </a>
+          <a href="mailto:oli3d.design@gmail.com" class="social-link" aria-label="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
       <div class="footer-bottom">
         <p>&copy; 2025 Oli3D Design. Todos los derechos reservados.</p>
       </div>
     </div>
   </footer>
 
-  <script src="js/products.js?v=13"></script>
-  <script src="js/main.js?v=13"></script>
-  <script src="js/home.js?v=13"></script>
+  <script src="js/products.js?v=14"></script>
+  <script src="js/main.js?v=14"></script>
+  <script src="js/home.js?v=14"></script>
 </body>
 
 </html>
