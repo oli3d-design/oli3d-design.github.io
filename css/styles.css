@@ -1598,8 +1598,23 @@ ol[role="list"] {
 .product-description {
   margin-top: var(--space-m);
   max-width: 62ch;
-  white-space: pre-line;
   color: var(--text);
+}
+
+.product-description p {
+  white-space: pre-line;
+}
+
+.product-detail-grid.is-error {
+  grid-template-columns: 1fr;
+}
+
+.product-detail-grid.is-error .product-gallery {
+  display: none;
+}
+
+.product-details .empty-state h1 {
+  font-size: var(--step-3);
 }
 
 .product-actions {

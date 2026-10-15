@@ -40,46 +40,51 @@ function getProductImages(product) {
  * Render the image gallery with thumbnails
  */
 function renderGallery(product, basePath) {
+  const { escapeHtml } = window.ProductsModule;
   const images = getProductImages(product);
+  const name = escapeHtml(product.name);
+  const fallback = `this.onerror=null;this.src='${basePath}resources/LOGO_SIN_FONDO.png'`;
 
   if (images.length === 0) {
-    return `<img src="${basePath}resources/LOGO_SIN_FONDO.png" alt="${product.name}">`;
+    return `<img src="${basePath}resources/LOGO_SIN_FONDO.png" alt="${name}">`;
   }
 
   if (images.length === 1) {
     // Single image - simple display
     return `
-      <img src="${basePath}${images[0]}" alt="${product.name}" 
-           onerror="this.src='${basePath}resources/LOGO_SIN_FONDO.png'">
+      <img src="${basePath}${escapeHtml(images[0])}" alt="${name}" width="900" height="900"
+           onerror="${fallback}">
     `;
   }
 
   // Multiple images - gallery with thumbnails
   return `
     <div class="gallery-main">
-      <button class="gallery-arrow prev" onclick="changeGalleryImage(-1)" aria-label="Anterior">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <button type="button" class="gallery-arrow prev" onclick="changeGalleryImage(-1)" aria-label="Imagen anterior">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <polyline points="15 18 9 12 15 6"></polyline>
         </svg>
       </button>
 
-      <img id="gallery-main-image" src="${basePath}${images[0]}" alt="${product.name}" 
-           onerror="this.src='${basePath}resources/LOGO_SIN_FONDO.png'">
+      <img id="gallery-main-image" src="${basePath}${escapeHtml(images[0])}" alt="${name}" width="900" height="900"
+           onerror="${fallback}">
 
-      <button class="gallery-arrow next" onclick="changeGalleryImage(1)" aria-label="Siguiente">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <button type="button" class="gallery-arrow next" onclick="changeGalleryImage(1)" aria-label="Imagen siguiente">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <polyline points="9 18 15 12 9 6"></polyline>
         </svg>
       </button>
     </div>
-    <div class="gallery-thumbnails">
+    <div class="gallery-thumbnails" role="group" aria-label="Imágenes del producto">
       ${images.map((img, index) => `
-        <div class="gallery-thumbnail ${index === 0 ? 'active' : ''}" 
-             data-image="${basePath}${img}" 
+        <button type="button" class="gallery-thumbnail ${index === 0 ? 'active' : ''}"
+             data-image="${basePath}${escapeHtml(img)}"
+             aria-label="Ver imagen ${index + 1} de ${images.length}"
+             aria-pressed="${index === 0 ? 'true' : 'false'}"
              onclick="selectGalleryImage(this)">
-          <img src="${basePath}${img}" alt="${product.name} - ${index + 1}"
-               onerror="this.src='${basePath}resources/LOGO_SIN_FONDO.png'">
-        </div>
+          <img src="${basePath}${escapeHtml(img)}" alt="" loading="lazy" decoding="async"
+               onerror="${fallback}">
+        </button>
       `).join('')}
     </div>
   `;
@@ -107,12 +112,43 @@ window.selectGalleryImage = function (thumbnail) {
   const mainImage = document.getElementById('gallery-main-image');
   if (!mainImage) return;
 
-  // Update main image
-  mainImage.src = thumbnail.dataset.image;
+  // Update main image with a short cross-fade
+  mainImage.classList.add('is-swapping');
+  const swap = () => {
+    mainImage.src = thumbnail.dataset.image;
+    mainImage.classList.remove('is-swapping');
+  };
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    swap();
+  } else {
+    setTimeout(swap, 150);
+  }
 
   // Update active state
-  document.querySelectorAll('.gallery-thumbnail').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.gallery-thumbnail').forEach(t => {
+    t.classList.remove('active');
+    t.setAttribute('aria-pressed', 'false');
+  });
   thumbnail.classList.add('active');
+  thumbnail.setAttribute('aria-pressed', 'true');
+};
+
+// Arrow keys browse the gallery when focus is inside it
+document.addEventListener('keydown', (e) => {
+  if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+  const gallery = document.getElementById('product-gallery');
+  if (!gallery || !gallery.contains(document.activeElement)) return;
+  e.preventDefault();
+  window.changeGalleryImage(e.key === 'ArrowLeft' ? -1 : 1);
+});
+
+const ICONS = {
+  size: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>',
+  material: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>',
+  weight: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7c-2.76 0-5 2.24-5 5h10c0-2.76-2.24-5-5-5Z"></path><path d="M7 12H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2"></path><path d="M15 12h-6"></path></svg>',
+  pencil: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="m2 2 7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>',
+  mail: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>',
+  vinted: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.028 6c0 7.695 -.292 11.728 0 12c2.046 -5 4.246 -12.642 5.252 -14.099c.343 -.497 .768 -.93 1.257 -1.277c.603 -.39 1.292 -.76 1.463 -.575c-.07 2.319 -4.023 15.822 -4.209 16.314a6.135 6.135 0 0 1 -3.465 3.386c-3.213 .78 -3.429 -.446 -3.836 -1.134c-.95 -2.103 -1.682 -14.26 -1.445 -15.615c.05 -.523 .143 -1.851 2.491 -2c2.359 -.354 2.547 1.404 2.492 3z"></path></svg>'
 };
 
 /**
@@ -125,7 +161,7 @@ async function loadProductDetail(productId) {
   if (!galleryContainer || !detailsContainer) return;
 
   try {
-    const { getProductById, formatPrice, generateMailtoLink, getBasePath, shouldShowPrices } = window.ProductsModule;
+    const { getProductById, formatPrice, generateMailtoLink, getBasePath, shouldShowPrices, escapeHtml } = window.ProductsModule;
     const product = await getProductById(productId);
     const showPrices = await shouldShowPrices();
 
@@ -154,8 +190,8 @@ async function loadProductDetail(productId) {
       if (product.priceOnRequest) {
         priceSectionHTML = `
           <div class="product-price-section">
-            <div class="product-price-main" style="font-size: 22px; color: var(--primary);">Consultar precio</div>
-            <p style="margin: 4px 0 0; color: var(--gray-600); font-size: 14px;">Este producto se realiza a medida o bajo presupuesto.</p>
+            <div class="product-price-main">Consultar precio</div>
+            <p class="price-note">Este producto se realiza a medida o bajo presupuesto.</p>
           </div>
         `;
       } else {
@@ -163,15 +199,15 @@ async function loadProductDetail(productId) {
           <div class="product-price-section">
             <div class="product-price-main">${formatPrice(product.price)}</div>
             ${product.priceOffers && product.priceOffers.length > 0 ? `
-              <p style="margin: 0; font-size: 13px; color: var(--gray-500);">Ofertas por cantidad:</p>
-              <div class="price-offers">
+              <p class="price-note">Ofertas por cantidad:</p>
+              <ul class="price-offers">
                 ${product.priceOffers.map(offer => `
-                  <div class="price-offer">
-                    <span class="quantity">${offer.label}</span>
+                  <li class="price-offer">
+                    <span class="quantity">${escapeHtml(offer.label)}</span>
                     <span class="price">${formatPrice(offer.price)}/ud</span>
-                  </div>
+                  </li>
                 `).join('')}
-              </div>
+              </ul>
             ` : ''}
           </div>
         `;
@@ -180,72 +216,55 @@ async function loadProductDetail(productId) {
 
     // Render details
     detailsContainer.innerHTML = `
-      <h1>${product.name}</h1>
+      <h1>${escapeHtml(product.name)}</h1>
       ${product.customizable ? `
-        <div class="customizable-badge">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
-            <path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
-            <path d="m2 2 7.586 7.586"></path>
-            <circle cx="11" cy="11" r="2"></circle>
-          </svg>
-          ¡Personalizable!
+        <div class="detail-badges">
+          <span class="customizable-badge">${ICONS.pencil} ¡Personalizable!</span>
         </div>
       ` : ''}
-      <div class="product-meta">
-        <span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: -2px;">
-            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-          </svg>
-          ${product.size || 'Tamaño estándar'}
-        </span>
-        <span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: -2px;">
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-          </svg>
-          ${product.material || 'PLA'}
-        </span>
+
+      <dl class="spec-sheet product-meta">
+        <div>
+          <dt>${ICONS.size} Tamaño</dt>
+          <dd>${escapeHtml(product.size || 'Tamaño estándar')}</dd>
+        </div>
+        <div>
+          <dt>${ICONS.material} Material</dt>
+          <dd>${escapeHtml(product.material || 'PLA')}</dd>
+        </div>
         ${product.weight ? `
-        <span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px;">
-            <path d="M12 7c-2.76 0-5 2.24-5 5h10c0-2.76-2.24-5-5-5Z"></path>
-            <path d="M7 12H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2"></path>
-            <path d="M15 12h-6"></path>
-          </svg>
-          ${product.weight} kg
-        </span>
+        <div>
+          <dt>${ICONS.weight} Peso</dt>
+          <dd>${product.weight} kg</dd>
+        </div>
         ` : ''}
-      </div>
-      
+      </dl>
+
       ${priceSectionHTML}
-      
+
       <div class="product-description">
-        <p>${product.description}</p>
+        <p>${escapeHtml(product.description)}</p>
       </div>
-      
+
       <div class="product-actions">
         <a href="${generateMailtoLink(product, 1, '', showPrices)}" class="btn btn-primary btn-lg">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-            <polyline points="22,6 12,13 2,6"></polyline>
-          </svg>
+          ${ICONS.mail}
           ${showPrices ? 'Consultar Precio' : 'Contactar'}
         </a>
         ${product.wallapopLink ? `
-          <a href="${product.wallapopLink}" target="_blank" rel="noopener" class="btn btn-secondary">
-            <img src="resources/wallapop-logo.svg" alt="Wallapop" style="width: 18px; height: 18px;">
+          <a href="${escapeHtml(product.wallapopLink)}" target="_blank" rel="noopener" class="btn btn-wallapop">
+            <img src="resources/wallapop-logo.svg" alt="" class="marketplace-logo">
             Ver en Wallapop
           </a>
         ` : ''}
         ${product.vintedLink ? `
-          <a href="${product.vintedLink}" target="_blank" rel="noopener" class="btn btn-secondary btn-vinted" style="background-color: #09b1ba; color: white; border-color: #09b1ba;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 6px;">
-              <path d="M11.028 6c0 7.695 -.292 11.728 0 12c2.046 -5 4.246 -12.642 5.252 -14.099c.343 -.497 .768 -.93 1.257 -1.277c.603 -.39 1.292 -.76 1.463 -.575c-.07 2.319 -4.023 15.822 -4.209 16.314a6.135 6.135 0 0 1 -3.465 3.386c-3.213 .78 -3.429 -.446 -3.836 -1.134c-.95 -2.103 -1.682 -14.26 -1.445 -15.615c.05 -.523 .143 -1.851 2.491 -2c2.359 -.354 2.547 1.404 2.492 3z"></path>
-            </svg>
+          <a href="${escapeHtml(product.vintedLink)}" target="_blank" rel="noopener" class="btn btn-vinted">
+            ${ICONS.vinted}
             Ver en Vinted
           </a>
         ` : ''}
       </div>
+      <p class="action-hint">Se abrirá tu correo con la consulta ya escrita. Cuéntanos cantidad, colores o cualquier personalización.</p>
     `;
 
     // Store categories for related products
@@ -301,19 +320,17 @@ async function loadRelatedProducts(currentProductId) {
 function showError(message) {
   const gallery = document.getElementById('product-gallery');
   const details = document.getElementById('product-details');
+  const grid = document.querySelector('.product-detail-grid');
+  const art = window.ProductsModule ? window.ProductsModule.STATE_ART.spaghetti : '';
 
   if (gallery) gallery.innerHTML = '';
+  if (grid) grid.classList.add('is-error');
   if (details) {
     details.innerHTML = `
       <div class="empty-state">
-        <div class="empty-state-icon">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color: var(--gray-400);">
-            <circle cx="12" cy="12" r="10"></circle>
-            <line x1="12" y1="8" x2="12" y2="12"></line>
-            <line x1="12" y1="16" x2="12.01" y2="16"></line>
-          </svg>
-        </div>
-        <p>${message}</p>
+        ${art}
+        <h1>${message}</h1>
+        <p>Puede que el enlace esté incompleto o que el producto ya no esté a la venta. En el catálogo tienes todo lo disponible.</p>
         <a href="shop.html" class="btn btn-primary mt-lg">Ver todos los productos</a>
       </div>
     `;
