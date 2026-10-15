@@ -6,89 +6,277 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Catálogo Oli3D Design - Productos 3D personalizados.">
     <meta name="author" content="Oli3D Design">
+    <meta name="theme-color" content="#EEF2F6">
 
     <title>Catálogo - Oli3D Design</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css?v=14">
     <link rel="icon" type="image/png" href="resources/LOGO_SIN_FONDO.png">
 
     <style>
-        /* Shop Layout */
-        .shop-layout {
+        /* ---------- Shop header ---------- */
+        .shop-head {
             display: grid;
-            grid-template-columns: 200px 1fr;
-            gap: var(--spacing-2xl);
-            align-items: start;
+            gap: var(--space-l);
+            align-items: end;
         }
 
-        @media (max-width: 900px) {
-            .shop-layout {
-                grid-template-columns: 1fr;
-            }
-
-            .shop-sidebar {
-                display: none;
-            }
-
-            .shop-sidebar.open {
-                display: block;
-                position: fixed;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                z-index: 1001;
-                background: var(--white);
-                padding: var(--spacing-xl);
-                overflow-y: auto;
-            }
-
-            .mobile-filter-toggle {
-                display: flex;
+        @media (min-width: 900px) {
+            .shop-head {
+                grid-template-columns: 1fr minmax(340px, 470px);
             }
         }
 
-        /* Sidebar */
-        .shop-sidebar {
-            position: sticky;
-            top: calc(var(--nav-height) + var(--spacing-lg));
-        }
-
-        .sidebar-section {
-            margin-bottom: var(--spacing-xl);
-        }
-
-        .sidebar-title {
-            font-size: 11px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: var(--gray-500);
-            margin-bottom: var(--spacing-md);
-            display: flex;
-            justify-content: space-between;
+        .custom-design-banner {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: var(--space-xs) var(--space-s);
             align-items: center;
+            padding: var(--space-m);
+            border: 2px solid var(--navy);
+            border-radius: var(--r-l);
+            background: var(--paper);
+            box-shadow: 0 5px 0 var(--navy);
         }
 
-        .sidebar-close {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 20px;
-            color: var(--gray-500);
+        .banner-icon {
+            display: grid;
+            place-items: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--sky);
+            color: var(--navy);
+        }
+
+        .banner-icon svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .banner-text h2 {
+            font-size: var(--step-1);
+        }
+
+        .banner-text p {
+            color: var(--text-muted);
+            font-size: var(--step--1);
+        }
+
+        .custom-design-banner .btn {
+            grid-column: 1 / -1;
+            justify-self: start;
+        }
+
+        @media (min-width: 480px) {
+            .custom-design-banner {
+                grid-template-columns: auto 1fr auto;
+            }
+
+            .custom-design-banner .btn {
+                grid-column: auto;
+            }
+        }
+
+        /* ---------- Toolbar ---------- */
+        .shop-toolbar {
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr);
+            grid-template-areas:
+                "search search"
+                "filter sort"
+                "count count";
+            gap: var(--space-xs) var(--space-s);
+            align-items: center;
+            padding-block: var(--space-m);
+            margin-bottom: var(--space-l);
+            border-top: 2px solid var(--navy);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .search-box {
+            position: relative;
+            grid-area: search;
+        }
+
+        .search-box svg {
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--navy);
+            pointer-events: none;
+        }
+
+        .search-box input {
+            width: 100%;
+            min-height: 52px;
+            padding: 0.7rem 1rem 0.7rem 3rem;
+            border: 2px solid var(--navy);
+            border-radius: var(--r-pill);
+            background: var(--paper);
+            color: var(--text);
+            font-size: 1rem;
+        }
+
+        .search-box input::placeholder {
+            color: var(--text-muted);
+            opacity: 1;
+        }
+
+        .search-box input:focus-visible {
+            outline: 3px solid var(--sky);
+            outline-offset: 2px;
+        }
+
+        .shop-info {
+            display: contents;
+        }
+
+        #products-count {
+            grid-area: count;
+            font-weight: 700;
+            color: var(--navy);
+            white-space: nowrap;
+        }
+
+        .sort-select {
+            grid-area: sort;
+            width: 100%;
+            min-height: 48px;
+            padding: 0.6rem 2.6rem 0.6rem 1.1rem;
+            border: 2px solid var(--navy);
+            border-radius: var(--r-pill);
+            background: var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%230A3F6E' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 1rem center;
+            -webkit-appearance: none;
+            appearance: none;
+            font-weight: 700;
+            color: var(--navy);
             cursor: pointer;
         }
 
-        @media (max-width: 900px) {
-            .sidebar-close {
-                display: block;
+        .mobile-filter-toggle {
+            grid-area: filter;
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-2xs);
+            min-height: 48px;
+            padding: 0.6rem 1.1rem;
+            border: 2px solid var(--navy);
+            border-radius: var(--r-pill);
+            background: var(--navy);
+            color: var(--paper);
+            font-weight: 700;
+        }
+
+        .mobile-filter-toggle svg {
+            width: 18px;
+            height: 18px;
+            stroke: currentColor;
+            stroke-width: 2;
+            fill: none;
+            stroke-linecap: round;
+        }
+
+        .filter-count {
+            display: inline-grid;
+            place-items: center;
+            min-width: 22px;
+            height: 22px;
+            padding: 0 6px;
+            border-radius: var(--r-pill);
+            background: var(--sky);
+            color: var(--navy);
+            font-size: 0.8rem;
+        }
+
+        @media (min-width: 700px) {
+            .shop-toolbar {
+                grid-template-columns: minmax(0, 1fr) auto auto;
+                grid-template-areas: "search filter info";
+            }
+
+            .search-box {
+                max-width: 440px;
+            }
+
+            .shop-info {
+                grid-area: info;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                gap: var(--space-s);
+            }
+
+            #products-count,
+            .sort-select {
+                grid-area: auto;
+                width: auto;
             }
         }
 
-        /* Category List - Collapsible style */
+        /* ---------- Layout ---------- */
+        .shop-layout {
+            display: grid;
+            gap: var(--space-xl);
+            align-items: start;
+        }
+
+        .shop-main {
+            min-height: 400px;
+            min-width: 0;
+        }
+
+        #products-grid:focus {
+            outline: none;
+        }
+
+        @media (min-width: 900px) {
+            .shop-layout {
+                grid-template-columns: 240px minmax(0, 1fr);
+            }
+
+            .mobile-filter-toggle {
+                display: none;
+            }
+
+            .shop-toolbar {
+                grid-template-columns: minmax(0, 1fr) auto;
+                grid-template-areas: "search info";
+            }
+        }
+
+        @media (min-width: 900px) and (max-width: 1299px) {
+            .shop-main .product-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+
+        /* ---------- Sidebar ---------- */
+        .shop-sidebar {
+            position: sticky;
+            top: calc(var(--nav-height) + var(--space-m));
+        }
+
+        .sidebar-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: var(--space-xs);
+        }
+
+        .sidebar-title {
+            font-size: var(--step-1);
+        }
+
+        .sidebar-close,
+        .sidebar-apply {
+            display: none;
+        }
+
         .category-list {
             display: flex;
             flex-direction: column;
@@ -98,343 +286,441 @@
         .category-item {
             display: flex;
             align-items: center;
-            gap: var(--spacing-sm);
-            padding: 8px 10px;
-            border-radius: var(--radius-sm);
-            cursor: pointer;
-            font-size: 13px;
-            color: var(--gray-700);
-            transition: all var(--transition-fast);
-            background: transparent;
-            border: none;
+            gap: var(--space-xs);
             width: 100%;
+            min-height: 44px;
+            padding: 0.5rem 0.75rem 0.5rem 0.5rem;
+            border: 0;
+            border-radius: var(--r-pill);
+            background: transparent;
+            color: var(--text);
             text-align: left;
+            font-size: 1rem;
+            transition: background-color 0.2s ease;
         }
 
         .category-item:hover {
-            background: var(--gray-100);
+            background: var(--bed-deep);
+        }
+
+        /* Spool-style check: an empty ring that fills when selected */
+        .check-icon {
+            display: grid;
+            place-items: center;
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            border: 2px solid var(--navy);
+            border-radius: 50%;
+            background: var(--paper);
+            transition: background-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .check-icon svg {
+            width: 13px;
+            height: 13px;
+            fill: none;
+            stroke: var(--paper);
+            stroke-width: 3.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            opacity: 0;
+            transform: scale(0.4);
+            transition: opacity 0.2s ease, transform 0.25s var(--ease-out);
+        }
+
+        .category-emoji {
+            font-size: 1.05rem;
+            line-height: 1;
+        }
+
+        .category-label {
+            flex: 1;
+        }
+
+        .category-count {
+            min-width: 2ch;
+            font-size: 0.875rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            text-align: right;
         }
 
         .category-item.active {
-            background: var(--primary);
-            color: var(--white);
-        }
-
-        .category-item .check-icon {
-            width: 16px;
-            height: 16px;
-            border: 1.5px solid var(--gray-400);
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            transition: all var(--transition-fast);
+            background: var(--paper);
+            color: var(--navy);
+            font-weight: 700;
+            box-shadow: inset 0 0 0 2px var(--navy);
         }
 
         .category-item.active .check-icon {
-            background: var(--white);
-            border-color: var(--white);
+            background: var(--navy);
+            box-shadow: 0 0 0 3px var(--sky);
         }
 
         .category-item.active .check-icon svg {
             opacity: 1;
-        }
-
-        .category-item .check-icon svg {
-            width: 10px;
-            height: 10px;
-            stroke: var(--primary);
-            stroke-width: 3;
-            fill: none;
-            opacity: 0;
-        }
-
-        .category-count {
-            margin-left: auto;
-            font-size: 11px;
-            color: var(--gray-400);
+            transform: none;
         }
 
         .category-item.active .category-count {
-            color: rgba(255, 255, 255, 0.7);
+            color: var(--blue);
         }
 
-        /* Mobile Filter Toggle */
-        .mobile-filter-toggle {
-            display: none;
-            align-items: center;
-            gap: var(--spacing-sm);
-            padding: 8px 14px;
-            background: var(--gray-100);
-            border: none;
-            border-radius: var(--radius-sm);
-            font-size: 13px;
-            font-weight: 500;
-            color: var(--gray-700);
-            cursor: pointer;
-            margin-bottom: var(--spacing-lg);
-        }
-
-        .mobile-filter-toggle svg {
-            width: 16px;
-            height: 16px;
-            stroke: currentColor;
-            stroke-width: 2;
-            fill: none;
-        }
-
-        /* Shop Main */
-        .shop-main {
-            min-height: 400px;
-        }
-
-        .shop-top-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: var(--spacing-lg);
-            margin-bottom: var(--spacing-lg);
-            flex-wrap: wrap;
-        }
-
-        .shop-top-bar .search-box {
-            flex: 1;
-            max-width: 280px;
-            margin: 0;
-        }
-
-        .shop-info {
-            display: flex;
-            align-items: center;
-            gap: var(--spacing-lg);
-        }
-
-        #products-count {
-            color: var(--gray-500);
-            font-size: 13px;
-        }
-
-        /* Clear Filters */
         .clear-filters {
-            font-size: 12px;
-            color: var(--primary);
-            cursor: pointer;
+            margin-top: var(--space-s);
+            min-height: 44px;
+            padding: 0 0.5rem;
+            border: 0;
             background: none;
-            border: none;
-            padding: 0;
+            color: var(--blue);
+            font-weight: 700;
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 0.25em;
         }
 
         .clear-filters:hover {
-            text-decoration: underline;
+            color: var(--navy);
+        }
+
+        /* Mobile: sidebar becomes a full-height drawer */
+        @media (max-width: 899px) {
+            .shop-sidebar {
+                position: fixed;
+                inset: 0;
+                z-index: 1100;
+                display: flex;
+                flex-direction: column;
+                padding: var(--space-m) var(--gutter) 0;
+                background: var(--bed);
+                overflow-y: auto;
+                visibility: hidden;
+                transform: translateY(100%);
+                transition: transform 0.35s var(--ease-out), visibility 0s linear 0.35s;
+            }
+
+            .shop-sidebar.open {
+                visibility: visible;
+                transform: none;
+                transition: transform 0.35s var(--ease-out);
+            }
+
+            .sidebar-head {
+                padding-bottom: var(--space-s);
+                border-bottom: 2px solid var(--navy);
+                margin-bottom: var(--space-s);
+            }
+
+            .sidebar-title {
+                font-size: var(--step-2);
+            }
+
+            .sidebar-close {
+                display: grid;
+                place-items: center;
+                width: 48px;
+                height: 48px;
+                border: 2px solid var(--navy);
+                border-radius: 50%;
+                background: transparent;
+                color: var(--navy);
+            }
+
+            .sidebar-apply {
+                display: flex;
+                position: sticky;
+                bottom: 0;
+                width: 100%;
+                margin-top: auto;
+                margin-bottom: var(--space-m);
+            }
+
+            .shop-sidebar .clear-filters {
+                margin-bottom: var(--space-m);
+            }
+
+            body.filters-open {
+                overflow: hidden;
+            }
+        }
+
+        /* ---------- Pagination ---------- */
+        .pagination {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: var(--space-2xs);
+            margin-top: var(--space-2xl);
+        }
+
+        .page-btn {
+            display: inline-grid;
+            place-items: center;
+            min-width: 48px;
+            height: 48px;
+            padding: 0 0.75rem;
+            border: 2px solid var(--navy);
+            border-radius: var(--r-pill);
+            background: var(--paper);
+            color: var(--navy);
+            font-weight: 700;
+            transition: background-color 0.2s ease;
+        }
+
+        .page-btn:hover:not(:disabled):not(.active) {
+            background: var(--sky-soft);
+        }
+
+        .page-btn.active {
+            background: var(--navy);
+            color: var(--paper);
+            box-shadow: 0 3px 0 var(--sky);
+        }
+
+        .page-btn:disabled {
+            opacity: 0.35;
+            cursor: not-allowed;
+        }
+
+        .page-ellipsis {
+            border-color: transparent;
+            background: transparent;
+            min-width: 24px;
+            padding: 0;
         }
     </style>
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="nav-logo">
-                <img src="resources/LOGO_SIN_FONDO.png" alt="Oli3D Design Logo">
-                <span class="nav-logo-text">Oli3D Design</span>
-            </a>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
 
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Inicio</a></li>
-                <li><a href="shop.html" class="nav-link active">Catálogo</a></li>
-                <li><a href="about.html" class="nav-link">Sobre Nosotros</a></li>
-                <li><a href="contact.html" class="nav-link">Contacto</a></li>
-            </ul>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Principal">
+            <div class="container nav-inner">
+                <a href="index.html" class="nav-logo">
+                    <img src="resources/web/logo-mark.png" alt="" width="44" height="44">
+                    <span class="nav-logo-text">Oli3D<small>DESIGN</small></span>
+                </a>
 
-            <button class="nav-toggle" aria-label="Abrir menú">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
+                <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
 
-    <main>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="shop.html" class="nav-link active" aria-current="page">Catálogo</a></li>
+                    <li><a href="about.html" class="nav-link">Sobre Nosotros</a></li>
+                    <li><a href="contact.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
         <!-- Shop Header -->
-        <section class="shop-header">
-            <div class="container">
-                <h1>Catálogo</h1>
-                <p>
-                    Explora nuestra colección de productos
-                </p>
+        <section class="page-head">
+            <div class="container shop-head">
+                <div>
+                    <h1 class="page-title">Catálogo</h1>
+                    <p class="page-lede">Explora nuestra colección de productos</p>
+                </div>
+
+                <!-- Custom Design Banner -->
+                <aside class="custom-design-banner" aria-labelledby="custom-design-title">
+                    <div class="banner-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                            <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                            <path d="M2 2l7.586 7.586"></path>
+                        </svg>
+                    </div>
+                    <div class="banner-text">
+                        <h2 id="custom-design-title">¿Buscas algo único?</h2>
+                        <p>Diseñamos y personalizamos tu idea.</p>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">Contactar</a>
+                </aside>
             </div>
         </section>
 
         <!-- Shop Content -->
-        <section class="section" style="padding-top: var(--spacing-lg);">
+        <section aria-label="Productos">
             <div class="container">
-                <!-- Mobile Filter Toggle -->
-                <button class="mobile-filter-toggle" onclick="toggleSidebar()">
-                    <svg viewBox="0 0 24 24">
-                        <line x1="4" y1="21" x2="4" y2="14"></line>
-                        <line x1="4" y1="10" x2="4" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="12"></line>
-                        <line x1="12" y1="8" x2="12" y2="3"></line>
-                        <line x1="20" y1="21" x2="20" y2="16"></line>
-                        <line x1="20" y1="12" x2="20" y2="3"></line>
-                    </svg>
-                    Filtros
-                </button>
+                <!-- Toolbar -->
+                <div class="shop-toolbar">
+                    <div class="search-box">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+                            <circle cx="11" cy="11" r="7"></circle>
+                            <path d="m20 20-4-4"></path>
+                        </svg>
+                        <label for="search-input" class="visually-hidden">Buscar productos</label>
+                        <input type="search" id="search-input" placeholder="Buscar productos…" autocomplete="off" enterkeyhint="search">
+                    </div>
+
+                    <!-- Mobile Filter Toggle -->
+                    <button class="mobile-filter-toggle" type="button" aria-expanded="false" aria-controls="shop-sidebar" onclick="toggleSidebar()">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <line x1="4" y1="21" x2="4" y2="14"></line>
+                            <line x1="4" y1="10" x2="4" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="12"></line>
+                            <line x1="12" y1="8" x2="12" y2="3"></line>
+                            <line x1="20" y1="21" x2="20" y2="16"></line>
+                            <line x1="20" y1="12" x2="20" y2="3"></line>
+                        </svg>
+                        Filtros
+                        <span class="filter-count" id="filter-count" hidden></span>
+                    </button>
+
+                    <div class="shop-info">
+                        <span id="products-count" role="status" aria-live="polite"></span>
+                        <label for="sort-select" class="visually-hidden">Ordenar productos</label>
+                        <select id="sort-select" class="sort-select">
+                            <option value="newest">Más recientes</option>
+                            <option value="price-asc">Precio ↑</option>
+                            <option value="price-desc">Precio ↓</option>
+                            <option value="name-asc">A-Z</option>
+                            <option value="name-desc">Z-A</option>
+                        </select>
+                    </div>
+                </div>
 
                 <div class="shop-layout">
                     <!-- Sidebar Filters -->
-                    <aside class="shop-sidebar" id="shop-sidebar">
-                        <div class="sidebar-section">
-                            <div class="sidebar-title">
-                                <span>Categorías</span>
-                                <button class="sidebar-close" onclick="toggleSidebar()">×</button>
-                            </div>
-                            <div id="category-filters" class="category-list">
-                                <div class="loading-container" style="min-height: 80px;">
-                                    <div class="spinner"></div>
-                                </div>
-                            </div>
-                            <button class="clear-filters mt-lg" id="clear-filters" style="display: none;">Limpiar
-                                filtros</button>
+                    <aside class="shop-sidebar" id="shop-sidebar" aria-labelledby="filters-title">
+                        <div class="sidebar-head">
+                            <h2 class="sidebar-title" id="filters-title">Categorías</h2>
+                            <button class="sidebar-close" type="button" onclick="toggleSidebar()" aria-label="Cerrar filtros">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+                                    <path d="M6 6l12 12M18 6 6 18"></path>
+                                </svg>
+                            </button>
                         </div>
+                        <div id="category-filters" class="category-list" role="group" aria-labelledby="filters-title">
+                            <div class="loading-container" role="status" style="min-height: 120px;">
+                                <span class="loader-layers" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                                <span>Cargando categorías…</span>
+                            </div>
+                        </div>
+                        <button class="clear-filters" type="button" id="clear-filters" style="display: none;">Limpiar filtros</button>
+                        <button class="btn btn-primary sidebar-apply" type="button" onclick="toggleSidebar()">Ver productos</button>
                     </aside>
 
                     <!-- Main Content -->
                     <div class="shop-main">
-                        <!-- Custom Design Banner -->
-                        <div class="custom-design-banner">
-                            <div class="banner-content">
-                                <div class="banner-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
-                                        <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
-                                        <path d="M2 2l7.586 7.586"></path>
-                                    </svg>
-                                </div>
-                                <div class="banner-text">
-                                    <h3>¿Buscas algo único?</h3>
-                                    <p>Diseñamos y personalizamos tu idea.</p>
-                                </div>
-                            </div>
-                            <a href="contact.html" class="btn btn-primary btn-sm-custom">Contactar</a>
-                        </div>
-                        <!-- Top Bar -->
-                        <div class="shop-top-bar">
-                            <div class="search-box">
-                                <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2">
-                                    <circle cx="11" cy="11" r="8"></circle>
-                                    <path d="m21 21-4.35-4.35"></path>
-                                </svg>
-                                <input type="text" id="search-input" placeholder="Buscar..."
-                                    aria-label="Buscar productos">
-                            </div>
-
-                            <div class="shop-info">
-                                <span id="products-count"></span>
-                                <select id="sort-select" class="sort-select">
-                                    <option value="newest">Más recientes</option>
-                                    <option value="price-asc">Precio ↑</option>
-                                    <option value="price-desc">Precio ↓</option>
-                                    <option value="name-asc">A-Z</option>
-                                    <option value="name-desc">Z-A</option>
-                                </select>
-                            </div>
-                        </div>
-
                         <!-- Products Grid -->
-                        <div id="products-grid" class="product-grid">
-                            <div class="loading-container">
-                                <div class="spinner"></div>
+                        <div id="products-grid" class="product-grid" tabindex="-1">
+                            <div class="loading-container" role="status">
+                                <span class="loader-layers" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                                <span>Cargando productos…</span>
                             </div>
                         </div>
 
                         <!-- Pagination -->
-                        <div id="pagination" class="pagination"></div>
+                        <nav id="pagination" class="pagination" aria-label="Paginación"></nav>
                     </div>
                 </div>
             </div>
         </section>
-
-
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <img src="resources/LOGO_SIN_FONDO.png" alt="Oli3D Design">
-                        <span class="footer-logo-text">Oli3D Design</span>
-                    </div>
-                    <p>Apasionados de la impresión 3D y el diseño personalizado.</p>
+    <footer class="footer on-dark">
+        <svg class="footer-waves" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <path class="w3" d="M120 18 C 420 4, 660 30, 980 16 S 1300 8, 1420 20"></path>
+            <path class="w2" d="M-10 40 C 250 24, 520 60, 760 44 S 1220 18, 1450 38"></path>
+            <path class="fill" d="M0 68 C 220 46, 430 46, 700 70 S 1180 92, 1440 56 V 90 H 0 Z"></path>
+        </svg>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="resources/web/logo-mark.png" alt="" width="52" height="52" loading="lazy">
+                    <span class="footer-logo-text">Oli3D Design</span>
                 </div>
-
-                <div class="footer-section">
-                    <h4>Navegación</h4>
-                    <div class="footer-links">
-                        <a href="index.html">Inicio</a>
-                        <a href="shop.html">Catálogo</a>
-                        <a href="about.html">Sobre Nosotros</a>
-                        <a href="contact.html">Contacto</a>
-                    </div>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Contacto</h4>
-                    <div class="footer-links">
-                        <a href="mailto:oli3d.design@gmail.com">oli3d.design@gmail.com</a>
-                        <a href="https://www.instagram.com/oli3d.design/" target="_blank">@oli3d.design</a>
-                    </div>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Síguenos</h4>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/oli3d.design/" target="_blank" class="social-link"
-                            aria-label="Instagram">
-                            <svg viewBox="0 0 24 24">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                            </svg>
-                        </a>
-                        <a href="https://www.facebook.com/people/Oli3D/61581251891899/" target="_blank"
-                            class="social-link" aria-label="Facebook">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                            </svg>
-                        </a>
-                        <a href="https://es.wallapop.com/user/oli3d-470754978" target="_blank" class="social-link"
-                            aria-label="Wallapop">
-                            <img src="resources/wallapop-logo.svg" alt="Wallapop" style="width: 20px; height: 20px;">
-                        </a>
-                        <a href="mailto:oli3d.design@gmail.com" class="social-link" aria-label="Email">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                                </path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+                <p>Apasionados de la impresión 3D y el diseño personalizado.</p>
             </div>
 
+            <nav class="footer-section" aria-labelledby="footer-nav-title">
+                <h2 class="footer-title" id="footer-nav-title">Navegación</h2>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="shop.html">Catálogo</a></li>
+                    <li><a href="about.html">Sobre Nosotros</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-section">
+                <h2 class="footer-title">Contacto</h2>
+                <ul class="footer-links">
+                    <li><a href="mailto:oli3d.design@gmail.com">oli3d.design@gmail.com</a></li>
+                    <li><a href="https://www.instagram.com/oli3d.design/" target="_blank" rel="noopener">@oli3d.design</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h2 class="footer-title">Síguenos</h2>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/oli3d.design/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/people/Oli3D/61581251891899/" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://es.wallapop.com/user/oli3d-470754978" target="_blank" rel="noopener" class="social-link" aria-label="Wallapop">
+                        <img src="resources/wallapop-logo.svg" alt="" width="20" height="20" loading="lazy">
+                    </a>
+                    <a href="mailto:oli3d.design@gmail.com" class="social-link" aria-label="Email">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
             <div class="footer-bottom">
                 <p>&copy; 2025 Oli3D Design. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/products.js?v=12"></script>
-    <script src="js/main.js?v=12"></script>
-    <script src="js/shop.js?v=12"></script>
+    <script src="js/products.js?v=14"></script>
+    <script src="js/main.js?v=14"></script>
+    <script src="js/shop.js?v=14"></script>
     <script>
+        // Mobile filter drawer: open/close with focus management
         function toggleSidebar() {
-            document.getElementById('shop-sidebar').classList.toggle('open');
+            const sidebar = document.getElementById('shop-sidebar');
+            const toggle = document.querySelector('.mobile-filter-toggle');
+            const open = !sidebar.classList.contains('open');
+
+            sidebar.classList.toggle('open', open);
+            document.body.classList.toggle('filters-open', open);
+            if (toggle) toggle.setAttribute('aria-expanded', String(open));
+
+            if (open) {
+                const first = sidebar.querySelector('.category-item.active') || sidebar.querySelector('button');
+                if (first) setTimeout(() => first.focus(), 50);
+            } else if (toggle && getComputedStyle(toggle).display !== 'none') {
+                toggle.focus();
+            }
         }
+
+        document.addEventListener('keydown', (e) => {
+            const sidebar = document.getElementById('shop-sidebar');
+            if (e.key === 'Escape' && sidebar && sidebar.classList.contains('open')) {
+                toggleSidebar();
+            }
+        });
     </script>
 </body>
 

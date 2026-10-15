@@ -177,6 +177,10 @@ ol[role="list"] {
   color: var(--navy);
 }
 
+[hidden] {
+  display: none !important;
+}
+
 /* ---------- Accessibility ---------- */
 :focus-visible {
   outline: 3px solid var(--blue);
@@ -1351,6 +1355,7 @@ ol[role="list"] {
   margin-top: var(--space-s);
   max-width: 48ch;
   font-size: var(--step-1);
+  line-height: 1.45;
   color: var(--text);
 }
 
