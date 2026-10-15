@@ -1806,11 +1806,49 @@ ol[role="list"] {
 }
 
 /* ---------- Contact ---------- */
+.contact-layout {
+  display: grid;
+  gap: var(--space-l);
+  align-items: end;
+}
+
+@media (min-width: 960px) {
+  .contact-layout {
+    grid-template-columns: 1fr 1.1fr;
+    gap: var(--space-2xl);
+  }
+
+  .contact-layout .channel-list {
+    margin-top: 0;
+  }
+}
+
+.faq-wrap {
+  max-width: 860px;
+}
+
+.social-links--lg .social-link {
+  width: 56px;
+  height: 56px;
+}
+
+.social-links--lg .social-link svg,
+.social-links--lg .social-link img {
+  width: 24px;
+  height: 24px;
+}
 .contact-hero-title {
-  font-size: clamp(3rem, 1rem + 10vw, 9rem);
+  /* "Hablemos" is ~5.8em wide: size it to its column */
+  font-size: max(2.5rem, min(9rem, calc((100vw - 2 * var(--gutter)) / 6.2)));
   font-weight: 700;
   letter-spacing: -0.04em;
   line-height: 0.95;
+}
+
+@media (min-width: 960px) {
+  .contact-hero-title {
+    font-size: max(2.5rem, calc((min(100vw, var(--container)) - 2 * var(--gutter) - var(--space-2xl)) * 0.476 / 6.2));
+  }
 }
 
 @supports ((-webkit-background-clip: text) or (background-clip: text)) {
