@@ -48,8 +48,8 @@ Para añadir productos, cambiar precios o subir fotos:
 
 1.  Abre una **nueva** terminal (no cierres la de la web si quieres ver los cambios al momento).
 2.  Ejecuta:
-    *   **Mac**: `python3 local/admin.py`
-    *   **Windows**: `python local/admin.py`
+    *   **Mac**: `python3 local/wallapop/admin.py`
+    *   **Windows**: `python local/wallapop/admin.py`
 3.  Se abrirá automáticamente en tu navegador: **[http://localhost:5050](http://localhost:5050)**
 
 ### ¿Cómo funciona?
