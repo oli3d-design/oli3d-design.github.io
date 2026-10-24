@@ -905,31 +905,9 @@
             "weight": 0.5
         },
         {
-            "id": "pokeball_0008_wartortle",
-            "name": "0008 Wartortle Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Wartortle. Colecciona todas las pokeballs de tus Pokémon favoritos.",
-            "price": 8.5,
-            "image": "products/20260415_155455.jpg",
-            "images": [
-                "products/20260415_155455.jpg",
-                "products/20260415_155501.jpg"
-            ],
-            "highlighted": false,
-            "categories": [
-                "figures",
-                "pokeballs"
-            ],
-            "size": "",
-            "material": "PLA",
-            "createdAt": "2026-05-31",
-            "wallapopLink": "https://es.wallapop.com/item/0008-wartortle-pokeball-3d-1267877232",
-            "vintedLink": "",
-            "weight": 0.5
-        },
-        {
             "id": "pokeball_0001_bulbasaur",
-            "name": "0001 Bulbasaur Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Bulbasaur. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Bulbasaur Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Bulbasaur. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260415_155027.jpg",
             "images": [
@@ -944,14 +922,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "https://es.wallapop.com/item/0001-bulbasaur-pokeball-3d-1267877677",
+            "wallapopLink": "https://es.wallapop.com/item/0001-bulbasaur-pokeball-3d-1280644292",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0002_ivysaur",
-            "name": "0002 Ivysaur Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Ivysaur. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Ivysaur Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Ivysaur. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260415_155152.jpg",
             "images": [
@@ -966,14 +944,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "https://es.wallapop.com/item/0002-ivysaur-pokeball-3d-1267878090",
+            "wallapopLink": "https://es.wallapop.com/item/0002-ivysaur-pokeball-3d-1280644494",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0003_venusaur",
-            "name": "0003 Venusaur Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Venusaur. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Venusaur Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Venusaur. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 9.0,
             "image": "products/20260119_171751.jpg",
             "images": [
@@ -989,14 +967,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "https://es.wallapop.com/item/0003-venusaur-pokeball-3d-1267878497",
+            "wallapopLink": "https://es.wallapop.com/item/0003-venusaur-pokeball-3d-1280626240",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0004_charmander",
-            "name": "0004 Charmander Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Charmander. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Charmander Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Charmander. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260415_155229.jpg",
             "images": [
@@ -1010,14 +988,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "https://es.wallapop.com/item/0004-charmander-pokeball-3d-1267878914",
+            "wallapopLink": "https://es.wallapop.com/item/0004-charmander-pokeball-3d-1280626559",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0005_charmeleon",
-            "name": "0005 Charmeleon Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Charmeleon. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Charmeleon Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Charmeleon. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260415_155312.jpg",
             "images": [
@@ -1031,14 +1009,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "https://es.wallapop.com/item/0005-charmeleon-pokeball-3d-1267879317",
+            "wallapopLink": "https://es.wallapop.com/item/0005-charmeleon-pokeball-3d-1280626878",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0006_charizard",
-            "name": "0006 Charizard Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Charizard. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Charizard Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Charizard. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 9.0,
             "image": "products/20260119_171520.jpg",
             "images": [
@@ -1054,14 +1032,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "https://es.wallapop.com/item/0006-charizard-pokeball-3d-1267879729",
+            "wallapopLink": "https://es.wallapop.com/item/0006-charizard-pokeball-3d-1280627199",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0007_squirtle",
-            "name": "0007 Squirtle Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Squirtle. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Squirtle Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Squirtle. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260415_134510.jpg",
             "images": [
@@ -1078,14 +1056,36 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "https://es.wallapop.com/item/0007-squirtle-pokeball-3d-1267880165",
+            "wallapopLink": "https://es.wallapop.com/item/0007-squirtle-pokeball-3d-1280645507",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pokeball_0008_wartortle",
+            "name": "Wartortle Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Wartortle. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
+            "price": 8.5,
+            "image": "products/20260415_155455.jpg",
+            "images": [
+                "products/20260415_155455.jpg",
+                "products/20260415_155501.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-05-31",
+            "wallapopLink": "https://es.wallapop.com/item/0008-wartortle-pokeball-3d-1280625257",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0009_blastoise",
-            "name": "0009 Blastoise Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Blastoise. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Blastoise Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Blastoise. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260119_171731.jpg",
             "images": [
@@ -1100,14 +1100,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "https://es.wallapop.com/item/0009-blastoise-pokeball-3d-1267880606",
+            "wallapopLink": "https://es.wallapop.com/item/0009-blastoise-pokeball-3d-1280627807",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0010_caterpie",
-            "name": "0010 Caterpie Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Caterpie. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Caterpie Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Caterpie. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260415_155608.jpg",
             "images": [
@@ -1122,14 +1122,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "https://es.wallapop.com/item/0010-caterpie-pokeball-3d-1267881038",
+            "wallapopLink": "https://es.wallapop.com/item/0010-caterpie-pokeball-3d-1280628175",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0011_metapod",
-            "name": "0011 Metapod Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Metapod. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Metapod Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Metapod. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260415_172536.jpg",
             "images": [
@@ -1143,14 +1143,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "https://es.wallapop.com/item/0011-metapod-pokeball-3d-1267881478",
+            "wallapopLink": "https://es.wallapop.com/item/0011-metapod-pokeball-3d-1280628499",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0012_butterfree",
-            "name": "0012 Butterfree Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Butterfree. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Butterfree Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Butterfree. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 9.0,
             "image": "products/20260415_172603.jpg",
             "images": [
@@ -1164,14 +1164,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "https://es.wallapop.com/item/0012-butterfree-pokeball-3d-1267881927",
+            "wallapopLink": "https://es.wallapop.com/item/0012-butterfree-pokeball-3d-1280628781",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0013_weedle",
-            "name": "0013 Weedle Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Weedle. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Weedle Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Weedle. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260415_172626.jpg",
             "images": [
@@ -1185,14 +1185,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0013-weedle-pokeball-3d-1280629049",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0014_kakuna",
-            "name": "0014 Kakuna Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Kakuna. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Kakuna Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Kakuna. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 9.5,
             "image": "products/20260415_172707.jpg",
             "images": [
@@ -1206,14 +1206,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0014-kakuna-pokeball-3d-1280646727",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0015_beedrill",
-            "name": "0015 Beedrill Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Beedrill. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Beedrill Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Beedrill. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 9.0,
             "image": "products/20260415_172800.jpg",
             "images": [
@@ -1227,14 +1227,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0015-beedrill-pokeball-3d-1280629534",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0025_pikachu",
-            "name": "0025 Pikachu Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Pikachu. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Pikachu Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Pikachu. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260119_172439.jpg",
             "images": [
@@ -1248,14 +1248,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0025-pikachu-pokeball-3d-1280629804",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0026_raichu",
-            "name": "0026 Raichu Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Raichu. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Raichu Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Raichu. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260311_121540.jpg",
             "images": [
@@ -1269,14 +1269,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0026-raichu-pokeball-3d-1280630118",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0037_vulpix",
-            "name": "0037 Vulpix Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Vulpix. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Vulpix Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Vulpix. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260121_102128.jpg",
             "images": [
@@ -1290,14 +1290,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0037-vulpix-pokeball-3d-1280630375",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0037_vulpix_alola",
-            "name": "0037 Vulpix Alola Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Vulpix Alola. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Vulpix Alola Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Vulpix Alola. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260119_171822.jpg",
             "images": [
@@ -1311,14 +1311,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0037-vulpix-alola-pokeball-3d-1280630653",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0038_ninetales",
-            "name": "0038 Ninetales Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Ninetales. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Ninetales Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Ninetales. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260223_160443.jpg",
             "images": [
@@ -1332,14 +1332,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0038-ninetales-pokeball-3d-1280630897",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0038_ninetales_alola",
-            "name": "0038 Ninetales Alola Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Ninetales Alola. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Ninetales Alola Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Ninetales Alola. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260223_160430_alola.jpg",
             "images": [
@@ -1353,14 +1353,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0038-ninetales-alola-pokeball-3d-1280631153",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0051_dugtrio",
-            "name": "0051 Dugtrio Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Dugtrio. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Dugtrio Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Dugtrio. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 9.0,
             "image": "products/20260311_121628.jpg",
             "images": [
@@ -1374,14 +1374,122 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0051-dugtrio-pokeball-3d-1280631415",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pokeball_0052_meowth",
+            "name": "Meowth Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Meowth. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260715_195450.jpg",
+            "images": [
+                "products/20260715_195450.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-09-23",
+            "wallapopLink": "https://es.wallapop.com/item/0052-meowth-pokeball-3d-1305131191",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pokeball_0053_persian",
+            "name": "Persian Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Persian. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260715_195506.jpg",
+            "images": [
+                "products/20260715_195506.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-09-23",
+            "wallapopLink": "https://es.wallapop.com/item/0053-persian-pokeball-3d-1305131730",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pokeball_0054_psyduck",
+            "name": "Psyduck Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Psyduck. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260807_161102.jpg",
+            "images": [
+                "products/20260807_161102.jpg",
+                "products/20260807_161105.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-09-23",
+            "wallapopLink": "https://es.wallapop.com/item/0054-psyduck-pokeball-3d-1305132330",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pokeball_0055_golduck",
+            "name": "Golduck Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Golduck. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260807_161120.jpg",
+            "images": [
+                "products/20260807_161120.jpg",
+                "products/20260807_161125.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-09-23",
+            "wallapopLink": "https://es.wallapop.com/item/0055-golduck-pokeball-3d-1305132883",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pokeball_0056_mankey",
+            "name": "Mankey Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Mankey. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260601_173558.jpg",
+            "images": [
+                "products/20260601_173558.jpg",
+                "products/20260601_173603.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-09-23",
+            "wallapopLink": "https://es.wallapop.com/item/0056-mankey-pokeball-3d-1305133377",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0057_primeape",
-            "name": "0057 Primeape Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Primeape. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Primeape Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Primeape. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 9.0,
             "image": "products/20260311_121317.jpg",
             "images": [
@@ -1396,14 +1504,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0057-primeape-pokeball-3d-1280631652",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0062_poliwrath",
-            "name": "0062 Poliwrath Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Poliwrath. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Poliwrath Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Poliwrath. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 9.0,
             "image": "products/20260311_121152.jpg",
             "images": [
@@ -1417,14 +1525,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0062-poliwrath-pokeball-3d-1280631919",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0065_alakazam",
-            "name": "0065 Alakazam Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Alakazam. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Alakazam Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Alakazam. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260311_121121.jpg",
             "images": [
@@ -1439,14 +1547,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0065-alakazam-pokeball-3d-1280632259",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0068_machamp",
-            "name": "0068 Machamp Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Machamp. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Machamp Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Machamp. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 9.5,
             "image": "products/20260311_121603.jpg",
             "images": [
@@ -1460,14 +1568,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0068-machamp-pokeball-3d-1280632571",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0082_magneton",
-            "name": "0082 Magneton Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Magneton. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Magneton Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Magneton. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 9.0,
             "image": "products/20260311_121242.jpg",
             "images": [
@@ -1482,14 +1590,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0082-magneton-pokeball-3d-1280632894",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0091_cloyster",
-            "name": "0091 Cloyster Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Cloyster. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Cloyster Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Cloyster. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260311_121353.jpg",
             "images": [
@@ -1504,14 +1612,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0091-cloyster-pokeball-3d-1280633197",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0092_gastly",
-            "name": "0092 Gastly Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Gastly. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Gastly Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Gastly. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260127_163635.jpg",
             "images": [
@@ -1526,14 +1634,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0092-gastly-pokeball-3d-1280633489",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0093_haunter",
-            "name": "0093 Haunter Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Haunter. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Haunter Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Haunter. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260121_102259.jpg",
             "images": [
@@ -1549,14 +1657,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0093-haunter-pokeball-3d-1280633754",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0094_gengar",
-            "name": "0094 Gengar Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Gengar. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Gengar Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Gengar. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260127_163653.jpg",
             "images": [
@@ -1575,14 +1683,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0127-pinsir-pokeball-3d-1305139354",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0095_onix",
-            "name": "0095 Onix Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Onix. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Onix Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Onix. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260311_121029.jpg",
             "images": [
@@ -1596,14 +1704,141 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0095-onix-pokeball-3d-1280634337",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pokeball_0096_drowzee",
+            "name": "Drowzee Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Drowzee. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260715_195543.jpg",
+            "images": [
+                "products/20260715_195543.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-09-23",
+            "wallapopLink": "https://es.wallapop.com/item/0096-drowzee-pokeball-3d-1305134408",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pokeball_0097_hypno",
+            "name": "Hypno Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Hypno. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260715_195549.jpg",
+            "images": [
+                "products/20260715_195549.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-09-23",
+            "wallapopLink": "https://es.wallapop.com/item/0097-hypno-pokeball-3d-1305134972",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pokeball_0109_koffing",
+            "name": "Koffing Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Koffing. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260715_195610.jpg",
+            "images": [
+                "products/20260715_195610.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-09-23",
+            "wallapopLink": "https://es.wallapop.com/item/0109-koffing-pokeball-3d-1305135514",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pokeball_0110_weezing",
+            "name": "Weezing Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Weezing. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260715_195618.jpg",
+            "images": [
+                "products/20260715_195618.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-09-23",
+            "wallapopLink": "https://es.wallapop.com/item/0110-weezing-pokeball-3d-1305136035",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pokeball_0112_rhydon",
+            "name": "Rhydon Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Rhydon. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260807_155344.jpg",
+            "images": [
+                "products/20260807_155344.jpg",
+                "products/20260807_155348.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-09-23",
+            "wallapopLink": "https://es.wallapop.com/item/0112-rhydon-pokeball-3d-1305136605",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pokeball_0113_chansey",
+            "name": "Chansey Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Chansey. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260807_155310.jpg",
+            "images": [
+                "products/20260807_155310.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-09-23",
+            "wallapopLink": "https://es.wallapop.com/item/0113-chansey-pokeball-3d-1305137168",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0115_kangaskhan",
-            "name": "0115 Kangaskhan Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Kangaskhan. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Kangaskhan Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Kangaskhan. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 9.0,
             "image": "products/20260311_120835.jpg",
             "images": [
@@ -1619,14 +1854,124 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0115-kangaskhan-pokeball-3d-1280634608",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pokeball_0123_scyther",
+            "name": "Scyther Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Scyther. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260601_173812.jpg",
+            "images": [
+                "products/20260601_173812.jpg",
+                "products/20260601_173814.jpg",
+                "products/20260601_173817.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-09-23",
+            "wallapopLink": "https://es.wallapop.com/item/0123-scyther-pokeball-3d-1305137688",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pokeball_0125_electabuzz",
+            "name": "Electabuzz Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Electabuzz. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260601_173754.jpg",
+            "images": [
+                "products/20260601_173754.jpg",
+                "products/20260601_173756.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-09-23",
+            "wallapopLink": "https://es.wallapop.com/item/0125-electabuzz-pokeball-3d-1305138269",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pokeball_0126_magmar",
+            "name": "Magmar Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Magmar. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260601_173731.jpg",
+            "images": [
+                "products/20260601_173731.jpg",
+                "products/20260601_173735.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-09-23",
+            "wallapopLink": "https://es.wallapop.com/item/0126-magmar-pokeball-3d-1305138821",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pokeball_0127_pinsir",
+            "name": "Pinsir Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Pinsir. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260601_173637.jpg",
+            "images": [
+                "products/20260601_173637.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-09-23",
+            "wallapopLink": "https://es.wallapop.com/item/0127-pinsir-pokeball-3d-1305139354",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pokeball_0128_tauros",
+            "name": "Tauros Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Tauros. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260601_173657.jpg",
+            "images": [
+                "products/20260601_173657.jpg",
+                "products/20260601_173658.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-09-23",
+            "wallapopLink": "https://es.wallapop.com/item/0128-tauros-pokeball-3d-1305141368",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0130_gyarados",
-            "name": "0130 Gyarados Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Gyarados. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Gyarados Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Gyarados. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 9.5,
             "image": "products/20260311_121716.jpg",
             "images": [
@@ -1640,14 +1985,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0130-gyarados-pokeball-3d-1280634864",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0131_lapras",
-            "name": "0131 Lapras Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Lapras. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Lapras Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Lapras. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260311_121651.jpg",
             "images": [
@@ -1661,14 +2006,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0131-lapras-pokeball-3d-1280635082",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0133_eevee",
-            "name": "0133 Eevee Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Eevee. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Eevee Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Eevee. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260130_143927.jpg",
             "images": [
@@ -1682,14 +2027,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0133-eevee-pokeball-3d-1280635269",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0134_vaporeon",
-            "name": "0134 Vaporeon Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Vaporeon. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Vaporeon Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Vaporeon. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 9.0,
             "image": "products/20260130_143820.jpg",
             "images": [
@@ -1703,14 +2048,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0134-vaporeon-pokeball-3d-1280635525",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0135_jolteon",
-            "name": "0135 Jolteon Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Jolteon. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Jolteon Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Jolteon. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260130_143902.jpg",
             "images": [
@@ -1724,14 +2069,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0135-jolteon-pokeball-3d-1280635735",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0136_flareon",
-            "name": "0136 Flareon Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Flareon. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Flareon Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Flareon. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260130_143844.jpg",
             "images": [
@@ -1746,14 +2091,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0136-flareon-pokeball-3d-1280635977",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0142_aerodactyl",
-            "name": "0142 Aerodactyl Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Aerodactyl. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Aerodactyl Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Aerodactyl. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 9.0,
             "image": "products/20260415_172830.jpg",
             "images": [
@@ -1769,14 +2114,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0142-aerodactyl-pokeball-3d-1280636187",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0143_snorlax",
-            "name": "0143 Snorlax Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Snorlax. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Snorlax Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Snorlax. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260119_171926.jpg",
             "images": [
@@ -1791,14 +2136,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0143-snorlax-pokeball-3d-1280636422",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0144_articuno",
-            "name": "0144 Articuno Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Articuno. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Articuno Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Articuno. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 9.0,
             "image": "products/20260130_143045.jpg",
             "images": [
@@ -1813,14 +2158,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0144-articuno-pokeball-3d-1280636662",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0145_zapdos",
-            "name": "0145 Zapdos Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Zapdos. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Zapdos Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Zapdos. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 9.0,
             "image": "products/20260127_163949.jpg",
             "images": [
@@ -1836,14 +2181,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0145-zapdos-pokeball-3d-1280636889",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0146_moltres",
-            "name": "0146 Moltres Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Moltres. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Moltres Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Moltres. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 9.5,
             "image": "products/20260130_143059.jpg",
             "images": [
@@ -1858,14 +2203,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0146-moltres-pokeball-3d-1280637139",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0149_dragonite",
-            "name": "0149 Dragonite Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Dragonite. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Dragonite Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Dragonite. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260119_172113.jpg",
             "images": [
@@ -1880,14 +2225,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0149-dragonite-pokeball-3d-1280637376",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0150_mewtwo",
-            "name": "0150 Mewtwo Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Mewtwo. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Mewtwo Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Mewtwo. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260120_155748.jpg",
             "images": [
@@ -1902,14 +2247,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0150-mewtwo-pokeball-3d-1280637598",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0151_mew",
-            "name": "0151 Mew Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Mewtwo. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Mew Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Mewtwo. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.0,
             "image": "products/20260119_171952.jpg",
             "images": [
@@ -1924,14 +2269,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0150-mewtwo-pokeball-3d-1280637598",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0196_espeon",
-            "name": "0196 Espeon Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Espeon. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Espeon Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Espeon. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260127_164011.jpg",
             "images": [
@@ -1945,14 +2290,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0196-espeon-pokeball-3d-1280638009",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0197_umbreon",
-            "name": "0197 Umbreon Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Umbreon. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Umbreon Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Umbreon. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260120_155725.jpg",
             "images": [
@@ -1966,14 +2311,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0197-umbreon-pokeball-3d-1280638222",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0243_raikou",
-            "name": "0243 Raikou Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Raikou. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Raikou Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Raikou. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 9.0,
             "image": "products/20260130_143437.jpg",
             "images": [
@@ -1987,14 +2332,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0243-raikou-pokeball-3d-1280638429",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0244_entei",
-            "name": "0244 Entei Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Entei. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Entei Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Entei. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 9.0,
             "image": "products/20260127_163933.jpg",
             "images": [
@@ -2009,14 +2354,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0244-entei-pokeball-3d-1280638656",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0245_suicune",
-            "name": "0245 Suicune Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Suicune. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Suicune Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Suicune. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 9.0,
             "image": "products/20260127_163921.jpg",
             "images": [
@@ -2032,14 +2377,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0245-suicune-pokeball-3d-1280638847",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0249_lugia",
-            "name": "0249 Lugia Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Lugia. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Lugia Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Lugia. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260210_092559.jpg",
             "images": [
@@ -2054,14 +2399,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0249-lugia-pokeball-3d-1280639045",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0250_ho_oh",
-            "name": "0250 Ho oh Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Ho oh. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Ho oh Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Ho oh. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 9.0,
             "image": "products/20260311_121426.jpg",
             "images": [
@@ -2077,14 +2422,58 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0250-ho-oh-pokeball-3d-1280639263",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pokeball_0382_kyogre",
+            "name": "Kyogre Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Kyogre. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260715_190301.jpg",
+            "images": [
+                "products/20260715_190301.jpg",
+                "products/20260715_190304.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-09-23",
+            "wallapopLink": "https://es.wallapop.com/item/0382-kyogre-pokeball-3d-1305141878",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pokeball_0383_groudon",
+            "name": "Groudon Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Groudon. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260715_190314.jpg",
+            "images": [
+                "products/20260715_190314.jpg",
+                "products/20260715_190317.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-09-23",
+            "wallapopLink": "https://es.wallapop.com/item/0383-groudon-pokeball-3d-1305142385",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0384_rayquaza",
-            "name": "0384 Rayquaza Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Rayquaza. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Rayquaza Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Rayquaza. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 9.0,
             "image": "products/20260119_172033.jpg",
             "images": [
@@ -2098,14 +2487,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0384-rayquaza-pokeball-3d-1280639463",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0470_leafeon",
-            "name": "0470 Leafeon Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Leafeon. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Leafeon Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Leafeon. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260130_143810.jpg",
             "images": [
@@ -2119,14 +2508,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0470-leafeon-pokeball-3d-1280639697",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0471_glaceon",
-            "name": "0471 Glaceon Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Glaceon. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Glaceon Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Glaceon. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 8.5,
             "image": "products/20260130_143913.jpg",
             "images": [
@@ -2140,14 +2529,36 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0471-glaceon-pokeball-3d-1280639904",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pokeball_0491_darkrai",
+            "name": "Darkrai Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Darkrai. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 8.5,
+            "image": "products/20260715_123509.jpg",
+            "images": [
+                "products/20260715_123509.jpg",
+                "products/20260715_123513.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-09-23",
+            "wallapopLink": "https://es.wallapop.com/item/0491-darkrai-pokeball-3d-1305142881",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pokeball_0700_sylveon",
-            "name": "0700 Sylveon Pokeball 3D",
-            "description": "Pokeball impresa en 3D con diseño de Sylveon. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "name": "Sylveon Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Sylveon. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 9.5,
             "image": "products/20260130_143759.jpg",
             "images": [
@@ -2161,41 +2572,18 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/0700-sylveon-pokeball-3d-1280640119",
             "vintedLink": "",
             "weight": 0.5
         },
         {
-            "id": "pack_eevee",
-            "name": "Pack Pokeballs 3D Eevee, Vaporeon, Jolteon, Flareon, Espeon, Umbreon, Leafeon, Glaceon, Sylveon",
-            "description": "Pack de 9 pokeballs impresas en 3D: Eevee, Vaporeon, Jolteon, Flareon, Espeon, Umbreon, Leafeon, Glaceon y Sylveon. ¡Colecciona todas las evoluciones!",
-            "price": 75.0,
-            "image": "products/20260130_162121.jpg",
+            "id": "pokeball_honorball",
+            "name": "Honorball Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Honorball. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 7.0,
+            "image": "products/20260903_115734.jpg",
             "images": [
-                "products/20260130_162121.jpg",
-                "products/20260130_162123.jpg"
-            ],
-            "highlighted": true,
-            "categories": [
-                "pokeballs",
-                "figures"
-            ],
-            "size": "",
-            "material": "PLA",
-            "createdAt": "2026-02-08",
-            "wallapopLink": "",
-            "vintedLink": "",
-            "weight": 0.5
-        },
-        {
-            "id": "pack_entei_raikou_suicune",
-            "name": "Pack Pokeballs 3D Entei, Raikou, Suicune",
-            "description": "Pack de 3 pokeballs impresas en 3D: Entei, Raikou y Suicune. ¡Los perros legendarios de Johto!",
-            "price": 26.5,
-            "image": "products/20260130_143534.jpg",
-            "images": [
-                "products/20260130_143534.jpg",
-                "products/20260130_143539.jpg"
+                "products/20260903_115734.jpg"
             ],
             "highlighted": false,
             "categories": [
@@ -2204,19 +2592,40 @@
             ],
             "size": "",
             "material": "PLA",
-            "createdAt": "2026-02-08",
+            "createdAt": "2026-10-24",
             "wallapopLink": "",
             "vintedLink": "",
             "weight": 0.5
         },
         {
-            "id": "pack_espeon_umbreon",
-            "name": "Pack Pokeballs 3D Espeon, Umbreon",
-            "description": "Pack de 2 pokeballs impresas en 3D: Espeon y Umbreon. ¡El sol y la luna!",
-            "price": 16.5,
-            "image": "products/20260127_164011.jpg",
+            "id": "pokeball_masterball",
+            "name": "Masterball Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Masterball. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 7.0,
+            "image": "products/20260903_115724.jpg",
             "images": [
-                "products/20260127_164011.jpg"
+                "products/20260903_115724.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-10-24",
+            "wallapopLink": "",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pokeball_pokeball",
+            "name": "Pokeball Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Bulbasaur. Colecciona todas las pokeballs de tus Pokémon favoritos. Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
+            "price": 7.0,
+            "image": "products/20260903_115628.jpg",
+            "images": [
+                "products/20260903_115628.jpg"
             ],
             "highlighted": false,
             "categories": [
@@ -2231,9 +2640,137 @@
             "weight": 0.5
         },
         {
+            "id": "pokeball_superball",
+            "name": "Superball Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Superball. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 7.0,
+            "image": "products/20260903_115657.jpg",
+            "images": [
+                "products/20260903_115657.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-10-24",
+            "wallapopLink": "",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pokeball_ultraball",
+            "name": "Ultraball Pokeball 3D",
+            "description": "Pokeball impresa en 3D con diseño de Ultraball. Colecciona todas las pokeballs de tus Pokémon favoritos.",
+            "price": 7.0,
+            "image": "products/20260903_115712.jpg",
+            "images": [
+                "products/20260903_115712.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-10-24",
+            "wallapopLink": "",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pack_drowzee_hypno",
+            "name": "Pack Pokeballs 3D Drowzee, Hypno",
+            "description": "Pack de 2 pokeballs impresas en 3D: Drowzee e Hypno. ¡El hipnotizador y su evolución!",
+            "price": 17.0,
+            "image": "products/20260715_195557.jpg",
+            "images": [
+                "products/20260715_195557.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-10-24",
+            "wallapopLink": "",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pack_eevee",
+            "name": "Pack Pokeballs 3D Eevee, Vaporeon, Jolteon, Flareon, Espeon, Umbreon, Leafeon, Glaceon, Sylveon",
+            "description": "Pack de 9 pokeballs impresas en 3D: Eevee, Vaporeon, Jolteon, Flareon, Espeon, Umbreon, Leafeon, Glaceon y Sylveon. ¡Colecciona todas las evoluciones! Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
+            "price": 70.0,
+            "image": "products/20260130_162121.jpg",
+            "images": [
+                "products/20260130_162121.jpg",
+                "products/20260130_162123.jpg"
+            ],
+            "highlighted": true,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08",
+            "wallapopLink": "https://es.wallapop.com/item/pack-pokeballs-3d-eevee-vaporeon-jolteon-flareo-1280640329",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pack_entei_raikou_suicune",
+            "name": "Pack Pokeballs 3D Entei, Raikou, Suicune",
+            "description": "Pack de 3 pokeballs impresas en 3D: Entei, Raikou y Suicune. ¡Los perros legendarios de Johto! Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
+            "price": 25.0,
+            "image": "products/20260130_143534.jpg",
+            "images": [
+                "products/20260130_143534.jpg",
+                "products/20260130_143539.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-02-08",
+            "wallapopLink": "https://es.wallapop.com/item/pack-pokeballs-3d-entei-raikou-suicune-1280640548",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pack_espeon_umbreon",
+            "name": "Pack Pokeballs 3D Espeon, Umbreon",
+            "description": "Pack de 2 pokeballs impresas en 3D: Espeon y Umbreon. ¡El sol y la luna! Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
+            "price": 17.0,
+            "image": "products/20260127_164011.jpg",
+            "images": [
+                "products/20260127_164011.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-05-31",
+            "wallapopLink": "https://es.wallapop.com/item/pack-pokeballs-3d-espeon-umbreon-1280655964",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
             "id": "pack_gastly_haunter_gengar",
             "name": "Pack Pokeballs 3D Gastly, Haunter, Gengar",
-            "description": "Pack de 3 pokeballs impresas en 3D: Gastly, Haunter y Gengar. ¡La línea evolutiva fantasma!",
+            "description": "Pack de 3 pokeballs impresas en 3D: Gastly, Haunter y Gengar. ¡La línea evolutiva fantasma! Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 25.0,
             "image": "products/20260127_163716.jpg",
             "images": [
@@ -2252,6 +2789,50 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
+            "wallapopLink": "https://es.wallapop.com/item/pack-pokeballs-3d-gastly-haunter-gengar-1280641021",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pack_koffing_weezing",
+            "name": "Pack Pokeballs 3D Koffing, Weezing",
+            "description": "Pack de 2 pokeballs impresas en 3D: Koffing y Weezing. ¡La línea evolutiva del gas venenoso!",
+            "price": 17.0,
+            "image": "products/20260715_195628.jpg",
+            "images": [
+                "products/20260715_195628.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-10-24",
+            "wallapopLink": "",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pack_kyogre_groudon_rayquaza",
+            "name": "Pack Pokeballs 3D Kyogre, Groudon, Rayquaza",
+            "description": "Pack de 3 pokeballs impresas en 3D: Kyogre, Groudon y Rayquaza. ¡Los legendarios del clima de Hoenn!",
+            "price": 25.0,
+            "image": "products/20260715_190405.jpg",
+            "images": [
+                "products/20260715_190405.jpg",
+                "products/20260715_190408.jpg",
+                "products/20260715_190412.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-10-24",
             "wallapopLink": "",
             "vintedLink": "",
             "weight": 0.5
@@ -2259,7 +2840,7 @@
         {
             "id": "pack_lugia_ho_oh",
             "name": "Pack Pokeballs 3D Lugia, Ho oh",
-            "description": "Pack de 2 pokeballs impresas en 3D: Lugia y Ho oh. ¡Los guardianes de los cielos y los mares!",
+            "description": "Pack de 2 pokeballs impresas en 3D: Lugia y Ho oh. ¡Los guardianes de los cielos y los mares! Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 17.0,
             "image": "products/20260311_122614.jpg",
             "images": [
@@ -2275,6 +2856,27 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
+            "wallapopLink": "https://es.wallapop.com/item/pack-pokeballs-3d-lugia-ho-oh-1305143379",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pack_meowth_persian",
+            "name": "Pack Pokeballs 3D Meowth, Persian",
+            "description": "Pack de 2 pokeballs impresas en 3D: Meowth y Persian. ¡El equipo Rocket aprueba este pack!",
+            "price": 17.0,
+            "image": "products/20260715_195521.jpg",
+            "images": [
+                "products/20260715_195521.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-10-24",
             "wallapopLink": "",
             "vintedLink": "",
             "weight": 0.5
@@ -2282,8 +2884,8 @@
         {
             "id": "pack_mew_mewtwo",
             "name": "Pack Pokeballs 3D Mew, Mewtwo",
-            "description": "Pack de 2 pokeballs impresas en 3D: Mew y Mewtwo. ¡Los legendarios psíquicos!",
-            "price": 16.0,
+            "description": "Pack de 2 pokeballs impresas en 3D: Mew y Mewtwo. ¡Los legendarios psíquicos! Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
+            "price": 17.0,
             "image": "products/Mew, Mewtwo.jpg",
             "images": [
                 "products/Mew, Mewtwo.jpg"
@@ -2296,15 +2898,15 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/pack-pokeballs-3d-mew-mewtwo-1280641417",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pack_ninetales_ninetales_alola",
             "name": "Pack Pokeballs 3D Ninetales, Ninetales de Alola",
-            "description": "Pack de 2 pokeballs impresas en 3D: Ninetales y Ninetales de Alola. ¡Fuego y hielo de nueve colas!",
-            "price": 16.5,
+            "description": "Pack de 2 pokeballs impresas en 3D: Ninetales y Ninetales de Alola. ¡Fuego y hielo de nueve colas! Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
+            "price": 17.0,
             "image": "products/20260223_160430.jpg",
             "images": [
                 "products/20260223_160430.jpg"
@@ -2317,6 +2919,33 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-05-31",
+            "wallapopLink": "https://es.wallapop.com/item/pack-pokeballs-3d-ninetales-ninetales-de-alola-1280656170",
+            "vintedLink": "",
+            "weight": 0.5
+        },
+        {
+            "id": "pack_pokeballs_basicas",
+            "name": "Pack Pokeballs 3D Pokeball, Superball, Ultraball, Masterball, Honorball",
+            "description": "Pack de las 6 pokeballs básicas impresas en 3D: Pokeball, Superball, Ultraball, Masterball, Honorball y más. ¡Las clásicas de siempre!",
+            "price": 45.0,
+            "image": "products/20260903_115759.jpg",
+            "images": [
+                "products/20260903_115759.jpg",
+                "products/20260903_115801.jpg",
+                "products/20260903_115803.jpg",
+                "products/20260903_115807.jpg",
+                "products/20260904_103559.jpg",
+                "products/20260904_103611.jpg",
+                "products/20260904_103616.jpg"
+            ],
+            "highlighted": false,
+            "categories": [
+                "pokeballs",
+                "figures"
+            ],
+            "size": "",
+            "material": "PLA",
+            "createdAt": "2026-10-24",
             "wallapopLink": "",
             "vintedLink": "",
             "weight": 0.5
@@ -2324,8 +2953,8 @@
         {
             "id": "pack_snorlax_pikachu",
             "name": "Pack Pokeballs 3D Snorlax, Pikachu",
-            "description": "Pack de 2 pokeballs impresas en 3D: Snorlax y Pikachu. ¡Los favoritos de todos!",
-            "price": 16.5,
+            "description": "Pack de 2 pokeballs impresas en 3D: Snorlax y Pikachu. ¡Los favoritos de todos! Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
+            "price": 17.0,
             "image": "products/Snorlax, Pikachu.jpg",
             "images": [
                 "products/Snorlax, Pikachu.jpg"
@@ -2338,14 +2967,14 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/pack-pokeballs-3d-snorlax-pikachu-1280641899",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pack_venusaur_charizard_blastoise",
             "name": "Pack Pokeballs 3D Venusaur, Charizard, Blastoise",
-            "description": "Pack de 3 pokeballs impresas en 3D: Venusaur, Charizard y Blastoise. ¡Los starters de Kanto en su forma final!",
+            "description": "Pack de 3 pokeballs impresas en 3D: Venusaur, Charizard y Blastoise. ¡Los starters de Kanto en su forma final! Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
             "price": 25.0,
             "image": "products/Venusaur, Charizard, Blastoise.jpg",
             "images": [
@@ -2359,15 +2988,15 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/pack-pokeballs-3d-venusaur-charizard-blastoise-1280642116",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pack_vulpix_vulpix_alola",
             "name": "Pack Pokeballs 3D Vulpix, Vulpix de Alola",
-            "description": "Pack de 2 pokeballs impresas en 3D: Vulpix y Vulpix de Alola. ¡Fuego y hielo!",
-            "price": 16.5,
+            "description": "Pack de 2 pokeballs impresas en 3D: Vulpix y Vulpix de Alola. ¡Fuego y hielo! Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
+            "price": 17.0,
             "image": "products/Vulpix, Vulpix de Alola.jpg",
             "images": [
                 "products/Vulpix, Vulpix de Alola.jpg"
@@ -2380,15 +3009,15 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/pack-pokeballs-3d-vulpix-vulpix-de-alola-1280642324",
             "vintedLink": "",
             "weight": 0.5
         },
         {
             "id": "pack_zapdos_moltres_articuno",
             "name": "Pack Pokeballs 3D Zapdos, Moltres, Articuno",
-            "description": "Pack de 3 pokeballs impresas en 3D: Zapdos, Moltres y Articuno. ¡Los pájaros legendarios de Kanto!",
-            "price": 26.0,
+            "description": "Pack de 3 pokeballs impresas en 3D: Zapdos, Moltres y Articuno. ¡Los pájaros legendarios de Kanto! Opcionalmente, se puede añadir la peana con el número de la Pokedex por 1€ más",
+            "price": 25.0,
             "image": "products/20260130_142813.jpg",
             "images": [
                 "products/20260130_142813.jpg",
@@ -2404,7 +3033,7 @@
             "size": "",
             "material": "PLA",
             "createdAt": "2026-02-08",
-            "wallapopLink": "",
+            "wallapopLink": "https://es.wallapop.com/item/pack-pokeballs-3d-zapdos-moltres-articuno-1280642553",
             "vintedLink": "",
             "weight": 0.5
         }
