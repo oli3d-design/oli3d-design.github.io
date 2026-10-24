@@ -19,29 +19,38 @@ function initNavigation() {
 
     // Mobile menu toggle
     if (navToggle && navMenu) {
+        const setMenuOpen = (open) => {
+            navToggle.classList.toggle('open', open);
+            navMenu.classList.toggle('open', open);
+            navToggle.setAttribute('aria-expanded', String(open));
+            navToggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+        };
+
         navToggle.addEventListener('click', () => {
-            navToggle.classList.toggle('open');
-            navMenu.classList.toggle('open');
+            setMenuOpen(!navMenu.classList.contains('open'));
         });
 
         // Close menu when clicking a link
         navMenu.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                navToggle.classList.remove('open');
-                navMenu.classList.remove('open');
-            });
+            link.addEventListener('click', () => setMenuOpen(false));
+        });
+
+        // Close with Escape and return focus to the toggle
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && navMenu.classList.contains('open')) {
+                setMenuOpen(false);
+                navToggle.focus();
+            }
         });
     }
 
     // Navbar scroll effect
     if (navbar) {
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
+        const onScroll = () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
     }
 }
 
@@ -56,6 +65,7 @@ function setActiveNavLink() {
         const href = link.getAttribute('href');
         if (href === currentPage || (currentPage === '' && href === 'index.html')) {
             link.classList.add('active');
+            link.setAttribute('aria-current', 'page');
         }
     });
 }
@@ -73,7 +83,7 @@ function initFooter() {
     if (footerBottom) {
         footerBottom.innerHTML = `
       <p>&copy; ${currentYear} Oli3D Design. Todos los derechos reservados.</p>
-      <p>Hecho con ❤️ y mucha impresión 3D en España</p>
+      <p>Hecho con <span role="img" aria-label="cariño">❤️</span> y mucha impresión 3D en España</p>
     `;
     }
 }

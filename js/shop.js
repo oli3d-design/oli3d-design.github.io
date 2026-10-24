@@ -65,15 +65,18 @@ async function loadCategoryFilters() {
                 : selectedCategories.includes(category.id);
 
             const btn = document.createElement('button');
+            btn.type = 'button';
             btn.className = `category-item ${isActive ? 'active' : ''}`;
             btn.setAttribute('data-category', category.id);
+            btn.setAttribute('aria-pressed', String(isActive));
 
             btn.innerHTML = `
-        <span class="check-icon">
+        <span class="check-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
         </span>
-        <span>${category.name}</span>
-        <span class="category-count">${categoryCounts[category.id] || 0}</span>
+        <span class="category-emoji" aria-hidden="true">${category.icon || ''}</span>
+        <span class="category-label">${category.name}</span>
+        <span class="category-count"><span class="visually-hidden">(</span>${categoryCounts[category.id] || 0}<span class="visually-hidden"> productos)</span></span>
       `;
 
             btn.addEventListener('click', () => handleCategoryClick(category.id));
@@ -83,7 +86,7 @@ async function loadCategoryFilters() {
         updateClearFiltersVisibility();
     } catch (error) {
         console.error('Error loading category filters:', error);
-        container.innerHTML = '<p style="color: var(--gray-500); font-size: 13px; padding: 8px;">Error cargando categorías</p>';
+        container.innerHTML = '<p class="inline-error">No se han podido cargar las categorías. Recarga la página para intentarlo de nuevo.</p>';
     }
 }
 
@@ -124,16 +127,26 @@ function updateCategoryUI() {
             ? catId === 'all'
             : selectedCategories.includes(catId);
         btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-pressed', String(isActive));
     });
 }
 
 /**
- * Update clear filters button visibility
+ * Update clear filters button visibility (and the active-filter badge on mobile)
  */
 function updateClearFiltersVisibility() {
     const clearBtn = document.getElementById('clear-filters');
+    const hasFilters = !selectedCategories.includes('all');
     if (clearBtn) {
-        clearBtn.style.display = selectedCategories.includes('all') ? 'none' : 'block';
+        clearBtn.style.display = hasFilters ? 'block' : 'none';
+    }
+
+    const filterCount = document.getElementById('filter-count');
+    if (filterCount) {
+        filterCount.hidden = !hasFilters;
+        filterCount.innerHTML = hasFilters
+            ? `${selectedCategories.length}<span class="visually-hidden"> activos</span>`
+            : '';
     }
 }
 
@@ -193,7 +206,11 @@ async function loadProducts() {
     const countEl = document.getElementById('products-count');
     if (!container) return;
 
-    container.innerHTML = '<div class="loading-container"><div class="spinner"></div></div>';
+    container.innerHTML = `
+        <div class="loading-container" role="status">
+            <span class="loader-layers" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+            <span>Cargando productos…</span>
+        </div>`;
 
     try {
         const {
@@ -234,10 +251,13 @@ async function loadProducts() {
         container.innerHTML = '';
 
         if (paginated.items.length === 0) {
+            const { STATE_ART } = window.ProductsModule;
             container.innerHTML = `
-        <div class="empty-state" style="grid-column: 1 / -1;">
-          <div class="empty-state-icon">📦</div>
-          <p>No se encontraron productos</p>
+        <div class="empty-state">
+          ${STATE_ART.emptyBed}
+          <h2>No se encontraron productos</h2>
+          <p>Prueba con otra búsqueda o quita algún filtro. Si no encuentras lo que buscas, te lo diseñamos a medida.</p>
+          <a href="contact.html" class="btn btn-secondary">Contar mi idea</a>
         </div>
       `;
             hidePagination();
@@ -253,10 +273,13 @@ async function loadProducts() {
 
     } catch (error) {
         console.error('Error loading products:', error);
+        const art = (window.ProductsModule && window.ProductsModule.STATE_ART) ? window.ProductsModule.STATE_ART.spaghetti : '';
         container.innerHTML = `
-      <div class="empty-state" style="grid-column: 1 / -1;">
-        <div class="empty-state-icon">⚠️</div>
-        <p>Error al cargar productos</p>
+      <div class="empty-state">
+        ${art}
+        <h2>No se han podido cargar los productos</h2>
+        <p>Comprueba tu conexión y recarga la página.</p>
+        <button type="button" class="btn btn-secondary" onclick="window.location.reload()">Recargar página</button>
       </div>
     `;
     }
@@ -277,8 +300,10 @@ function renderPagination(paginated) {
     container.innerHTML = '';
 
     const prevBtn = document.createElement('button');
+    prevBtn.type = 'button';
     prevBtn.className = 'page-btn';
-    prevBtn.innerHTML = '←';
+    prevBtn.innerHTML = '<span aria-hidden="true">←</span>';
+    prevBtn.setAttribute('aria-label', 'Página anterior');
     prevBtn.disabled = !paginated.hasPrev;
     prevBtn.addEventListener('click', () => {
         if (paginated.hasPrev) {
@@ -292,9 +317,11 @@ function renderPagination(paginated) {
     for (let i = 1; i <= paginated.totalPages; i++) {
         if (paginated.totalPages > 7) {
             if (i > 3 && i < paginated.totalPages - 2 && Math.abs(i - paginated.currentPage) > 1) {
-                if (i === 4 || i === paginated.totalPages - 3) {
+                if ((i === 4 || i === paginated.totalPages - 3) &&
+                    !(container.lastElementChild && container.lastElementChild.classList.contains('page-ellipsis'))) {
                     const ellipsis = document.createElement('span');
-                    ellipsis.className = 'page-btn';
+                    ellipsis.className = 'page-btn page-ellipsis';
+                    ellipsis.setAttribute('aria-hidden', 'true');
                     ellipsis.textContent = '...';
                     ellipsis.style.cursor = 'default';
                     container.appendChild(ellipsis);
@@ -304,8 +331,11 @@ function renderPagination(paginated) {
         }
 
         const pageBtn = document.createElement('button');
+        pageBtn.type = 'button';
         pageBtn.className = `page-btn ${i === paginated.currentPage ? 'active' : ''}`;
         pageBtn.textContent = i;
+        pageBtn.setAttribute('aria-label', `Página ${i}`);
+        if (i === paginated.currentPage) pageBtn.setAttribute('aria-current', 'page');
         pageBtn.addEventListener('click', () => {
             currentPage = i;
             loadProducts();
@@ -315,8 +345,10 @@ function renderPagination(paginated) {
     }
 
     const nextBtn = document.createElement('button');
+    nextBtn.type = 'button';
     nextBtn.className = 'page-btn';
-    nextBtn.innerHTML = '→';
+    nextBtn.innerHTML = '<span aria-hidden="true">→</span>';
+    nextBtn.setAttribute('aria-label', 'Página siguiente');
     nextBtn.disabled = !paginated.hasNext;
     nextBtn.addEventListener('click', () => {
         if (paginated.hasNext) {
@@ -334,5 +366,10 @@ function hidePagination() {
 }
 
 function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+
+    // The clicked page button is re-rendered, so move focus to the results
+    const grid = document.getElementById('products-grid');
+    if (grid) grid.focus({ preventScroll: true });
 }

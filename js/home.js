@@ -4,6 +4,7 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+    initHeroVideo();
     initHomePage();
 });
 
@@ -16,6 +17,83 @@ async function initHomePage() {
     ]);
 }
 
+const ARROW_ICON = `
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M5 12h14M13 6l6 6-6 6"></path>
+    </svg>`;
+
+/**
+ * Hero timelapse: the 28 MB video is never preloaded. It only starts after the page
+ * has loaded, and not at all for reduced-motion or data-saver users (they keep the poster).
+ * Includes a pause/play control and pauses itself while off-screen.
+ */
+function initHeroVideo() {
+    const video = document.querySelector('.hero-video');
+    const toggle = document.querySelector('.video-toggle');
+    if (!video) return;
+
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const saveData = navigator.connection && navigator.connection.saveData;
+    if (reduceMotion || saveData) return;
+
+    let userPaused = false;
+
+    const setPausedUI = (paused) => {
+        if (!toggle) return;
+        toggle.setAttribute('aria-pressed', String(paused));
+        toggle.setAttribute('aria-label', paused ? 'Reproducir vídeo' : 'Pausar vídeo');
+    };
+
+    const tryPlay = () => {
+        const playPromise = video.play();
+        if (playPromise && playPromise.catch) {
+            playPromise.catch(() => setPausedUI(true));
+        }
+    };
+
+    if (toggle) {
+        toggle.addEventListener('click', () => {
+            if (video.paused) {
+                userPaused = false;
+                tryPlay();
+            } else {
+                userPaused = true;
+                video.pause();
+            }
+        });
+    }
+
+    video.addEventListener('play', () => setPausedUI(false));
+    video.addEventListener('pause', () => setPausedUI(true));
+
+    const start = () => {
+        video.preload = 'auto';
+        if (toggle) toggle.hidden = false;
+        tryPlay();
+
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (userPaused) return;
+                    if (entry.isIntersecting) {
+                        tryPlay();
+                    } else {
+                        video.pause();
+                    }
+                });
+            }, { threshold: 0.15 });
+            observer.observe(video);
+        }
+    };
+
+    if (document.readyState === 'complete') {
+        start();
+    } else {
+        window.addEventListener('load', start, { once: true });
+    }
+}
+
 /**
  * Load and display highlighted products
  */
@@ -25,7 +103,7 @@ async function loadHighlightedProducts() {
 
     const { showLoading, getHighlightedProducts, renderProductCard } = window.ProductsModule;
 
-    showLoading(container);
+    showLoading(container, 'Cargando productos…');
 
     try {
         const products = await getHighlightedProducts();
@@ -38,7 +116,7 @@ async function loadHighlightedProducts() {
         }
     } catch (error) {
         console.error('Error loading highlighted products:', error);
-        container.innerHTML = '<p class="text-center">Error al cargar productos destacados</p>';
+        container.innerHTML = '<p class="inline-error">No se han podido cargar los productos destacados. Recarga la página o visita el catálogo.</p>';
     }
 }
 
@@ -51,7 +129,7 @@ async function loadLatestProducts() {
 
     const { showLoading, getLatestProducts, renderProductCard } = window.ProductsModule;
 
-    showLoading(container);
+    showLoading(container, 'Cargando productos…');
 
     try {
         const products = await getLatestProducts(4);
@@ -63,7 +141,7 @@ async function loadLatestProducts() {
         }
     } catch (error) {
         console.error('Error loading latest products:', error);
-        container.innerHTML = '<p class="text-center">Error al cargar últimos productos</p>';
+        container.innerHTML = '<p class="inline-error">No se han podido cargar las novedades. Recarga la página o visita el catálogo.</p>';
     }
 }
 
@@ -74,7 +152,7 @@ async function loadPopularCategories() {
     const container = document.getElementById('popular-categories');
     if (!container) return;
 
-    const { getPopularCategories, renderCategoryCard } = window.ProductsModule;
+    const { getPopularCategories, escapeHtml } = window.ProductsModule;
 
     try {
         const categories = await getPopularCategories();
@@ -83,30 +161,22 @@ async function loadPopularCategories() {
         categories.forEach(category => {
             const card = document.createElement('a');
             card.href = `shop.html?category=${category.id}`;
-            card.className = 'category-image-card';
+            card.className = 'cat-tile';
 
-            let imagesHtml = '';
+            // Images are decorative: the category name labels the link
+            const images = (category.images && category.images.length > 0)
+                ? category.images
+                : ['resources/LOGO_SIN_FONDO.png'];
 
-            if (!category.images || category.images.length <= 1) {
-                // Single image
-                const imgSrc = (category.images && category.images[0]) || 'resources/LOGO_SIN_FONDO.png';
-                imagesHtml = `<img src="${imgSrc}" alt="${category.name}" loading="lazy" class="category-single-img">`;
-            } else {
-                // Collage (2 or 4 images)
-                const count = category.images.length;
-                const gridClass = count === 2 ? 'grid-2' : 'grid-4';
-
-                imagesHtml = `<div class="category-collage ${gridClass}">`;
-                category.images.forEach((img, index) => {
-                    imagesHtml += `<img src="${img}" alt="${category.name} ${index + 1}" loading="lazy">`;
-                });
-                imagesHtml += `</div>`;
-            }
+            const imagesHtml = images.map(img =>
+                `<img src="${escapeHtml(img)}" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='resources/LOGO_SIN_FONDO.png'">`
+            ).join('');
 
             card.innerHTML = `
-                ${imagesHtml}
-                <div class="category-image-overlay">
-                    <span>${category.name}</span>
+                <div class="cat-tile-media">${imagesHtml}</div>
+                <div class="cat-tile-label">
+                    <span class="cat-tile-name">${escapeHtml(category.name)}</span>
+                    <span class="cat-tile-go" aria-hidden="true">${ARROW_ICON}</span>
                 </div>
             `;
 
@@ -114,7 +184,7 @@ async function loadPopularCategories() {
         });
     } catch (error) {
         console.error('Error loading categories:', error);
-        container.innerHTML = '<p class="text-center">Error al cargar categorías</p>';
+        container.innerHTML = '<p class="inline-error">No se han podido cargar las categorías. Puedes verlas todas en el catálogo.</p>';
     }
 }
 
@@ -127,7 +197,7 @@ async function loadSeasonalBanner() {
     if (!section || !banner) return;
 
     try {
-        const { loadCategories, getProductsByCategory } = window.ProductsModule;
+        const { loadCategories, getProductsByCategory, escapeHtml } = window.ProductsModule;
         const categories = await loadCategories();
 
         // Find first visible seasonal category
@@ -152,18 +222,15 @@ async function loadSeasonalBanner() {
 
         // Render the banner
         banner.innerHTML = `
-            <div class="featured-banner-bg"></div>
-            <div class="featured-banner-content">
-                <span class="seasonal-tag">${seasonalCategory.icon} Temporada</span>
-                <h3>${seasonalCategory.name}</h3>
+            <div>
+                <span class="seasonal-tag"><span aria-hidden="true">${seasonalCategory.icon}</span> Temporada</span>
+                <h2>${escapeHtml(seasonalCategory.name)}</h2>
                 <p>${description}</p>
-                <a href="shop.html?category=${seasonalCategory.id}" class="btn btn-primary btn-glow">Ver Colección</a>
+                <a href="shop.html?category=${seasonalCategory.id}" class="btn btn-sky btn-lg">Ver colección</a>
             </div>
-            <div class="featured-banner-showcase">
-                ${productImages.map((img, i) => `
-                    <div class="showcase-item" style="animation-delay: ${i * 0.1}s">
-                        <img src="${img}" alt="Producto" loading="lazy">
-                    </div>
+            <div class="seasonal-showcase">
+                ${productImages.map(img => `
+                    <img src="${escapeHtml(img)}" alt="" loading="lazy" decoding="async">
                 `).join('')}
             </div>
         `;

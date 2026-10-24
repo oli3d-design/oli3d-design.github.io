@@ -302,7 +302,20 @@ function formatPrice(price) {
 }
 
 /**
+ * Escape text for safe use inside HTML attributes and content
+ */
+function escapeHtml(value) {
+  return String(value == null ? '' : value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+/**
  * Render a product card (preview version for shop grid)
+ * The whole card is a real link so it works with keyboard, middle-click and screen readers.
  */
 async function renderProductCard(product, showPrice = null) {
   // If showPrice not explicitly set, check settings
@@ -311,26 +324,26 @@ async function renderProductCard(product, showPrice = null) {
   }
 
   const card = document.createElement('article');
-  card.className = 'card product-card';
+  card.className = 'product-card';
   card.setAttribute('data-product-id', product.id);
 
-  card.innerHTML = `
-    <div class="product-badges">
-      ${product.highlighted ? '<span class="product-badge">Destacado</span>' : ''}
-      ${product.customizable ? '<span class="product-badge badge-customizable">Personalizable</span>' : ''}
-    </div>
-    <div class="product-image">
-      <img src="${product.image}" alt="${product.name}" loading="lazy" onerror="this.src='resources/LOGO_SIN_FONDO.png'">
-    </div>
-    <div class="product-info">
-      <h3 class="product-name">${product.name}</h3>
-      ${showPrice ? `<p class="product-price">${product.priceOnRequest ? '<span style="font-size:14px;color:var(--gray-500)">Consultar / A medida</span>' : formatPrice(product.price)}</p>` : ''}
-    </div>
-  `;
+  const badges = [
+    product.highlighted ? '<span class="product-badge">Destacado</span>' : '',
+    product.customizable ? '<span class="product-badge badge-customizable">Personalizable</span>' : ''
+  ].join('');
 
-  card.addEventListener('click', () => {
-    window.location.href = `product.html?id=${product.id}`;
-  });
+  card.innerHTML = `
+    <a class="product-link" href="product.html?id=${encodeURIComponent(product.id)}">
+      <div class="product-image">
+        ${badges ? `<div class="product-badges">${badges}</div>` : ''}
+        <img src="${escapeHtml(product.image)}" alt="" width="600" height="600" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='resources/LOGO_SIN_FONDO.png'">
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">${escapeHtml(product.name)}</h3>
+        ${showPrice ? `<p class="product-price">${product.priceOnRequest ? '<span class="product-price-request">Consultar / A medida</span>' : formatPrice(product.price)}</p>` : ''}
+      </div>
+    </a>
+  `;
 
   return card;
 }
@@ -339,13 +352,14 @@ async function renderProductCard(product, showPrice = null) {
  * Render a category card
  */
 function renderCategoryCard(category, onClick) {
-  const card = document.createElement('div');
+  const card = document.createElement('button');
+  card.type = 'button';
   card.className = 'category-card';
   card.setAttribute('data-category-id', category.id);
 
   card.innerHTML = `
-    <span class="category-icon">${category.icon}</span>
-    <span class="category-name">${category.name}</span>
+    <span class="category-icon" aria-hidden="true">${category.icon}</span>
+    <span class="category-name">${escapeHtml(category.name)}</span>
   `;
 
   if (onClick) {
@@ -397,12 +411,38 @@ ${customMessage}
 }
 
 /**
- * Show loading spinner
+ * Illustrations for empty and error states
+ * - emptyBed: a clean build plate with the nozzle waiting (nothing to show)
+ * - spaghetti: the classic failed print (something went wrong / not found)
  */
-function showLoading(container) {
+const STATE_ART = {
+  emptyBed: `
+    <svg class="empty-state-art" viewBox="0 0 260 150" aria-hidden="true" focusable="false">
+      <rect x="96" y="8" width="68" height="34" rx="8" fill="#0A3F6E"></rect>
+      <path d="M122 42h16l-4 14h-8z" fill="#1A6FB3"></path>
+      <path d="M130 62v44" stroke="#5CC6F3" stroke-width="3" stroke-dasharray="4 7" stroke-linecap="round"></path>
+      <rect x="30" y="112" width="200" height="12" rx="6" fill="#8792A2"></rect>
+      <rect x="44" y="124" width="172" height="8" rx="4" fill="#0A3F6E"></rect>
+    </svg>`,
+  spaghetti: `
+    <svg class="empty-state-art" viewBox="0 0 260 150" aria-hidden="true" focusable="false">
+      <rect x="150" y="6" width="68" height="34" rx="8" fill="#0A3F6E" transform="rotate(8 184 23)"></rect>
+      <path d="M170 44h16l-4 14h-8z" fill="#1A6FB3" transform="rotate(8 184 23)"></path>
+      <path d="M176 60c-10 18 18 22 4 36s-42-6-46 10 30 16 14 26-58-4-64-18 22-26 6-34-34 10-28 24 34 18 46 8" fill="none" stroke="#5CC6F3" stroke-width="4" stroke-linecap="round"></path>
+      <path d="M150 74c-20-6-30 14-14 20s10 22-8 18" fill="none" stroke="#1A6FB3" stroke-width="3" stroke-linecap="round"></path>
+      <rect x="30" y="126" width="200" height="12" rx="6" fill="#8792A2"></rect>
+      <rect x="44" y="138" width="172" height="8" rx="4" fill="#0A3F6E"></rect>
+    </svg>`
+};
+
+/**
+ * Show loading indicator (layers stacking on the bed)
+ */
+function showLoading(container, label = 'Cargando…') {
   container.innerHTML = `
-    <div class="loading-container">
-      <div class="spinner"></div>
+    <div class="loading-container" role="status">
+      <span class="loader-layers" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span>${label}</span>
     </div>
   `;
 }
@@ -410,11 +450,12 @@ function showLoading(container) {
 /**
  * Show empty state
  */
-function showEmptyState(container, message = 'No se encontraron productos') {
+function showEmptyState(container, message = 'No se encontraron productos', hint = '') {
   container.innerHTML = `
     <div class="empty-state">
-      <div class="empty-state-icon">📦</div>
-      <p>${message}</p>
+      ${STATE_ART.emptyBed}
+      <h3>${message}</h3>
+      ${hint ? `<p>${hint}</p>` : ''}
     </div>
   `;
 }
@@ -443,6 +484,8 @@ window.ProductsModule = {
   generateMailtoLink,
   showLoading,
   showEmptyState,
+  escapeHtml,
+  STATE_ART,
   getBasePath
 };
 
